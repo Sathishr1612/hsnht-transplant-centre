@@ -2001,9 +2001,11 @@ h6 {
   .modal-dialog {
     margin: 1rem;
   }
+
   .modal-content {
     border-radius: 16px !important;
   }
+
   .modal-body {
     padding: 2rem 1.5rem !important;
   }
@@ -2036,4 +2038,348 @@ h6 {
   letter-spacing: 0.1em;
   color: var(--color-text-primary);
   margin-bottom: 0.5rem;
+}
+
+/* ==========================================================================
+   Luxury Patient Reviews Section
+   ========================================================================== */
+
+#patient-reviews {
+  background-color: #F8F7F4;
+  overflow: hidden;
+}
+
+/* Featured Review */
+.featured-review-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
+  position: relative;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.featured-review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
+}
+
+.featured-quote-icon {
+  position: absolute;
+  top: -20px;
+  left: 30px;
+  width: 60px;
+  height: 60px;
+  background: #C9A46A;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 10px 20px rgba(201, 164, 106, 0.3);
+}
+
+/* Review Slider (Marquee) */
+.marquee-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 2rem 0;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marquee-content {
+  display: flex;
+  width: max-content;
+  animation: scrollMarquee 40s linear infinite;
+  gap: 2rem;
+  padding-left: 2rem;
+}
+
+.marquee-container:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+@keyframes scrollMarquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-50% - 1rem));
+  }
+}
+
+.luxury-review-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 400px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  flex-shrink: 0;
+}
+
+.luxury-review-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+}
+
+/* Trust Strip */
+.google-trust-strip {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  border: 1px solid rgba(201, 164, 106, 0.1);
+}
+
+.trust-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.trust-value {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.trust-label {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-secondary);
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .featured-review-card {
+    padding: 2rem;
+  }
+
+  .luxury-review-card {
+    width: 320px;
+  }
+
+  .google-trust-strip {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .trust-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding-bottom: 0.75rem;
+    width: 100%;
+  }
+
+  .trust-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
+/* ==========================================================================
+   Real People Editorial Section
+   ========================================================================== */
+#real-people {
+  background-color: rgba(15, 23, 42, 0.05);
+}
+
+.real-people-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 991px) {
+  .real-people-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .real-people-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.real-people-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 500px;
+  background-color: #ffffff;
+  border: 1px solid #D8B57A;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.5s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.real-people-card:hover {
+  box-shadow: 0 15px 40px rgba(216, 181, 122, 0.2);
+}
+
+.real-people-img-container {
+  flex-grow: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.real-people-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.real-people-card:hover .real-people-img-container img {
+  transform: scale(1.05);
+}
+
+.real-people-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  color: white;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.real-people-card:hover .real-people-content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.real-people-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 0 0 rgba(216, 181, 122, 0);
+  transition: box-shadow 0.5s ease;
+  pointer-events: none;
+  border-radius: 12px;
+}
+
+.real-people-card:hover::after {
+  box-shadow: inset 0 0 20px 0 rgba(216, 181, 122, 0.3);
+}
+
+.real-people-title {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.real-people-subtitle {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.8;
+  color: #ffffff;
+}
+
+.real-people-arrow {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
+}
+
+.real-people-card:hover .real-people-arrow {
+  background: #D8B57A;
+  color: #fff;
+  transform: translateX(5px);
+}
+
+.luxury-stats-strip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
+  border-top: 1px solid rgba(216, 181, 122, 0.3);
+  margin-top: 4rem;
+}
+
+.luxury-stat-item {
+  text-align: center;
+  flex: 1;
+  position: relative;
+}
+
+.luxury-stat-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 20%;
+  height: 60%;
+  width: 1px;
+  background-color: rgba(216, 181, 122, 0.3);
+}
+
+.luxury-stat-value {
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  color: var(--color-primary);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.luxury-stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 767px) {
+  .luxury-stats-strip {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .luxury-stat-item {
+    flex: 0 0 45%;
+  }
+
+  .luxury-stat-item:not(:last-child)::after {
+    display: none;
+  }
+
+  .luxury-stat-value {
+    font-size: 2.5rem;
+  }
 }
