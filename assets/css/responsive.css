@@ -1,0 +1,126 @@
+/* responsive.css - Custom viewport overrides for HSN Hair Transplant Centre */
+
+@media (max-width: 991.98px) {
+  body {
+    padding-bottom: 60px !important;
+  }
+
+  /* Mobile Navbar - Transparent initially, Glassmorphism on scroll */
+  #main-navbar {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border-bottom: 1px solid transparent !important;
+    box-shadow: none !important;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  }
+  
+  #main-navbar.navbar-scrolled {
+    background: rgba(248, 247, 244, 0.9) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border-bottom: 1px solid rgba(29, 29, 31, 0.08) !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.02) !important;
+  }
+  
+  /* Hero Overrides */
+  .hero-title {
+    font-size: 2.25rem !important;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.9rem !important;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-indicators {
+    display: none !important; /* Hide vertical indicators on mobile */
+  }
+  
+  /* Sections Padding */
+  .py-24 {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+  
+  .py-32 {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+  }
+
+  /* Gallery buttons on mobile */
+  .gallery-filter-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 0.75rem;
+    justify-content: flex-start !important;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .gallery-tab-btn {
+    padding: 0.5rem 1rem !important;
+    font-size: 8px !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* Before After Slider aspect-ratio adjustment */
+  .ba-slider-outer {
+    aspect-ratio: 1/1 !important; /* Square aspect ratio for mobile screens */
+  }
+  
+  .metric-card {
+    text-align: center;
+    padding: 1.5rem 1rem !important;
+    border-right: none !important;
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  }
+  
+  .metric-card:last-child {
+    border-bottom: none !important;
+  }
+  
+  .metric-num {
+    font-size: 2.75rem !important;
+  }
+  
+  /* Services */
+  .service-card {
+    height: 400px !important;
+  }
+  
+  .service-card-title {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  /* Small screen fine-tuning */
+  .hero-title {
+    font-size: 1.75rem !important;
+  }
+  
+  .navbar-brand .logo-text-top {
+    font-size: 1rem !important;
+  }
+  
+  .navbar-brand .logo-text-bottom {
+    font-size: 7px !important;
+  }
+  
+  .btn-gold-outline, .btn-gold-solid {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  .doc-tab-btn {
+    padding: 0.75rem 1rem !important;
+    font-size: 8px !important;
+  }
+}

@@ -1,0 +1,1645 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HSN Hair Transplant Centre | Premium Luxury Hair Restoration</title>
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Custom Style sheets -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+
+<body>
+
+  <!-- 1. Top Scroll Progress Indicator -->
+  <!-- <div class="scroll-progress-bar"></div> -->
+
+  <!-- 2. Global Gold Grain Overlay -->
+  <div class="luxury-grain"></div>
+
+  <!-- 3. Navigation Header -->
+  <nav class="navbar navbar-expand-lg fixed-top glass-nav py-3" id="main-navbar">
+    <div class="container">
+      <!-- Logo Emblem -->
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+        <div class="logo-emblem-svg" style="width: 60px; height: 60px;">
+          <img src="assets/images/logo.png" alt="HSN Hair Centre Logo Emblem" class="w-100 h-100"
+            style="object-fit: contain;" />
+        </div>
+        <div class="d-flex flex-column">
+          <span class="logo-text-top">HSN HAIR CENTRE</span>
+          <!-- <span class="logo-text-bottom">Luxury Restoration</span> -->
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Items -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbar-content">
+        <ul class="navbar-nav gap-2">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#before-after">Transformations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#surgeon">The Surgeon</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#clinic">The Sanctuary</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonials">Reviews</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right Side Controls -->
+      <div class="d-none d-lg-flex align-items-center gap-4">
+        <a href="tel:+919876543210" class="phone-link d-flex align-items-center gap-1.5">
+          <i data-lucide="phone" style="width: 14px; height: 14px;"></i>
+          <span>+91 98765 43210</span>
+        </a>
+        <button class="btn btn-gold-outline" data-bs-toggle="modal" data-bs-target="#consultationModal">
+          Reserve Suite
+        </button>
+      </div>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button class="navbar-toggler border-0 p-0 focus-none d-lg-none" type="button" id="mobile-menu-toggle">
+        <i data-lucide="menu" style="width: 24px; height: 24px; color: #0F172A;"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Backdrop -->
+  <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
+
+  <!-- Mobile Menu Drawer (Side Panel) -->
+  <div class="mobile-nav-panel" id="mobile-nav-panel">
+    <!-- Drawer Header -->
+    <div class="drawer-header d-flex justify-content-between align-items-center w-100">
+      <!-- Logo Emblem -->
+      <a class="d-flex align-items-center gap-2 text-decoration-none" href="#home" id="drawer-logo-link">
+        <div class="logo-emblem-svg" style="width: 32px; height: 32px;">
+          <svg viewBox="0 0 100 100" class="w-100 h-100">
+            <circle cx="50" cy="50" r="46" fill="#0F172A" stroke="#C8A45D" stroke-width="3" />
+            <circle cx="50" cy="50" r="40" fill="transparent" stroke="#C8A45D" stroke-width="1"
+              stroke-dasharray="3 3" />
+            <text x="28" y="58" fill="#FFFFFF" font-size="24" font-weight="bold" font-family="sans-serif">H</text>
+            <text x="47" y="58" fill="#C8A45D" font-size="26" font-weight="bold" font-family="sans-serif"
+              font-style="italic">S</text>
+            <text x="66" y="58" fill="#FFFFFF" font-size="24" font-weight="bold" font-family="sans-serif">N</text>
+          </svg>
+        </div>
+        <div class="d-flex flex-column text-start">
+          <span class="logo-text-top"
+            style="font-size: 11px; letter-spacing: 0.15em; font-weight: bold; color: var(--color-primary);">HSN HAIR
+            CENTRE</span>
+          <span class="logo-text-bottom"
+            style="font-size: 6px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-secondary);">Luxury
+            Restoration</span>
+        </div>
+      </a>
+      <button class="btn border-0 p-0" id="mobile-menu-close" aria-label="Close menu">
+        <i data-lucide="x" style="width: 24px; height: 24px; color: var(--color-primary);"></i>
+      </button>
+    </div>
+
+    <!-- Drawer Body (Links) -->
+    <div class="drawer-body w-100 flex-grow-1 my-4">
+      <ul class="drawer-menu-list list-unstyled m-0 p-0">
+        <li class="drawer-menu-item">
+          <a class="nav-link active" href="#home">
+            <span class="menu-num">01</span>
+            <span class="menu-text">Home</span>
+            <span class="menu-arrow"></span>
+          </a>
+        </li>
+        <li class="drawer-menu-item">
+          <a class="nav-link" href="#surgeon">
+            <span class="menu-num">02</span>
+            <span class="menu-text">About Us</span>
+            <span class="menu-arrow"></span>
+          </a>
+        </li>
+        <li class="drawer-menu-item">
+          <a class="nav-link" href="#services">
+            <span class="menu-num">03</span>
+            <span class="menu-text">Treatments</span>
+            <span class="menu-arrow"></span>
+          </a>
+        </li>
+        <li class="drawer-menu-item">
+          <a class="nav-link" href="#before-after">
+            <span class="menu-num">04</span>
+            <span class="menu-text">Results</span>
+            <span class="menu-arrow"></span>
+          </a>
+        </li>
+        <li class="drawer-menu-item">
+          <a class="nav-link" href="#clinic">
+            <span class="menu-num">05</span>
+            <span class="menu-text">Gallery</span>
+            <span class="menu-arrow"></span>
+          </a>
+        </li>
+        <li class="drawer-menu-item">
+          <a class="nav-link" href="#testimonials">
+            <span class="menu-num">06</span>
+            <span class="menu-text">Testimonials</span>
+            <span class="menu-arrow"></span>
+          </a>
+        </li>
+        <li class="drawer-menu-item">
+          <a class="nav-link" href="#why-hsn">
+            <span class="menu-num">07</span>
+            <span class="menu-text">Locations</span>
+            <span class="menu-arrow"></span>
+          </a>
+        </li>
+        <li class="drawer-menu-item">
+          <a class="nav-link" href="#cta-section">
+            <span class="menu-num">08</span>
+            <span class="menu-text">Contact</span>
+            <span class="menu-arrow"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Drawer Footer -->
+    <div class="drawer-footer w-100 mt-auto pt-3 border-top border-secondary border-opacity-10 text-start">
+      <!-- Primary CTA -->
+      <button class="btn btn-gold-solid w-100 mb-3 py-2.5 text-uppercase tracking-wider font-mono text-[11px]"
+        data-bs-toggle="modal" data-bs-target="#consultationModal" id="drawer-cta-book">
+        Book Consultation
+      </button>
+
+      <!-- Secondary CTA Buttons -->
+      <div class="row g-2 mb-4">
+        <div class="col-6">
+          <a href="https://wa.me/919876543210?text=Hello%20HSN%20Hair%20Transplant%20Centre,%20I%20am%20looking%20to%20schedule%20an%20expert%20digital%20scalp%20consultation."
+            target="_blank" rel="noreferrer"
+            class="btn btn-outline-dark w-100 py-2 font-mono text-[10px] tracking-widest text-uppercase d-flex align-items-center justify-content-center gap-1.5"
+            style="border-color: rgba(29, 29, 31, 0.15); font-size: 10px; color: var(--color-primary); background: transparent;">
+            <i data-lucide="message-square" style="width: 12px; height: 12px;"></i> WhatsApp Now
+          </a>
+        </div>
+        <div class="col-6">
+          <a href="tel:+919876543210"
+            class="btn btn-outline-dark w-100 py-2 font-mono text-[10px] tracking-widest text-uppercase d-flex align-items-center justify-content-center gap-1.5"
+            style="border-color: rgba(29, 29, 31, 0.15); font-size: 10px; color: var(--color-primary); background: transparent;">
+            <i data-lucide="phone" style="width: 12px; height: 12px;"></i> Call Now
+          </a>
+        </div>
+      </div>
+
+      <!-- Social Icons + Google Reviews Badge -->
+      <div class="d-flex align-items-center justify-content-between gap-2 mt-2">
+        <!-- Socials -->
+        <div class="d-flex gap-2.5">
+          <a href="https://instagram.com" target="_blank" rel="noreferrer" class="social-link-drawer"
+            aria-label="Instagram">
+            <i data-lucide="instagram" style="width: 16px; height: 16px;"></i>
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noreferrer" class="social-link-drawer"
+            aria-label="Facebook">
+            <i data-lucide="facebook" style="width: 16px; height: 16px;"></i>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noreferrer" class="social-link-drawer"
+            aria-label="YouTube">
+            <i data-lucide="youtube" style="width: 16px; height: 16px;"></i>
+          </a>
+        </div>
+
+        <!-- Google Reviews Badge -->
+        <a href="#testimonials"
+          class="google-reviews-badge-drawer d-flex align-items-center gap-1.5 text-decoration-none">
+          <span class="font-mono text-[9px] text-muted tracking-wide text-uppercase">Google Reviews</span>
+          <div class="d-flex gap-0.5 text-secondary">
+            <i data-lucide="star" style="width: 10px; height: 10px; fill: var(--color-secondary);"></i>
+            <i data-lucide="star" style="width: 10px; height: 10px; fill: var(--color-secondary);"></i>
+            <i data-lucide="star" style="width: 10px; height: 10px; fill: var(--color-secondary);"></i>
+            <i data-lucide="star" style="width: 10px; height: 10px; fill: var(--color-secondary);"></i>
+            <i data-lucide="star" style="width: 10px; height: 10px; fill: var(--color-secondary);"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Sticky Conversion Bottom Bar (Visible on mobile only) -->
+  <div class="mobile-sticky-bar d-flex d-md-none" id="mobile-sticky-bar">
+    <!-- WhatsApp Column -->
+    <a href="https://wa.me/919876543210?text=Hello%20HSN%20Hair%20Transplant%20Centre,%20I%20am%20looking%20to%20schedule%20an%20expert%20digital%20scalp%20consultation."
+      target="_blank" rel="noreferrer" class="sticky-bar-btn sticky-whatsapp">
+      <i data-lucide="message-square" class="btn-icon"></i>
+      <span>WhatsApp</span>
+    </a>
+
+    <!-- Call Column -->
+    <a href="tel:+919876543210" class="sticky-bar-btn sticky-call">
+      <i data-lucide="phone" class="btn-icon"></i>
+      <span>Call Clinic</span>
+    </a>
+
+    <!-- Book Column -->
+    <button class="sticky-bar-btn sticky-book" data-bs-toggle="modal" data-bs-target="#consultationModal">
+      <i data-lucide="calendar" class="btn-icon"></i>
+      <span>Book Suite</span>
+    </button>
+  </div>
+
+  <!-- 4. Hero Section -->
+  <section class="hero-section" id="home">
+    <!-- Premium High-Quality Carousel Image Slides -->
+    <div class="hero-slide active" style="background-image: url('assets/images/hero-1.png');">
+    </div>
+    <div class="hero-slide" style="background-image: url('assets/images/hero-2.png');">
+    </div>
+    <div class="hero-slide" style="background-image: url('assets/images/hero-hsn.webp');">
+    </div>
+
+    <!-- Soft Luxury Vignette & Light-Gradient Overlays -->
+    <div class="hero-overlay-r"
+      style="background: linear-gradient(to right, rgba(248, 247, 244, 0.96) 0%, rgba(248, 247, 244, 0.85) 50%, rgba(248, 247, 244, 0.2) 100%); position: absolute; inset: 0; z-index: 3;">
+    </div>
+    <div class="hero-overlay-t"
+      style="background: linear-gradient(to top, var(--color-bg-main) 0%, transparent 60%); position: absolute; inset: 0; z-index: 3; opacity: 0.95;">
+    </div>
+
+    <!-- Hero Main Content Grid -->
+    <div class="container hero-content position-relative" style="z-index: 4;">
+      <div class="row align-items-center" style="margin-top: 2rem;">
+        <div class="col-lg-7" data-reveal="fade-up">
+          <div class="hero-badge-container">
+            <div class="hero-badge-line" style="background-color: var(--color-secondary); width: 40px; height: 1px;">
+            </div>
+            <span class="hero-badge-text"
+              style="color: var(--color-secondary); font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase;">THE
+              ARTISTRY OF RESTORATION</span>
+          </div>
+
+          <h1 class="hero-title font-serif text-5xl md:text-7xl tracking-wide mb-3 text-primary"
+            style="line-height: 1.15;">
+            RESTORE YOUR CONFIDENCE
+          </h1>
+
+          <p class="hero-subtitle font-sans text-lg md:text-xl text-secondary font-light tracking-wide mb-4"
+            style="color: var(--color-text-secondary);">
+            Advanced Hair Restoration With Natural Results
+          </p>
+
+          <p class="font-sans text-sm text-muted mb-4 max-w-lg leading-relaxed"
+            style="color: var(--color-text-secondary);">
+            Experience the absolute pinnacle of luxury hair transplants. Seamless high-density graft placement
+            supervised under the certified medical artistry of Dr. H. S. Neyogi.
+          </p>
+
+          <div class="d-flex flex-wrap gap-3 mb-4">
+            <button class="btn btn-gold-solid px-4 py-3" data-bs-toggle="modal" data-bs-target="#consultationModal">
+              Book Consultation
+            </button>
+            <a href="#before-after" class="btn btn-gold-outline px-4 py-3 text-decoration-none">
+              View Results
+            </a>
+            <a href="https://wa.me/919876543210?text=Hello%20HSN%20Hair%20Transplant%20Centre,%20I%20am%20looking%20to%20schedule%20an%20expert%20digital%20scalp%20consultation."
+              target="_blank" rel="noreferrer"
+              class="btn btn-gold-outline px-4 py-3 d-flex align-items-center gap-2 text-decoration-none">
+              <i data-lucide="message-square" style="width: 14px; height: 14px;"></i>
+              <span>WhatsApp Consultation</span>
+            </a>
+          </div>
+
+          <!-- Luxury floating statistics below hero content -->
+          <div class="row g-4 pt-4 border-top border-secondary border-opacity-10 max-w-xl">
+            <div class="col-4">
+              <span class="d-block font-serif text-2xl md:text-3xl text-primary font-medium">99.4%</span>
+              <span class="d-block font-mono text-[9px] text-uppercase text-secondary tracking-wider mt-1">GRAFT
+                SURVIVAL</span>
+            </div>
+            <div class="col-4 border-start border-secondary border-opacity-10 pl-4">
+              <span class="d-block font-serif text-2xl md:text-3xl text-primary font-medium">18+ Yrs</span>
+              <span class="d-block font-mono text-[9px] text-uppercase text-secondary tracking-wider mt-1">SURGICAL
+                MASTERY</span>
+            </div>
+            <div class="col-4 border-start border-secondary border-opacity-10 pl-4">
+              <span class="d-block font-serif text-2xl md:text-3xl text-primary font-medium">5,000+</span>
+              <span class="d-block font-mono text-[9px] text-uppercase text-secondary tracking-wider mt-1">HAPPY
+                PATIENTS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vertical Slideshow Page Indicators -->
+    <div class="hero-indicators" style="z-index: 5;">
+      <button class="indicator-item active">
+        <span class="indicator-num">01</span>
+        <div class="indicator-line"></div>
+      </button>
+      <button class="indicator-item">
+        <span class="indicator-num">02</span>
+        <div class="indicator-line"></div>
+      </button>
+      <button class="indicator-item">
+        <span class="indicator-num">03</span>
+        <div class="indicator-line"></div>
+      </button>
+    </div>
+
+    <!-- Mouse Scroll Indicator -->
+    <!-- <a href="#before-after" class="scroll-down-link" style="z-index: 4;">
+      <span>Discover Transformations</span>
+      <div class="mouse-wheel-container">
+        <div class="mouse-wheel"></div>
+      </div>
+    </a> -->
+  </section>
+
+  <!-- 5. Before & After Section -->
+  <section class="py-24 md:py-32" id="before-after"
+    style="background-color: var(--color-bg-main); border-bottom: 1px solid rgba(29,29,31,0.06); overflow: hidden;">
+    <div class="container-fluid px-0">
+
+      <!-- Section Title -->
+      <div class="container text-center mb-5" data-reveal="fade-up">
+        <div class="d-inline-flex align-items-center gap-2 mb-3">
+          <i data-lucide="sparkles" class="text-secondary" style="width: 16px; height: 16px;"></i>
+          <span class="font-mono text-[10px] tracking-widest text-secondary uppercase font-semibold">The Aesthetics of
+            Symmetrical Restoration</span>
+        </div>
+        <h2 class="text-4xl md:text-6xl font-serif text-primary tracking-wide">
+          PATIENT <span class="italic text-secondary">TRANSFORMATIONS</span>
+        </h2>
+        <p class="text-xs text-muted font-mono tracking-widest mt-2 uppercase">HORIZONTAL AUTO-MOVING INFINITE GALLERY •
+          HOVER ZOOM EFFECT</p>
+      </div>
+
+      <!-- Auto Scrolling Marquee Track -->
+      <div class="ba-marquee-container" data-reveal="fade-in">
+        <div class="ba-marquee-track" id="ba-drag-track">
+          <!-- Card 1 -->
+          <div class="ba-card">
+            <div class="ba-img-container">
+              <img src="assets/images/hsnht-10.png" alt="Receding Frontal Hairline Before" />
+            </div>
+            <div class="ba-details">
+              <div class="ba-title-row">
+                <h4 class="ba-card-title">THE SWEEPING REVEAL</h4>
+                <span class="ba-card-grafts">3,000 Grafts</span>
+              </div>
+              <p class="ba-card-desc">Full frontal dense session restoring natural density and directional hair flow.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="ba-card">
+            <div class="ba-img-container">
+              <img src="assets/images/hsnht-11.png" alt="Receding Corner Temples Before" />
+            </div>
+            <div class="ba-details">
+              <div class="ba-title-row">
+                <h4 class="ba-card-title">SYMMETRICAL CORNERING</h4>
+                <span class="ba-card-grafts">2,500 Grafts</span>
+              </div>
+              <p class="ba-card-desc">Reconstructing recessions to create a sharp, masculine, and youthful facial frame.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="ba-card">
+            <div class="ba-img-container">
+              <img src="assets/images/hsnht-9.png" alt="Vertex Thinning Before" />
+            </div>
+            <div class="ba-details">
+              <div class="ba-title-row">
+                <h4 class="ba-card-title">THE CROWN MAJESTY</h4>
+                <span class="ba-card-grafts">5,000 Grafts</span>
+              </div>
+              <p class="ba-card-desc">Comprehensive megasession addressing vertex thinning and primary hairline borders.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="ba-card">
+            <div class="ba-img-container">
+              <img src="assets/images/hsnht-17.png" alt="Patchy Beard Before" />
+            </div>
+            <div class="ba-details">
+              <div class="ba-title-row">
+                <h4 class="ba-card-title">BEARD & TEMPLE CONTINUITY</h4>
+                <span class="ba-card-grafts">2,200 Grafts</span>
+              </div>
+              <p class="ba-card-desc">Blending facial transplants seamlessly with existing sideburn line angles.</p>
+            </div>
+          </div>
+
+          <!-- Duplicate items for seamless infinite scroll loop -->
+          <!-- Card 1 Duplicate -->
+          <div class="ba-card">
+            <div class="ba-img-container">
+              <img src="assets/images/hsnht-19.png" alt="Receding Frontal Hairline Before" />
+            </div>
+            <div class="ba-details">
+              <div class="ba-title-row">
+                <h4 class="ba-card-title">THE SWEEPING REVEAL</h4>
+                <span class="ba-card-grafts">3,000 Grafts</span>
+              </div>
+              <p class="ba-card-desc">Full frontal dense session restoring natural density and directional hair flow.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 Duplicate -->
+          <div class="ba-card">
+            <div class="ba-img-container">
+              <img src="assets/images/hsnht-20.png" alt="Receding Corner Temples Before" />
+            </div>
+            <div class="ba-details">
+              <div class="ba-title-row">
+                <h4 class="ba-card-title">SYMMETRICAL CORNERING</h4>
+                <span class="ba-card-grafts">2,500 Grafts</span>
+              </div>
+              <p class="ba-card-desc">Reconstructing recessions to create a sharp, masculine, and youthful facial frame.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 Duplicate -->
+          <div class="ba-card">
+            <div class="ba-img-container">
+              <img src="assets/images/hsnht-21.png" alt="Vertex Thinning Before" />
+            </div>
+            <div class="ba-details">
+              <div class="ba-title-row">
+                <h4 class="ba-card-title">THE CROWN MAJESTY</h4>
+                <span class="ba-card-grafts">5,000 Grafts</span>
+              </div>
+              <p class="ba-card-desc">Comprehensive megasession addressing vertex thinning and primary hairline borders.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 Duplicate -->
+          <div class="ba-card">
+            <div class="ba-img-container">
+              <img src="assets/images/hsnht-22.png" alt="Patchy Beard Before" />
+            </div>
+            <div class="ba-details">
+              <div class="ba-title-row">
+                <h4 class="ba-card-title">BEARD & TEMPLE CONTINUITY</h4>
+                <span class="ba-card-grafts">2,200 Grafts</span>
+              </div>
+              <p class="ba-card-desc">Blending facial transplants seamlessly with existing sideburn line angles.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Services Section -->
+  <section class="py-24 md:py-32" id="services"
+    style="background-color: var(--color-primary); border-bottom: 1px solid rgba(200,164,93,0.15); color: #FFFFFF;">
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="text-center mb-5" data-reveal="fade-up">
+        <div class="d-inline-flex align-items-center gap-2 mb-3">
+          <i data-lucide="sparkles" class="text-secondary" style="width: 16px; height: 16px;"></i>
+          <span class="font-mono text-[10px] tracking-widest text-secondary uppercase font-semibold">HSN</span>
+        </div>
+        <h2 class="text-4xl md:text-6xl font-serif text-white tracking-wide">
+          Our <span class="italic text-secondary"> Services</span>
+        </h2>
+        <p class="text-sm md:text-base text-secondary font-mono tracking-widest mt-2 uppercase">Not Just Solutions,
+          But Understanding
+        </p>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="row g-4 mt-4">
+        <!-- Card 1: Hair Transplant -->
+        <div class="col-md-6 col-lg-4" data-reveal="fade-up">
+          <div class="service-card draw-border" data-bs-toggle="modal" data-bs-target="#consultationModal"
+            data-service="Hair Transplantation">
+            <div class="service-card-bg-container">
+              <img src="assets/images/hero-hsn.webp" class="service-card-img" alt="Hair Transplant" />
+              <div class="service-card-vignette"></div>
+              <div class="service-card-dim"></div>
+            </div>
+            <div>
+              <span class="service-card-tag">Signature Scalp Restoration</span>
+              <h4 class="service-card-title mt-1">Hair Transplantation</h4>
+              <div class="service-card-desc-box">
+                <p class="service-card-desc">The gold standard in scalp restoration. Utilizing advanced Micro-FUE to
+                  replicate the precise density and natural angle of your hairline.</p>
+              </div>
+              <div class="service-card-badges">
+                <span class="service-badge">Micro-FUE Harvesting</span>
+                <span class="service-badge">Artisanal Design</span>
+              </div>
+              <div class="service-card-footer">
+                <button class="service-footer-btn">Book Therapy</button>
+                <div class="service-footer-icon">
+                  <i data-lucide="arrow-right" style="width: 12px; height: 12px;"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Beard Transplant -->
+        <div class="col-md-6 col-lg-4" data-reveal="fade-up">
+          <div class="service-card draw-border" data-bs-toggle="modal" data-bs-target="#consultationModal"
+            data-service="Beard Transplantation">
+            <div class="service-card-bg-container">
+              <img src="assets/images/beard-1.jfif" class="service-card-img" alt="Beard Transplant" />
+              <div class="service-card-vignette"></div>
+              <div class="service-card-dim"></div>
+            </div>
+            <div>
+              <span class="service-card-tag">Sartorial Facial Sculpting</span>
+              <h4 class="service-card-title mt-1">Beard Transplantation</h4>
+              <div class="service-card-desc-box">
+                <p class="service-card-desc">Create structure and dense fullness. Whether covering patchy spots or
+                  designing a bold beard, we implant matched single-hair grafts.</p>
+              </div>
+              <div class="service-card-badges">
+                <span class="service-badge">Cheek Sculpting</span>
+                <span class="service-badge">Exit Angle Mapping</span>
+              </div>
+              <div class="service-card-footer">
+                <button class="service-footer-btn">Book Therapy</button>
+                <div class="service-footer-icon">
+                  <i data-lucide="arrow-right" style="width: 12px; height: 12px;"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Eyebrow Transplant -->
+        <div class="col-md-6 col-lg-4" data-reveal="fade-up">
+          <div class="service-card draw-border" data-bs-toggle="modal" data-bs-target="#consultationModal"
+            data-service="Eyebrow Transplantation">
+            <div class="service-card-bg-container">
+              <img src="assets/images/Eyebrow-transplantation-cost.webp" class="service-card-img"
+                alt="Eyebrow Transplant" />
+              <div class="service-card-vignette"></div>
+              <div class="service-card-dim"></div>
+            </div>
+            <div>
+              <span class="service-card-tag">Precision Brow Architecture</span>
+              <h4 class="service-card-title mt-1">Eyebrow Transplantation</h4>
+              <div class="service-card-desc-box">
+                <p class="service-card-desc">Frame your eyes with perfect symmetry. Fine single hair follicles are
+                  chosen specifically to align with delicate eyebrow curves.</p>
+              </div>
+              <div class="service-card-badges">
+                <span class="service-badge">Precision Mapping</span>
+                <span class="service-badge">Ultra-Fine Grafts</span>
+              </div>
+              <div class="service-card-footer">
+                <button class="service-footer-btn">Book Therapy</button>
+                <div class="service-footer-icon">
+                  <i data-lucide="arrow-right" style="width: 12px; height: 12px;"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Hair Fall Management -->
+        <div class="col-md-6 col-lg-4" data-reveal="fade-up">
+          <div class="service-card draw-border" data-bs-toggle="modal" data-bs-target="#consultationModal"
+            data-service="Hair Fall Management">
+            <div class="service-card-bg-container">
+              <img src="assets/images/hair-fall-management.jfif" class="service-card-img" alt="Hair Fall Management" />
+              <div class="service-card-vignette"></div>
+              <div class="service-card-dim"></div>
+            </div>
+            <div>
+              <span class="service-card-tag">Cellular Vitalization Therapies</span>
+              <h4 class="service-card-title mt-1">Hair Fall Management</h4>
+              <div class="service-card-desc-box">
+                <p class="service-card-desc">Non-surgical, scientific intervention. Combining dynamic growth-factor
+                  concentrates and laser stimulation to preserve roots.</p>
+              </div>
+              <div class="service-card-badges">
+                <span class="service-badge">GFC Therapy</span>
+                <span class="service-badge">Laser Stimulation</span>
+              </div>
+              <div class="service-card-footer">
+                <button class="service-footer-btn">Book Therapy</button>
+                <div class="service-footer-icon">
+                  <i data-lucide="arrow-right" style="width: 12px; height: 12px;"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5: Reconstructive Restoration -->
+        <div class="col-md-6 col-lg-4" data-reveal="fade-up">
+          <div class="service-card draw-border" data-bs-toggle="modal" data-bs-target="#consultationModal"
+            data-service="Reconstructive Restoration">
+            <div class="service-card-bg-container">
+              <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200&q=80"
+                class="service-card-img" alt="Reconstructive Restoration" />
+              <div class="service-card-vignette"></div>
+              <div class="service-card-dim"></div>
+            </div>
+            <div>
+              <span class="service-card-tag">Aesthetic Scar Overlap</span>
+              <h4 class="service-card-title mt-1">Reconstructive Restoration</h4>
+              <div class="service-card-desc-box">
+                <p class="service-card-desc">Reclaim flawless continuity. Specialized grafting into surgical scars, burn
+                  tissues, or prior low-quality transplant hairline corrections.</p>
+              </div>
+              <div class="service-card-badges">
+                <span class="service-badge">Scar Camouflage</span>
+                <span class="service-badge">Symmetry Recovery</span>
+              </div>
+              <div class="service-card-footer">
+                <button class="service-footer-btn">Book Therapy</button>
+                <div class="service-footer-icon">
+                  <i data-lucide="arrow-right" style="width: 12px; height: 12px;"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6: Dermatosurgery -->
+        <div class="col-md-6 col-lg-4" data-reveal="fade-up">
+          <div class="service-card draw-border" data-bs-toggle="modal" data-bs-target="#consultationModal"
+            data-service="Dermatosurgery">
+            <div class="service-card-bg-container">
+              <img src="assets/images/dermatosurgery-improve-skin-simple-steps.jpg" class="service-card-img"
+                alt="Dermatosurgery" />
+              <div class="service-card-vignette"></div>
+              <div class="service-card-dim"></div>
+            </div>
+            <div>
+              <span class="service-card-tag">Clinical Scalp & Skin Care</span>
+              <h4 class="service-card-title mt-1">Dermatosurgery</h4>
+              <div class="service-card-desc-box">
+                <p class="service-card-desc">Precision medical skin interventions. Excising skin growths, cysts, or
+                  abnormalities with high-precision instruments to maximize clean healing.</p>
+              </div>
+              <div class="service-card-badges">
+                <span class="service-badge">Lesion Removal</span>
+                <span class="service-badge">Scarless Suturing</span>
+              </div>
+              <div class="service-card-footer">
+                <button class="service-footer-btn">Book Therapy</button>
+                <div class="service-footer-icon">
+                  <i data-lucide="arrow-right" style="width: 12px; height: 12px;"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 7. Why HSN Section -->
+  <section class="py-24 md:py-32" id="why-hsn"
+    style="background-color: var(--color-bg-alt); border-bottom: 1px solid rgba(29, 29, 31, 0.05);">
+    <div class="container">
+
+      <!-- Asymmetric Row Layout -->
+      <div class="row g-5 align-items-center">
+
+        <!-- Left Column: Editorial Statement -->
+        <div class="col-lg-5" data-reveal="slide-right">
+          <div class="d-inline-flex align-items-center gap-2 mb-3">
+            <i data-lucide="shield-check" class="text-secondary" style="width: 16px; height: 16px;"></i>
+            <span class="font-mono text-[10px] tracking-widest text-secondary uppercase font-semibold">HSN Hair
+              Transplantation Center</span>
+          </div>
+
+          <h2 class="text-4xl md:text-5xl lg:text-6xl font-serif text-primary tracking-wide mb-4"
+            style="line-height: 1.15;">
+            Why Choose<br />
+            <span class="italic text-secondary"> HSN?</span>
+
+          </h2>
+
+          <p class="font-sans text-sm text-muted leading-relaxed mt-4 max-w-sm"
+            style="color: var(--color-text-secondary);">
+            At HSN, we believe hair restoration is an art of human portraiture. We reject generic, machine-like
+            templates to design custom hairlines centered on your unique cranial facial structure.
+          </p>
+
+          <div class="mt-5 pt-4 border-top border-secondary border-opacity-10 max-w-sm">
+            <button class="btn btn-gold-solid w-100" data-bs-toggle="modal" data-bs-target="#consultationModal">
+              Book Private Suite Consultation
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Column: Premium Icon Layout (NO CARDS) -->
+        <div class="col-lg-7" data-reveal="slide-left">
+          <div class="space-y-8 d-flex flex-column gap-5">
+
+            <!-- Pillar 1 -->
+            <div class="d-flex gap-4 align-items-start">
+              <div class="p-3 bg-white rounded-full text-secondary shadow-sm"
+                style="border: 1px solid rgba(201, 164, 106, 0.15);">
+                <i data-lucide="shield" style="width: 24px; height: 24px;"></i>
+              </div>
+              <div>
+                <h4 class="font-serif text-xl text-primary mb-2">Experience</h4>
+                <p class="text-xs text-muted leading-relaxed max-w-xl" style="color: var(--color-text-secondary);">
+                  We have a wide breadth of experience that covers most of our clients’ hair concerns.
+
+                  HSN Super Speciality Hair Transplantation Center offers completely pain free treatment. Qualified Hair
+                  Transplant Dermato-surgeon with huge experience will be taking care of you.
+                </p>
+              </div>
+            </div>
+
+            <!-- Pillar 2 -->
+            <div class="d-flex gap-4 align-items-start">
+              <div class="p-3 bg-white rounded-full text-secondary shadow-sm"
+                style="border: 1px solid rgba(201, 164, 106, 0.15);">
+                <i data-lucide="sparkles" style="width: 24px; height: 24px;"></i>
+              </div>
+              <div>
+                <h4 class="font-serif text-xl text-primary mb-2">Bespoke Artistic Hairline Design</h4>
+                <p class="text-xs text-muted leading-relaxed max-w-xl" style="color: var(--color-text-secondary);">
+                  We calibrate every hair angle and direction to trace your natural growth lines. Each graft is
+                  carefully sorted and manually classified for an invisible, high-density transition.
+                </p>
+              </div>
+            </div>
+
+            <!-- Pillar 3 -->
+            <div class="d-flex gap-4 align-items-start">
+              <div class="p-3 bg-white rounded-full text-secondary shadow-sm"
+                style="border: 1px solid rgba(201, 164, 106, 0.15);">
+                <i data-lucide="heart" style="width: 24px; height: 24px;"></i>
+              </div>
+              <div>
+                <h4 class="font-serif text-xl text-primary mb-2">Elite Patient Confidentiality</h4>
+                <p class="text-xs text-muted leading-relaxed max-w-xl" style="color: var(--color-text-secondary);">
+                  We maintain absolute privacy. Our clinic features dedicated executive suites, private entrances, and
+                  exclusive booking slots designed for high-profile individuals.
+                </p>
+              </div>
+            </div>
+
+            <!-- Pillar 4 -->
+            <div class="d-flex gap-4 align-items-start">
+              <div class="p-3 bg-white rounded-full text-secondary shadow-sm"
+                style="border: 1px solid rgba(201, 164, 106, 0.15);">
+                <i data-lucide="calendar" style="width: 24px; height: 24px;"></i>
+              </div>
+              <div>
+                <h4 class="font-serif text-xl text-primary mb-2">Lifelong Post-Therapy Care</h4>
+                <p class="text-xs text-muted leading-relaxed max-w-xl" style="color: var(--color-text-secondary);">
+                  Your journey doesn't end in the theater. We provide bespoke post-surgical followups and customized
+                  scalp regenerative therapies to ensure lifetime thickness.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Counters section -->
+      <div class="row mt-5 g-4 py-5 border-top border-bottom border-secondary border-opacity-10">
+        <div class="col-6 col-md-3 text-center">
+          <div class="metric-num stat-counter-animate" data-target="5000" data-suffix="+">0</div>
+          <div class="metric-lbl">Happy Transformed Patients</div>
+        </div>
+        <div class="col-6 col-md-3 text-center border-start border-secondary border-opacity-10">
+          <div class="metric-num stat-counter-animate" data-target="99.4" data-suffix="%">0</div>
+          <div class="metric-lbl">Graft Survival Rate</div>
+        </div>
+        <div class="col-6 col-md-3 text-center border-start border-secondary border-opacity-10">
+          <div class="metric-num stat-counter-animate" data-target="18" data-suffix="+">0</div>
+          <div class="metric-lbl">Years Surgical Mastery</div>
+        </div>
+        <div class="col-6 col-md-3 text-center border-start border-secondary border-opacity-10">
+          <div class="metric-num stat-counter-animate" data-target="100" data-suffix="%">0</div>
+          <div class="metric-lbl">Custom Symmetry Score</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 8. Surgeon Section -->
+  <section class="py-24 md:py-32" id="surgeon"
+    style="background-color: rgba(15,23,42,0.05); border-bottom: 1px solid rgba(15,23,42,0.08); overflow: hidden;">
+    <div class="container">
+
+      <div class="row align-items-center g-5">
+        <!-- Left Column: Big Image & badge -->
+        <div class="col-lg-5" data-reveal="slide-right">
+          <div class="doctor-img-container">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=90"
+              class="img-fluid w-100" style="object-fit: cover; aspect-ratio: 4/5;" alt="Dr. H. S. Neyogi" />
+
+            <div class="doc-info-badge">
+              <span class="font-mono text-[8px] tracking-[0.3em] text-secondary uppercase d-block mb-1">Chief
+                Surgeon</span>
+              <span class="font-serif text-lg text-white font-medium d-block leading-none">Dr. H. S. Neyogi</span>
+              <span class="font-mono text-[8px] text-white text-opacity-40 mt-1 d-block uppercase tracking-widest">18+
+                Years Practice</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Biography & interactive tabs -->
+        <div class="col-lg-7" data-reveal="slide-left">
+          <div class="d-inline-flex align-items-center gap-2 mb-3">
+            <i data-lucide="award" class="text-secondary" style="width: 16px; height: 16px;"></i>
+            <span class="font-mono text-[10px] tracking-widest text-secondary uppercase font-semibold">Chief Medical
+              Director</span>
+          </div>
+
+          <h2 class="text-4xl md:text-5xl lg:text-6xl font-serif text-primary tracking-wide mb-2 leading-none">
+            Dr. H. S. Neyogi
+          </h2>
+
+          <span class="font-mono text-[10px] tracking-wider text-secondary uppercase font-semibold block mb-4">
+            MBBS, MD (Dermatology) • ISHRS Active Fellow
+          </span>
+
+          <p class="text-sm text-muted font-sans leading-relaxed mb-4">
+            "A hair transplant is not merely a clinical procedure—it is the fine art of facial frame reconstruction.
+            Every single graft must be placed with absolute respect to the patient’s natural anatomy, directional
+            angles, and proportional geometry."
+          </p>
+
+          <!-- Interactive Tab Buttons -->
+          <div class="d-flex border-bottom border-secondary border-opacity-15 mb-4">
+            <button class="doc-tab-btn active" data-tab="philosophy">Philosophy</button>
+            <button class="doc-tab-btn" data-tab="credentials">Credentials</button>
+            <button class="doc-tab-btn" data-tab="awards">Awards</button>
+          </div>
+
+          <!-- Tab Content 1: Philosophy -->
+          <div class="doc-tab-content active" id="doc-tab-philosophy">
+            <p class="text-xs text-muted leading-relaxed">
+              Dr. Neyogi approaches every hairline with the eye of an editorial portrait artist. Combining deep
+              dermatological expertise in scalp structure with mathematical hairline geometry, he maintains full control
+              over angle alignment, graft sorting, and high-density hairline density.
+            </p>
+            <ul class="doctor-item-list mt-3">
+              <li>Bespoke Micro-FUE angle calibration based on facial geometry.</li>
+              <li>Exclusive manual graft sorting and follicle classification.</li>
+              <li>Comprehensive natural donor area protection protocols.</li>
+            </ul>
+          </div>
+
+          <!-- Tab Content 2: Credentials -->
+          <div class="doc-tab-content" id="doc-tab-credentials">
+            <p class="text-xs text-muted leading-relaxed">
+              A highly respected name globally, Dr. Neyogi is a certified specialist board diplomat nominee and active
+              global partner across several micro-restoration trichology networks.
+            </p>
+            <ul class="doctor-item-list mt-3">
+              <li>MBBS - Top Tier National Medical Institute</li>
+              <li>MD - Dermatology & Aesthetics</li>
+              <li>Active Fellow, International Society of Hair Restoration Surgery (ISHRS)</li>
+              <li>Executive Board Member - AHRS India</li>
+            </ul>
+          </div>
+
+          <!-- Tab Content 3: Awards -->
+          <div class="doc-tab-content" id="doc-tab-awards">
+            <p class="text-xs text-muted leading-relaxed">
+              Over his 18+ years of dedicated practice, Dr. Neyogi has been recognized with multiple South-Asian
+              clinical awards for breakthrough surgical techniques.
+            </p>
+            <ul class="doctor-item-list mt-3">
+              <li>Pioneer in Micro-FUE Hairline Sculpting Award 2024</li>
+              <li>Best Aesthetic Hair Transplant Surgeon - South Asia Clinical Summit</li>
+              <li>Published Researcher - Journal of Aesthetic Trichology</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 9. Video Testimonials Section -->
+  <section class="py-24 md:py-32" id="video-testimonials"
+    style="background-color: var(--color-bg-main); border-bottom: 1px solid rgba(15,23,42,0.08);">
+    <div class="container text-center">
+
+      <!-- Header -->
+      <div class="mb-5" data-reveal="fade-up">
+        <span class="font-mono text-[10px] tracking-widest text-secondary uppercase font-semibold block mb-3">ACOUSTIC
+          PROOF</span>
+        <h2 class="text-4xl md:text-5xl font-serif text-primary tracking-wide mb-3">
+          Video Testimonials
+        </h2>
+        <p class="text-xs text-muted font-sans mx-auto" style="max-width: 600px; color: var(--color-text-secondary);">
+          Hear the authentic journeys of patients who restored their profile and confidence.
+        </p>
+      </div>
+
+      <!-- Testimonials Cards Grid -->
+      <div class="row g-4 mt-2 justify-content-center">
+        <!-- Card 1 -->
+        <div class="col-md-4" data-reveal="fade-up">
+          <div class="position-relative overflow-hidden w-100 draw-border testimonial-video-box"
+            style="aspect-ratio: 16/10; cursor: pointer; background: #1a1a1a;"
+            data-video="https://www.youtube-nocookie.com/embed/dQo4mvDh7Vw?rel=0&modestbranding=1"
+            data-bs-toggle="modal" data-bs-target="#videoReviewModal">
+            <!-- Background Image -->
+            <img src="assets/images/kunal-verma-testimonial.jpg"
+              onerror="this.src='https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80'; this.onerror=null;"
+              alt="Kunal Verma" class="w-100 h-100 object-fit-cover opacity-50"
+              style="filter: brightness(0.6) contrast(1.2); transition: transform 0.5s ease;"
+              onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" />
+
+            <!-- Play Button Container -->
+            <div
+              class="position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center"
+              style="pointer-events: none;">
+              <div
+                class="rounded-circle border border-white border-opacity-25 d-flex align-items-center justify-content-center"
+                style="width: 76px; height: 76px;">
+                <div class="bg-white rounded-circle d-flex align-items-center justify-content-center shadow-lg"
+                  style="width: 48px; height: 48px;">
+                  <i data-lucide="play" class="text-secondary"
+                    style="width: 20px; height: 20px; fill: currentColor; margin-left: 3px;"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Text -->
+            <div class="position-absolute bottom-0 start-0 p-4 text-start w-100"
+              style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); pointer-events: none;">
+              <h4 class="font-serif text-white text-xl mb-1">Kunal Verma</h4>
+              <span class="font-mono text-[9px] tracking-widest text-secondary uppercase font-bold">12 MONTHS PROGRESS
+                REVIEW</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4" data-reveal="fade-up" data-reveal-delay="100">
+          <div class="position-relative overflow-hidden w-100 draw-border testimonial-video-box"
+            style="aspect-ratio: 16/10; cursor: pointer; background: #1a1a1a;"
+            data-video="https://youtu.be/dQo4mvDh7Vw?si=vaASq2xlJBfbCg0W" data-bs-toggle="modal"
+            data-bs-target="#videoReviewModal">
+            <!-- Background Image -->
+            <img src="assets/images/rajesh-kumar-testimonial.jpg"
+              onerror="this.src='https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80'; this.onerror=null;"
+              alt="Rajesh Kumar" class="w-100 h-100 object-fit-cover opacity-50"
+              style="filter: brightness(0.6) contrast(1.2); transition: transform 0.5s ease;"
+              onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" />
+
+            <!-- Play Button Container -->
+            <div
+              class="position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center"
+              style="pointer-events: none;">
+              <div
+                class="rounded-circle border border-white border-opacity-25 d-flex align-items-center justify-content-center"
+                style="width: 76px; height: 76px;">
+                <div class="bg-white rounded-circle d-flex align-items-center justify-content-center shadow-lg"
+                  style="width: 48px; height: 48px;">
+                  <i data-lucide="play" class="text-secondary"
+                    style="width: 20px; height: 20px; fill: currentColor; margin-left: 3px;"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Text -->
+            <div class="position-absolute bottom-0 start-0 p-4 text-start w-100"
+              style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); pointer-events: none;">
+              <h4 class="font-serif text-white text-xl mb-1">Rajesh Kumar</h4>
+              <span class="font-mono text-[9px] tracking-widest text-secondary uppercase font-bold">FUE MEGA-SESSION
+                REVIEW</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4" data-reveal="fade-up" data-reveal-delay="200">
+          <div class="position-relative overflow-hidden w-100 draw-border testimonial-video-box"
+            style="aspect-ratio: 16/10; cursor: pointer; background: #1a1a1a;"
+            data-video="https://www.youtube-nocookie.com/embed/FI1DOcL5KkQ?rel=0&modestbranding=1"
+            data-bs-toggle="modal" data-bs-target="#videoReviewModal">
+            <!-- Background Image -->
+            <img src="assets/images/amit-sharma-testimonial.jpg"
+              onerror="this.src='https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80'; this.onerror=null;"
+              alt="Amit Sharma" class="w-100 h-100 object-fit-cover opacity-50"
+              style="filter: brightness(0.6) contrast(1.2); transition: transform 0.5s ease;"
+              onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" />
+
+            <!-- Play Button Container -->
+            <div
+              class="position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center"
+              style="pointer-events: none;">
+              <div
+                class="rounded-circle border border-white border-opacity-25 d-flex align-items-center justify-content-center"
+                style="width: 76px; height: 76px;">
+                <div class="bg-white rounded-circle d-flex align-items-center justify-content-center shadow-lg"
+                  style="width: 48px; height: 48px;">
+                  <i data-lucide="play" class="text-secondary"
+                    style="width: 20px; height: 20px; fill: currentColor; margin-left: 3px;"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Text -->
+            <div class="position-absolute bottom-0 start-0 p-4 text-start w-100"
+              style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); pointer-events: none;">
+              <h4 class="font-serif text-white text-xl mb-1">Amit Sharma</h4>
+              <span class="font-mono text-[9px] tracking-widest text-secondary uppercase font-bold">NATURAL HAIRLINE
+                DESIGN REVIEW</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Sanctuary Gallery Section -->
+  <section class="py-24 md:py-32" id="clinic"
+    style="background-color: rgba(15,23,42,0.05); border-bottom: 1px solid rgba(15,23,42,0.08);">
+    <div class="container">
+
+      <!-- Headers -->
+      <div class="text-center mb-5" data-reveal="fade-up">
+        <div class="d-inline-flex align-items-center gap-2 mb-3">
+          <i data-lucide="hotel" class="text-secondary" style="width: 16px; height: 16px;"></i>
+          <span class="font-mono text-[10px] tracking-widest text-secondary uppercase font-semibold">The Sanctuary of
+            Restoration</span>
+        </div>
+        <h2 class="text-4xl md:text-6xl font-serif text-primary tracking-wide">
+          THE HSN CLINIC <span class="italic text-secondary">SANCTUARY</span>
+        </h2>
+        <p class="text-sm md:text-base text-muted font-sans mt-4 max-w-xl mx-auto leading-relaxed">
+          Take a visual tour through our state-of-the-art hair restoration facilities across South India. Optimized
+          cleanrooms, advanced microscopy sorting stations, and elite recovery suites.
+        </p>
+      </div>
+
+      <!-- Filter Tab Buttons -->
+      <div class="d-flex justify-content-center gap-2 mb-5 flex-wrap gallery-filter-container" data-reveal="fade-up">
+        <button class="gallery-tab-btn active" data-category="All">All</button>
+        <button class="gallery-tab-btn" data-category="Consultation">Consultation</button>
+        <button class="gallery-tab-btn" data-category="Operation Theatre">Operating Suite</button>
+        <button class="gallery-tab-btn" data-category="Graft Processing">Graft Processing</button>
+        <button class="gallery-tab-btn" data-category="Lounges">Lounges</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="row g-4 mt-2" id="gallery-grid" data-reveal="fade-up">
+        <!-- Image 1 -->
+        <div class="col-md-6 col-lg-4 gallery-grid-item-wrapper" data-category="Consultation">
+          <div class="gallery-grid-item">
+            <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=80"
+              alt="VIP Consult Salon" class="gallery-img" />
+            <div class="gallery-overlay">
+              <span class="font-mono text-[9px] tracking-widest text-secondary uppercase">Consultation</span>
+              <div>
+                <h4 class="font-serif text-2xl text-white tracking-wide">VIP Executive Consult Salon</h4>
+                <span
+                  class="font-mono text-[9px] text-white text-opacity-40 tracking-wider uppercase block mt-2">Hyderabad
+                  Suite</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="col-md-6 col-lg-4 gallery-grid-item-wrapper" data-category="Operation Theatre">
+          <div class="gallery-grid-item">
+            <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1200&q=80"
+              alt="Cleanroom OT" class="gallery-img" />
+            <div class="gallery-overlay">
+              <span class="font-mono text-[9px] tracking-widest text-secondary uppercase">Operation Theatre</span>
+              <div>
+                <h4 class="font-serif text-2xl text-white tracking-wide">State-of-the-Art Cleanroom OT</h4>
+                <span
+                  class="font-mono text-[9px] text-white text-opacity-40 tracking-wider uppercase block mt-2">Bangalore
+                  Suite</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image 3 -->
+        <div class="col-md-6 col-lg-4 gallery-grid-item-wrapper" data-category="Graft Processing">
+          <div class="gallery-grid-item">
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80"
+              alt="Microscope Desk" class="gallery-img" />
+            <div class="gallery-overlay">
+              <span class="font-mono text-[9px] tracking-widest text-secondary uppercase">Graft Processing</span>
+              <div>
+                <h4 class="font-serif text-2xl text-white tracking-wide">Laminar Flow Microscope Desk</h4>
+                <span
+                  class="font-mono text-[9px] text-white text-opacity-40 tracking-wider uppercase block mt-2">Chennai
+                  Suite</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image 4 -->
+        <div class="col-md-6 col-lg-4 gallery-grid-item-wrapper" data-category="Lounges">
+          <div class="gallery-grid-item">
+            <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1200&q=80"
+              alt="Patient healing suite" class="gallery-img" />
+            <div class="gallery-overlay">
+              <span class="font-mono text-[9px] tracking-widest text-secondary uppercase">Lounges</span>
+              <div>
+                <h4 class="font-serif text-2xl text-white tracking-wide">Premium Patient Healing Suite</h4>
+                <span
+                  class="font-mono text-[9px] text-white text-opacity-40 tracking-wider uppercase block mt-2">Hyderabad
+                  Suite</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image 5 -->
+        <div class="col-md-6 col-lg-4 gallery-grid-item-wrapper" data-category="Lounges">
+          <div class="gallery-grid-item">
+            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80"
+              alt="Elite Lounge" class="gallery-img" />
+            <div class="gallery-overlay">
+              <span class="font-mono text-[9px] tracking-widest text-secondary uppercase">Lounges</span>
+              <div>
+                <h4 class="font-serif text-2xl text-white tracking-wide">Elite Reception & Apothecary</h4>
+                <span
+                  class="font-mono text-[9px] text-white text-opacity-40 tracking-wider uppercase block mt-2">Bangalore
+                  Lounge</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image 6 -->
+        <div class="col-md-6 col-lg-4 gallery-grid-item-wrapper" data-category="Consultation">
+          <div class="gallery-grid-item">
+            <img src="https://images.unsplash.com/photo-1579684389782-64d84b5e901a?auto=format&fit=crop&w=1200&q=80"
+              alt="Diagnostics Bay" class="gallery-img" />
+            <div class="gallery-overlay">
+              <span class="font-mono text-[9px] tracking-widest text-secondary uppercase">Consultation</span>
+              <div>
+                <h4 class="font-serif text-2xl text-white tracking-wide">Dermatological Diagnostics Bay</h4>
+                <span
+                  class="font-mono text-[9px] text-white text-opacity-40 tracking-wider uppercase block mt-2">Chennai
+                  Lounge</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 11. Custom Banner CTA Section -->
+  <section class="py-24 md:py-32 bg-primary text-white text-center position-relative" id="cta-section">
+    <div class="container position-relative" style="z-index: 5;" data-reveal="zoom-in">
+      <div class="d-inline-flex align-items-center gap-2 mb-3">
+        <i data-lucide="calendar" class="text-secondary" style="width: 16px; height: 16px;"></i>
+        <span class="font-mono text-[10px] tracking-widest text-secondary uppercase">Private Consult Scheduling</span>
+      </div>
+
+      <h2 class="text-4xl md:text-6xl lg:text-7xl font-serif text-white tracking-wide mb-4 leading-none">
+        READY TO RESTORE <br />
+        <span class="italic text-secondary">YOUR NATURAL LOOK?</span>
+      </h2>
+
+      <p class="text-sm text-white text-opacity-70 max-w-xl mx-auto mb-5 leading-relaxed font-sans">
+        Schedule your highly detailed, private micro-graft analysis session with our chief aesthetic director Dr.
+        Neyogi. Explore personalized hairline placement configurations.
+      </p>
+
+      <div class="max-w-md mx-auto d-flex flex-column gap-3">
+        <button class="btn btn-gold-solid w-100 py-3" data-bs-toggle="modal" data-bs-target="#consultationModal">
+          RESERVE PRIVATE SUITE
+        </button>
+
+        <a href="https://wa.me/919876543210?text=Hello%20HSN%20Hair%20Transplant%20Centre,%20I%20am%20looking%20to%20schedule%20an%20expert%20digital%20scalp%20consultation."
+          target="_blank" rel="noreferrer"
+          class="btn btn-gold-outline w-100 py-3 d-flex align-items-center justify-content-center gap-2">
+          <i data-lucide="message-square" style="width: 14px; height: 14px;"></i>
+          <span>WHATSAPP CONCIERGE</span>
+        </a>
+
+        <a href="tel:+919876543210"
+          class="btn btn-gold-outline w-100 py-3 d-flex align-items-center justify-content-center gap-2">
+          <i data-lucide="phone-call" style="width: 14px; height: 14px;"></i>
+          <span>RING CLINICAL DESK</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. Dark Location Suite Footer -->
+  <footer class="py-5"
+    style="background-color: var(--color-bg-alt); border-top: 1px solid rgba(201,164,106,0.25); color: var(--color-text-secondary);">
+    <div class="container">
+
+      <div class="row g-5 pb-5 border-bottom border-primary border-opacity-10">
+        <!-- Column 1: Logo & brand description -->
+        <div class="col-lg-5">
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <div class="w-9 h-9">
+              <svg viewBox="0 0 100 100" class="w-100 h-100">
+                <circle cx="50" cy="50" r="46" fill="var(--color-bg-main)" stroke="var(--color-secondary)"
+                  stroke-width="3" />
+                <circle cx="50" cy="50" r="40" fill="transparent" stroke="var(--color-secondary)" stroke-width="1"
+                  stroke-dasharray="3 3" />
+                <text x="28" y="58" fill="var(--color-primary)" font-size="24" font-weight="bold"
+                  font-family="sans-serif">H</text>
+                <text x="47" y="58" fill="var(--color-secondary)" font-size="26" font-weight="bold"
+                  font-family="sans-serif" font-style="italic">S</text>
+                <text x="66" y="58" fill="var(--color-primary)" font-size="24" font-weight="bold"
+                  font-family="sans-serif">N</text>
+              </svg>
+            </div>
+            <div class="d-flex flex-column">
+              <span class="font-serif text-lg tracking-[0.2em] text-primary font-bold">HSN HAIR CENTRE</span>
+              <span class="font-mono text-[8px] tracking-[0.3em] text-secondary uppercase mt-0.5 d-block">Luxury
+                Restoration</span>
+            </div>
+          </div>
+
+          <p class="text-xs leading-relaxed mb-4" style="color: var(--color-text-secondary);">
+            HSN is India’s foremost luxury clinical brand dedicated entirely to high-density medical hair restoration,
+            facial hairline aesthetics, and clinical trichological biology.
+          </p>
+
+          <!-- Social links -->
+          <div class="d-flex gap-3">
+            <a href="https://instagram.com" target="_blank" rel="noreferrer"
+              class="btn border border-secondary border-opacity-15 rounded-circle p-0 d-flex align-items-center justify-content-center text-secondary hover:bg-secondary hover:text-white transition-all"
+              style="width: 32px; height: 32px;">
+              <i data-lucide="instagram" style="width: 14px; height: 14px;"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noreferrer"
+              class="btn border border-secondary border-opacity-15 rounded-circle p-0 d-flex align-items-center justify-content-center text-secondary hover:bg-secondary hover:text-white transition-all"
+              style="width: 32px; height: 32px;">
+              <i data-lucide="youtube" style="width: 14px; height: 14px;"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noreferrer"
+              class="btn border border-secondary border-opacity-15 rounded-circle p-0 d-flex align-items-center justify-content-center text-secondary hover:bg-secondary hover:text-white transition-all"
+              style="width: 32px; height: 32px;">
+              <i data-lucide="facebook" style="width: 14px; height: 14px;"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick navigation links -->
+        <div class="col-md-6 col-lg-3">
+          <h5 class="font-serif text-primary text-uppercase tracking-wider mb-4 font-bold" style="font-size: 1rem;">
+            Quick Navigation</h5>
+          <div class="row">
+            <div class="col-6">
+              <ul class="list-unstyled space-y-2 text-xs">
+                <li class="mb-2"><a href="#home" class="text-decoration-none hover:text-secondary transition-colors"
+                    style="color: var(--color-text-secondary);">Home</a></li>
+                <li class="mb-2"><a href="#before-after"
+                    class="text-decoration-none hover:text-secondary transition-colors"
+                    style="color: var(--color-text-secondary);">Transformations</a></li>
+                <li class="mb-2"><a href="#services" class="text-decoration-none hover:text-secondary transition-colors"
+                    style="color: var(--color-text-secondary);">Services</a></li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul class="list-unstyled space-y-2 text-xs">
+                <li class="mb-2"><a href="#surgeon" class="text-decoration-none hover:text-secondary transition-colors"
+                    style="color: var(--color-text-secondary);">The Surgeon</a></li>
+                <li class="mb-2"><a href="#clinic" class="text-decoration-none hover:text-secondary transition-colors"
+                    style="color: var(--color-text-secondary);">The Sanctuary</a></li>
+                <li class="mb-2"><a href="#testimonials"
+                    class="text-decoration-none hover:text-secondary transition-colors"
+                    style="color: var(--color-text-secondary);">Reviews</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 3: Contact clinical desk info -->
+        <div class="col-md-6 col-lg-4">
+          <h5 class="font-serif text-primary text-uppercase tracking-wider mb-4 font-bold" style="font-size: 1rem;">
+            Clinical Inquiries</h5>
+          <div class="space-y-4 text-xs">
+            <div class="d-flex gap-3 align-items-center mb-3">
+              <i data-lucide="phone" class="text-secondary" style="width: 14px; height: 14px;"></i>
+              <a href="tel:+919876543210"
+                class="text-decoration-none text-primary font-semibold hover:text-secondary transition-colors">
+                +91 98765 43210 (VIP toll-free helpline)
+              </a>
+            </div>
+            <div class="d-flex gap-3 align-items-center mb-3">
+              <i data-lucide="mail" class="text-secondary" style="width: 14px; height: 14px;"></i>
+              <a href="mailto:concierge@hsncentre.com"
+                class="text-decoration-none hover:text-secondary transition-colors"
+                style="color: var(--color-text-secondary);">
+                concierge@hsncentre.com
+              </a>
+            </div>
+            <div class="d-flex gap-3 align-items-center">
+              <i data-lucide="clock" class="text-secondary" style="width: 14px; height: 14px;"></i>
+              <span style="color: var(--color-text-secondary);">Daily Consultation Hours: 09:00 AM – 08:30 PM IST</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Headquarters locations -->
+      <div class="row py-5 border-bottom border-primary border-opacity-10 g-4">
+        <div class="col-md-4">
+          <span class="font-serif text-lg text-primary font-medium d-block mb-2">Hyderabad Lounge</span>
+          <p class="text-xs leading-relaxed mb-3" style="color: var(--color-text-secondary);">VIP Suite Road No. 36,
+            Jubilee Hills, Hyderabad - 500033</p>
+          <div class="d-flex gap-3">
+            <a href="https://maps.google.com" target="_blank" rel="noreferrer"
+              class="font-mono text-[9px] text-secondary tracking-widest text-uppercase text-decoration-none hover:text-primary transition-colors">MAPS
+              CO-ORDINATES</a>
+            <a href="tel:+919876543210"
+              class="font-mono text-[9px] text-secondary tracking-widest text-uppercase text-decoration-none hover:text-primary transition-colors">CALL
+              LOUNGE</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <span class="font-serif text-lg text-primary font-medium d-block mb-2">Chennai Lounge</span>
+          <p class="text-xs leading-relaxed mb-3" style="color: var(--color-text-secondary);">Golden Arc Mansion, Khader
+            Nawaz Khan Road, Nungambakkam, Chennai - 600006</p>
+          <div class="d-flex gap-3">
+            <a href="https://maps.google.com" target="_blank" rel="noreferrer"
+              class="font-mono text-[9px] text-secondary tracking-widest text-uppercase text-decoration-none hover:text-primary transition-colors">MAPS
+              CO-ORDINATES</a>
+            <a href="tel:+919876543210"
+              class="font-mono text-[9px] text-secondary tracking-widest text-uppercase text-decoration-none hover:text-primary transition-colors">CALL
+              LOUNGE</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <span class="font-serif text-lg text-primary font-medium d-block mb-2">Bangalore Lounge</span>
+          <p class="text-xs leading-relaxed mb-3" style="color: var(--color-text-secondary);">The Executive Salon, 100
+            Feet Road, Indiranagar, Bangalore - 560038</p>
+          <div class="d-flex gap-3">
+            <a href="https://maps.google.com" target="_blank" rel="noreferrer"
+              class="font-mono text-[9px] text-secondary tracking-widest text-uppercase text-decoration-none hover:text-primary transition-colors">MAPS
+              CO-ORDINATES</a>
+            <a href="tel:+919876543210"
+              class="font-mono text-[9px] text-secondary tracking-widest text-uppercase text-decoration-none hover:text-primary transition-colors">CALL
+              LOUNGE</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyrights and credits -->
+      <div
+        class="pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 text-[11px] font-sans"
+        style="color: var(--color-text-secondary);">
+        <span>HSN Hair Centre © All Rights Reserved.</span>
+        <div class="d-flex gap-4">
+          <a href="#home" class="text-decoration-none hover:text-secondary transition-colors"
+            style="color: var(--color-text-secondary);">Medical Disclaimer</a>
+          <a href="#home" class="text-decoration-none hover:text-secondary transition-colors"
+            style="color: var(--color-text-secondary);">Privacy Policy</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- 13. Consultation Booking Modular Calendar Modal -->
+  <div class="modal fade" id="consultationModal" tabindex="-1" aria-labelledby="consultationModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body p-4 p-md-5">
+          <!-- Close button -->
+          <button type="button" class="btn-close position-absolute top-0 end-0 m-4" data-bs-dismiss="modal"
+            aria-label="Close" id="consultation-modal-close"></button>
+
+          <!-- STEP 1: Personal Credentials panel -->
+          <div id="booking-step-1-panel">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <i data-lucide="sparkles" class="text-secondary" style="width: 16px; height: 16px;"></i>
+              <span class="text-xs font-mono tracking-widest text-secondary uppercase">Private Suite Consultation</span>
+            </div>
+            <h3 class="text-3xl font-serif text-primary tracking-wide mb-2">BOOK AN EXPERT ANALYSIS</h3>
+            <p class="text-sm text-muted mb-4">
+              Reserve a session with our chief aesthetic hair surgeon in absolute clinical privacy.
+            </p>
+
+            <form id="booking-form-step-1">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="booking-name" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="booking-name" placeholder="e.g. Vikram Rao" required />
+                </div>
+                <div class="col-md-6">
+                  <label for="booking-phone" class="form-label">Phone Number</label>
+                  <input type="tel" class="form-control" id="booking-phone" placeholder="e.g. +91 98765 43210"
+                    required />
+                </div>
+                <div class="col-12 mt-3">
+                  <label for="booking-email" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" id="booking-email" placeholder="e.g. name@domain.com"
+                    required />
+                </div>
+                <div class="col-12 mt-3">
+                  <label for="booking-service" class="form-label">Desired Therapy</label>
+                  <select class="form-select" id="booking-service">
+                    <option value="Hair Transplantation">Hair Transplantation (Signature Scalp)</option>
+                    <option value="Beard Transplantation">Beard Transplantation (Facial Sculpting)</option>
+                    <option value="Eyebrow Transplantation">Eyebrow Transplantation (Precision Brow)</option>
+                    <option value="Hair Fall Management">Hair Fall Management (Cellular)</option>
+                    <option value="Reconstructive Restoration">Reconstructive Restoration</option>
+                    <option value="Dermatosurgery">Dermatosurgery</option>
+                  </select>
+                </div>
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn btn-gold-solid w-100 py-3">
+                    PROCEED TO CALENDAR
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- STEP 2: Choose Date & Timeslot panel -->
+          <div id="booking-step-2-panel" style="display: none;">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <i data-lucide="calendar" class="text-secondary" style="width: 16px; height: 16px;"></i>
+              <span class="text-xs font-mono tracking-widest text-secondary uppercase">Step 2 of 2</span>
+            </div>
+            <h3 class="text-3xl font-serif text-primary tracking-wide mb-2">CHOOSE DATE & TIME</h3>
+            <p class="text-sm text-muted mb-4">
+              Select your private consult slot. A dedicated surgical advisor will verify your reservation.
+            </p>
+
+            <form id="booking-form-step-2">
+              <div class="row g-3">
+                <div class="col-12">
+                  <label for="booking-date" class="form-label">Select Date</label>
+                  <input type="date" class="form-control" id="booking-date" required />
+                </div>
+
+                <div class="col-12 mt-3">
+                  <label class="form-label d-block mb-2">Available Private Timeslots</label>
+                  <div class="row g-2">
+                    <div class="col-4">
+                      <button type="button" class="btn time-slot-btn w-100" data-time="10:00 AM">10:00 AM</button>
+                    </div>
+                    <div class="col-4">
+                      <button type="button" class="btn time-slot-btn w-100" data-time="11:30 AM">11:30 AM</button>
+                    </div>
+                    <div class="col-4">
+                      <button type="button" class="btn time-slot-btn w-100" data-time="02:00 PM">02:00 PM</button>
+                    </div>
+                    <div class="col-4 mt-2">
+                      <button type="button" class="btn time-slot-btn w-100" data-time="04:30 PM">04:30 PM</button>
+                    </div>
+                    <div class="col-4 mt-2">
+                      <button type="button" class="btn time-slot-btn w-100" data-time="06:00 PM">06:00 PM</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 mt-3">
+                  <label for="booking-notes" class="form-label">Aesthetic Goals / Notes (Optional)</label>
+                  <textarea class="form-control" id="booking-notes" rows="3"
+                    placeholder="Explain your expectations or hair loss history..."></textarea>
+                </div>
+
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn btn-gold-solid w-100 py-3">
+                    CONFIRM RESERVATION
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- STEP 3: Success Screen panel -->
+          <div id="booking-success-panel" style="display: none;" class="text-center">
+            <div
+              class="w-16 h-16 rounded-circle bg-success bg-opacity-10 text-success d-inline-flex align-items-center justify-content-center mb-4"
+              style="width: 64px; height: 64px;">
+              <i data-lucide="check" style="width: 32px; height: 32px;"></i>
+            </div>
+            <span class="font-mono text-[10px] tracking-widest text-secondary uppercase d-block mb-2">Reservation
+              Received</span>
+            <h3 class="text-4xl font-serif text-primary tracking-wide mb-3">AN ARTISAN AWAITS YOU</h3>
+            <p class="text-sm text-muted max-w-md mx-auto leading-relaxed mb-4">
+              Thank you, <strong class="text-primary font-semibold" id="success-summary-name">Patient</strong>. Your
+              requested VIP Consultation for <strong class="text-secondary"
+                id="success-summary-service">Therapy</strong> on <strong class="text-primary"
+                id="success-summary-date">Date</strong> at <strong class="text-primary"
+                id="success-summary-time">Time</strong> is pre-registered.
+            </p>
+
+            <div
+              class="p-4 border border-secondary border-opacity-10 bg-primary bg-opacity-5 max-w-md mx-auto mb-4 text-start">
+              <div class="d-flex justify-content-between text-xs font-mono mb-2">
+                <span class="text-muted">Surgical Director</span>
+                <span class="text-primary font-semibold">Dr. H. S. Neyogi</span>
+              </div>
+              <div class="d-flex justify-content-between text-xs font-mono mb-2">
+                <span class="text-muted">Consult Room</span>
+                <span class="text-primary">VIP Suite 4</span>
+              </div>
+              <div class="d-flex justify-content-between text-xs font-mono">
+                <span class="text-muted">Status</span>
+                <span class="text-secondary">Awaiting Call confirmation</span>
+              </div>
+            </div>
+
+            <p class="text-[10px] text-muted italic">
+              A surgical concierge will call you within 30 minutes to finalize the validation.
+            </p>
+
+            <button type="button" class="btn btn-gold-outline mt-4 px-5" id="booking-success-return">
+              Return to Home
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 14. Pulsing WhatsApp Concierge floating widget -->
+  <div class="floating-whatsapp-container">
+    <div class="whatsapp-popup-text animate-pulse">
+      <i data-lucide="sparkles" style="width: 10px; height: 10px;"></i>
+      <span>Concierge Online</span>
+    </div>
+    <a href="https://wa.me/919876543210?text=Hello%20HSN%20Hair%20Transplant%20Centre,%20I%20am%20looking%20to%20schedule%20an%20expert%20digital%20scalp%20consultation."
+      target="_blank" rel="noreferrer" class="whatsapp-trigger-btn" id="floating-whatsapp-trigger"
+      aria-label="WhatsApp chat">
+      <div class="whatsapp-halo-1"></div>
+      <div class="whatsapp-halo-2"></div>
+      <i data-lucide="message-square" style="width: 22px; height: 22px;"></i>
+    </a>
+  </div>
+
+  <!-- 15. Video Review Play Popup Modal -->
+  <div class="modal fade" id="videoReviewModal" tabindex="-1" aria-labelledby="videoReviewModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 bg-transparent">
+        <div class="modal-body p-0 position-relative">
+          <button type="button" class="btn-close position-absolute top-0 end-0 m-3 btn-close-white"
+            data-bs-dismiss="modal" aria-label="Close" style="z-index: 1055;"></button>
+          <div class="modal-video-container shadow-2xl">
+            <iframe id="testimonial-iframe" src="" title="Video review player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 JS Bundle (with Popper) CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Lucide Vector Icons Engine CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Scripts -->
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
