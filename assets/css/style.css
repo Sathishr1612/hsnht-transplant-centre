@@ -2202,6 +2202,8 @@ h6 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
 @media (max-width: 991px) {
@@ -2213,6 +2215,7 @@ h6 {
 @media (max-width: 767px) {
   .real-people-grid {
     grid-template-columns: 1fr;
+    max-width: 400px;
   }
 }
 
@@ -2220,9 +2223,9 @@ h6 {
   position: relative;
   border-radius: 12px;
   overflow: hidden;
-  min-height: 500px;
+  aspect-ratio: 1 / 1;
   background-color: #ffffff;
-  border: 1px solid #D8B57A;
+  border: 1px solid rgba(216, 181, 122, 0.4);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   transition: all 0.5s ease;
   cursor: pointer;
@@ -2381,5 +2384,30 @@ h6 {
 
   .luxury-stat-value {
     font-size: 2.5rem;
+  }
+}
+
+/* ==========================================================================
+   CTA Banner Section
+   ========================================================================== */
+.cta-banner-section {
+  background-image: url('../images/hsn-cta-banner.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.8) 45%, rgba(255, 255, 255, 0) 100%);
+  z-index: 1;
+}
+
+@media (max-width: 991px) {
+  .cta-banner-section {
+    background-position: 70% center; 
+  }
+  .cta-overlay {
+    background: rgba(255, 255, 255, 0.85);
   }
 }

@@ -317,7 +317,7 @@
               data-bs-toggle="modal" data-bs-target="#consultationModal">
               Book Consultation
             </button>
-            <a href="#before-after"
+            <!-- <a href="#before-after"
               class="btn btn-gold-outline px-4 py-3 text-decoration-none font-mono text-[11px] tracking-widest text-uppercase font-semibold d-flex align-items-center gap-2">
               View Results
             </a>
@@ -326,7 +326,7 @@
               class="btn btn-gold-outline px-4 py-3 text-decoration-none font-mono text-[11px] tracking-widest text-uppercase font-semibold d-flex align-items-center gap-2">
               <i data-lucide="message-square" style="width: 14px; height: 14px;"></i>
               WhatsApp Consultation
-            </a>
+            </a> -->
           </div>
 
           <!-- Luxury floating statistics below hero content -->
@@ -523,9 +523,9 @@
   </section>
 
   <!-- 6. Services Section -->
-  <section class="py-24 md:py-32" id="services"
-    style="background-color: var(--color-primary); border-bottom: 1px solid rgba(200,164,93,0.15); color: #FFFFFF;">
-    <div class="container">
+  <section class="py-24 md:py-32 position-relative" id="services"
+    style="background-image: linear-gradient(rgba(248, 247, 244, 0.92), rgba(248, 247, 244, 0.92)), url('assets/images/hero-1.png'); background-size: cover; background-position: center; background-attachment: fixed; border-bottom: 1px solid rgba(15,23,42,0.08);">
+    <div class="container position-relative" style="z-index: 2;">
 
       <!-- Section Header -->
       <div class="text-center mb-5" data-reveal="fade-up">
@@ -533,11 +533,11 @@
           <i data-lucide="sparkles" class="text-secondary" style="width: 16px; height: 16px;"></i>
           <span class="font-mono text-[10px] tracking-widest text-secondary uppercase font-semibold">HSN</span>
         </div>
-        <h2 class="text-4xl md:text-6xl font-serif text-white tracking-wide">
-          Our <span class="italic text-secondary"> Services</span>
+        <h2 class="text-4xl md:text-6xl font-serif text-primary tracking-wide text-uppercase">
+          Our <span class="italic text-secondary">Services</span>
         </h2>
-        <p class="text-sm md:text-base text-secondary font-mono tracking-widest mt-2 uppercase">Not Just Solutions,
-          But Understanding
+        <p class="text-sm md:text-base text-muted font-mono tracking-widest mt-2 uppercase">
+          Not Just Solutions, But Understanding
         </p>
       </div>
 
@@ -898,7 +898,7 @@
         </div>
         <div class="col-6 col-md-3 text-center border-start border-secondary border-opacity-10">
           <div class="metric-num stat-counter-animate" data-target="100" data-suffix="%">0</div>
-          <div class="metric-lbl">Custom Symmetry Score</div>
+              <div class="metric-lbl">Custom Symmetry Score</div>
         </div>
       </div> -->
 
@@ -907,95 +907,117 @@
 
   <!-- 8. Surgeon Section -->
   <section class="py-24 md:py-32" id="surgeon"
-    style="background-color: rgba(15,23,42,0.05); border-bottom: 1px solid rgba(15,23,42,0.08); overflow: hidden;">
+    style="background-color: rgba(15,23,42,0.03); border-bottom: 1px solid rgba(15,23,42,0.08); overflow: hidden;">
     <div class="container">
 
-      <div class="row align-items-center g-5">
+      <div class="row align-items-center g-lg-5">
         <!-- Left Column: Big Image & badge -->
-        <div class="col-lg-5" data-reveal="slide-right">
-          <div class="doctor-img-container">
-            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=90"
-              class="img-fluid w-100" style="object-fit: cover; aspect-ratio: 4/5;" alt="Dr. H. S. Neyogi" />
+        <div class="col-lg-5 mb-5 mb-lg-0" data-reveal="slide-right">
+          <div class="position-relative w-100 h-100">
+            <img src="assets/images/hsn-ceo.png" class="img-fluid w-100 rounded"
+              style="object-fit: cover; aspect-ratio: 3/4; box-shadow: 0 20px 40px rgba(0,0,0,0.08);"
+              alt="Dr. H. S. Neyogi" />
 
-            <div class="doc-info-badge">
-              <span class="font-mono text-[8px] tracking-[0.3em] text-secondary uppercase d-block mb-1">Chief
+            <div class="position-absolute p-4"
+              style="bottom: 20px; left: -20px; background-color: var(--color-primary); border-left: 3px solid var(--color-secondary); box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+              <span class="font-mono text-[9px] tracking-[0.2em] text-secondary uppercase d-block mb-1">Chief
                 Surgeon</span>
-              <span class="font-serif text-lg text-white font-medium d-block leading-none">Dr. H. S. Neyogi</span>
-              <span class="font-mono text-[8px] text-white text-opacity-40 mt-1 d-block uppercase tracking-widest">18+
-                Years Practice</span>
+              <span class="font-serif text-xl text-white font-medium d-block leading-none mb-1">Dr. H. S. Neyogi</span>
+              <span class="font-sans text-[11px] text-white text-opacity-60 d-block tracking-wide">18+ Years
+                Practice</span>
             </div>
           </div>
         </div>
 
-        <!-- Right Column: Biography & interactive tabs -->
-        <div class="col-lg-7" data-reveal="slide-left">
+        <!-- Right Column: Biography -->
+        <div class="col-lg-7 ps-lg-5" data-reveal="slide-left">
+
           <div class="d-inline-flex align-items-center gap-2 mb-3">
-            <i data-lucide="award" class="text-secondary" style="width: 16px; height: 16px;"></i>
-            <span class="font-mono text-[10px] tracking-widest text-secondary uppercase font-semibold">Chief Medical
-              Director</span>
+            <i data-lucide="award" class="text-secondary" style="width:18px;height:18px;"></i>
+            <span class="font-mono text-[11px] tracking-widest text-secondary uppercase font-semibold">
+              Founder & Chief Hair Transplant Surgeon
+            </span>
           </div>
 
-          <h2 class="text-4xl md:text-5xl lg:text-6xl font-serif text-primary tracking-wide mb-2 leading-none">
-            Dr. H. S. Neyogi
+          <h2 class="text-5xl md:text-6xl font-sans text-primary mb-3 text-uppercase font-bold"
+            style="letter-spacing: -0.02em; line-height: 1.1;">
+            DR. H. S. NEYOGI
           </h2>
 
-          <span class="font-mono text-[10px] tracking-wider text-secondary uppercase font-semibold block mb-4">
-            MBBS, MD (Dermatology) • ISHRS Active Fellow
+          <span class="font-mono text-xs tracking-widest text-secondary uppercase font-semibold d-block mb-4">
+            Hair Transplant Specialist • 18+ Years Experience
           </span>
 
-          <p class="text-sm text-muted font-sans leading-relaxed mb-4">
-            "A hair transplant is not merely a clinical procedure—it is the fine art of facial frame reconstruction.
-            Every single graft must be placed with absolute respect to the patient’s natural anatomy, directional
-            angles, and proportional geometry."
-          </p>
-
-          <!-- Interactive Tab Buttons -->
-          <div class="d-flex border-bottom border-secondary border-opacity-15 mb-4">
-            <button class="doc-tab-btn active" data-tab="philosophy">Philosophy</button>
-            <button class="doc-tab-btn" data-tab="credentials">Credentials</button>
-            <button class="doc-tab-btn" data-tab="awards">Awards</button>
-          </div>
-
-          <!-- Tab Content 1: Philosophy -->
-          <div class="doc-tab-content active" id="doc-tab-philosophy">
-            <p class="text-xs text-muted leading-relaxed">
-              Dr. Neyogi approaches every hairline with the eye of an editorial portrait artist. Combining deep
-              dermatological expertise in scalp structure with mathematical hairline geometry, he maintains full control
-              over angle alignment, graft sorting, and high-density hairline density.
+          <div class="mb-5">
+            <p class="text-base text-muted font-sans leading-loose mb-4" style="color: rgba(15,23,42,0.75);">
+              Dr. H. S. Neyogi is one of the leading hair restoration specialists known for delivering
+              natural-looking hair transplant results with precision and personalized care.
+              With over 18 years of experience, he has successfully transformed the confidence of
+              thousands of patients through advanced FUE hair restoration techniques.
             </p>
-            <ul class="doctor-item-list mt-3">
-              <li>Bespoke Micro-FUE angle calibration based on facial geometry.</li>
-              <li>Exclusive manual graft sorting and follicle classification.</li>
-              <li>Comprehensive natural donor area protection protocols.</li>
-            </ul>
+
+            <p class="text-base text-muted font-sans leading-loose mb-0" style="color: rgba(15,23,42,0.75);">
+              His approach combines medical expertise, artistic hairline design, and modern
+              transplantation technology to create results that look completely natural and long-lasting.
+              Every procedure is carefully planned to match the patient’s facial structure,
+              hair density, and future hair growth pattern.
+            </p>
           </div>
 
-          <!-- Tab Content 2: Credentials -->
-          <div class="doc-tab-content" id="doc-tab-credentials">
-            <p class="text-xs text-muted leading-relaxed">
-              A highly respected name globally, Dr. Neyogi is a certified specialist board diplomat nominee and active
-              global partner across several micro-restoration trichology networks.
-            </p>
-            <ul class="doctor-item-list mt-3">
-              <li>MBBS - Top Tier National Medical Institute</li>
-              <li>MD - Dermatology & Aesthetics</li>
-              <li>Active Fellow, International Society of Hair Restoration Surgery (ISHRS)</li>
-              <li>Executive Board Member - AHRS India</li>
-            </ul>
+          <!-- Luxury Info Stats -->
+          <div class="row g-4 mb-5 border-top border-bottom border-secondary border-opacity-15 py-4">
+            <div class="col-4">
+              <div class="d-flex flex-column gap-2">
+                <h5 class="fs-2 font-bold text-primary mb-0 font-sans" style="letter-spacing: -1px;">5000+</h5>
+                <span class="font-mono text-[10px] tracking-wider text-muted text-uppercase">Successful
+                  Procedures</span>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="d-flex flex-column gap-2">
+                <h5 class="fs-2 font-bold text-primary mb-0 font-sans text-uppercase" style="letter-spacing: -1px;">18+
+                  Yrs</h5>
+                <span class="font-mono text-[10px] tracking-wider text-muted text-uppercase">Clinical Experience</span>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="d-flex flex-column gap-2">
+                <h5 class="fs-2 font-bold text-primary mb-0 font-sans" style="letter-spacing: -1px;">98%</h5>
+                <span class="font-mono text-[10px] tracking-wider text-muted text-uppercase">Patient Satisfaction</span>
+              </div>
+            </div>
           </div>
 
-          <!-- Tab Content 3: Awards -->
-          <div class="doc-tab-content" id="doc-tab-awards">
-            <p class="text-xs text-muted leading-relaxed">
-              Over his 18+ years of dedicated practice, Dr. Neyogi has been recognized with multiple South-Asian
-              clinical awards for breakthrough surgical techniques.
-            </p>
-            <ul class="doctor-item-list mt-3">
-              <li>Pioneer in Micro-FUE Hairline Sculpting Award 2024</li>
-              <li>Best Aesthetic Hair Transplant Surgeon - South Asia Clinical Summit</li>
-              <li>Published Researcher - Journal of Aesthetic Trichology</li>
+          <!-- Expertise List -->
+          <!-- <div>
+            <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+              <li class="d-flex align-items-center gap-3 text-base text-primary font-sans">
+                <div style="min-width: 6px; height: 6px; background-color: var(--color-secondary); border-radius: 50%;">
+                </div>
+                Advanced FUE Hair Transplant Specialist
+              </li>
+              <li class="d-flex align-items-center gap-3 text-base text-primary font-sans">
+                <div style="min-width: 6px; height: 6px; background-color: var(--color-secondary); border-radius: 50%;">
+                </div>
+                Natural Hairline Design Expert
+              </li>
+              <li class="d-flex align-items-center gap-3 text-base text-primary font-sans">
+                <div style="min-width: 6px; height: 6px; background-color: var(--color-secondary); border-radius: 50%;">
+                </div>
+                Beard & Eyebrow Restoration Procedures
+              </li>
+              <li class="d-flex align-items-center gap-3 text-base text-primary font-sans">
+                <div style="min-width: 6px; height: 6px; background-color: var(--color-secondary); border-radius: 50%;">
+                </div>
+                Personalized Hair Restoration Planning
+              </li>
+              <li class="d-flex align-items-center gap-3 text-base text-primary font-sans">
+                <div style="min-width: 6px; height: 6px; background-color: var(--color-secondary); border-radius: 50%;">
+                </div>
+                High-Density Graft Placement Techniques
+              </li>
             </ul>
-          </div>
+          </div> -->
 
         </div>
       </div>
@@ -1609,11 +1631,9 @@
   </section>
 
   <!-- 11. Custom Banner CTA Section -->
-  <section class="py-24 md:py-32 position-relative" id="cta-section"
-    style="background-image: url('assets/images/hsn-cta-banner.png'); background-size: cover; background-position: center;">
+  <section class="py-24 md:py-32 position-relative cta-banner-section" id="cta-section">
     <!-- Light gradient overlay to ensure text readability on left side while keeping doctor visible on right -->
-    <div
-      style="position: absolute; inset: 0; background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.8) 45%, rgba(255, 255, 255, 0) 100%); z-index: 1;">
+    <div class="cta-overlay">
     </div>
 
     <div class="container position-relative" style="z-index: 5;" data-reveal="zoom-in">
