@@ -2164,13 +2164,33 @@ h6 {
   margin-top: 0.25rem;
 }
 
+@media (max-width: 991px) {
+  .luxury-review-card {
+    width: 360px;
+  }
+}
+
 @media (max-width: 768px) {
+  #surgeon h2 {
+    font-size: 2.25rem !important;
+  }
+
   .featured-review-card {
     padding: 2rem;
   }
 
+  .marquee-container {
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+
   .luxury-review-card {
-    width: 320px;
+    width: 300px;
+    padding: 1.5rem;
+  }
+
+  .luxury-review-card p {
+    font-size: 1rem !important;
   }
 
   .google-trust-strip {
@@ -2405,8 +2425,9 @@ h6 {
 
 @media (max-width: 991px) {
   .cta-banner-section {
-    background-position: 70% center; 
+    background-position: 70% center;
   }
+
   .cta-overlay {
     background: rgba(255, 255, 255, 0.85);
   }
