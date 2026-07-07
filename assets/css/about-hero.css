@@ -1,7 +1,7 @@
 .about-hero {
     position: relative;
     width: 100%;
-    min-height: 550px;
+    min-height: 450px;
     /* Short height banner */
     display: flex;
     align-items: center;
@@ -57,7 +57,7 @@
     align-items: center;
     font-family: var(--font-mono);
     font-size: 11px;
-    font-weight: 500;
+    /* font-weight removed */
     letter-spacing: 3px;
     color: #C9A46A;
     text-transform: uppercase;
@@ -79,14 +79,14 @@
 
 .about-hero-title {
     font-family: var(--font-serif);
-    font-size: 60px;
+    font-size: 46px;
     line-height: 1.1;
-    font-weight: 400;
+    /* font-weight removed */
     /* Regular weight for elegance */
     color: #1A1A1A;
     margin-bottom: 28px;
     letter-spacing: -0.5px;
-    text-transform: none !important;
+    
     /* Prevent all-caps override */
 }
 
@@ -102,7 +102,7 @@
     font-size: 17px;
     line-height: 1.7;
     color: #555555;
-    font-weight: 300;
+    /* font-weight removed */
     max-width: 480px;
 }
 
@@ -167,3 +167,4 @@
         line-height: 1.6;
     }
 }
+

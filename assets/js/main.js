@@ -112,26 +112,7 @@ function initScrollProgress() {
       }
     }
 
-    // 3. Scrollspy link highlighting
-    let currentSectionId = "home";
-    const scrollPosition = window.scrollY + 150; // offset for navbar height
-
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.offsetHeight;
-      if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-        currentSectionId = section.getAttribute("id");
-      }
-    });
-
-    if (currentSectionId) {
-      navLinks.forEach(link => {
-        link.classList.remove("active");
-        if (link.getAttribute("href") === `#${currentSectionId}`) {
-          link.classList.add("active");
-        }
-      });
-    }
+    // Removed buggy scrollspy link highlighting that was stripping active classes from page links
   });
 }
 
