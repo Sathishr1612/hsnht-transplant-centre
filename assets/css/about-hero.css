@@ -86,7 +86,7 @@
     color: #1A1A1A;
     margin-bottom: 28px;
     letter-spacing: -0.5px;
-    
+
     /* Prevent all-caps override */
 }
 
@@ -156,9 +156,9 @@
     }
 
     .about-hero-title {
-        font-size: 42px;
+        font-size: 28px;
         /* Nicer wrapping size */
-        line-height: 1.15;
+        line-height: 1.35;
         margin-bottom: 20px;
     }
 
@@ -167,4 +167,3 @@
         line-height: 1.6;
     }
 }
-

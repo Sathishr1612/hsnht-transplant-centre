@@ -84,6 +84,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Initialize statistics scroll counters
   initStatCounters();
+
+  // Initialize Concern Selector
+  initConcernSelector();
 });
 
 /* Scroll Tracker (Progress Bar, Navbar State, & Scrollspy) */
@@ -122,7 +125,7 @@ function initMobileNav() {
   const closeBtn = document.getElementById("mobile-menu-close");
   const panel = document.getElementById("mobile-nav-panel");
   const backdrop = document.getElementById("mobile-nav-backdrop");
-  const links = document.querySelectorAll(".mobile-nav-panel .nav-link");
+  const links = document.querySelectorAll(".mobile-nav-panel .nav-link, .mobile-nav-panel .mobile-dropdown-item");
   const actionButtons = document.querySelectorAll(".mobile-nav-panel button, .mobile-nav-panel a");
 
   if (!toggleBtn || !panel || !backdrop) return;
@@ -159,7 +162,12 @@ function initMobileNav() {
 
   // Navigation link clicks close menu
   links.forEach(link => {
-    link.addEventListener("click", () => {
+    link.addEventListener("click", (e) => {
+      // If it is the dropdown/accordion trigger, do not close menu and prevent bubbling!
+      if (link.hasAttribute("data-bs-toggle") && link.getAttribute("data-bs-toggle") === "collapse") {
+        return; // Let bootstrap collapse handle it
+      }
+
       closeMenu();
     });
   });
@@ -622,8 +630,33 @@ function initLuxuryGallery() {
     track.scrollLeft = scrollLeft - walk;
   });
 
-  // Pause on hover
   track.addEventListener('mouseenter', () => {
     isHovered = true;
+  });
+}
+
+/* Services Page: Interactive Concern Selector */
+function initConcernSelector() {
+  const items = document.querySelectorAll(".concern-item");
+  const contents = document.querySelectorAll(".concern-content");
+
+  if (!items.length || !contents.length) return;
+
+  items.forEach(item => {
+    item.addEventListener("click", () => {
+      // Remove active from all items and contents
+      items.forEach(i => i.classList.remove("active"));
+      contents.forEach(c => c.classList.remove("active"));
+
+      // Add active to clicked item
+      item.classList.add("active");
+
+      // Show corresponding content
+      const targetId = item.getAttribute("data-target");
+      const targetContent = document.getElementById(targetId);
+      if (targetContent) {
+        targetContent.classList.add("active");
+      }
+    });
   });
 }

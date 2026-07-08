@@ -20,12 +20,7 @@
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/responsive.css" />
   <link rel="stylesheet" href="assets/css/about-hero.css" />
-  <link rel="stylesheet" href="assets/css/about-intro.css" />
-  <link rel="stylesheet" href="assets/css/about-story.css" />
-  <link rel="stylesheet" href="assets/css/who-we-are.css" />
-  <link rel="stylesheet" href="assets/css/mission-vision.css" />
-  <link rel="stylesheet" href="assets/css/core-values.css" />
-  <link rel="stylesheet" href="assets/css/why-choose.css" />
+
 </head>
 
 <body>
@@ -60,8 +55,57 @@
           <li class="nav-item">
             <a class="nav-link active" href="about.html">About</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#services">Services</a>
+          <li class="nav-item luxury-dropdown">
+            <a class="nav-link" href="service.html">Services <span class="dropdown-caret">▼</span></a>
+            <div class="luxury-dropdown-menu rich-dropdown">
+              <div class="dropdown-grid">
+
+                <a href="hair-restoration.html" class="rich-dropdown-item">
+                  <div class="rich-dropdown-icon">
+                    <i data-lucide="scissors" style="width: 18px; height: 18px;"></i>
+                  </div>
+                  <div class="rich-dropdown-content">
+                    <span class="rich-dropdown-title">Hair Restoration</span>
+                    <span class="rich-dropdown-desc">Advanced Hair Restoration Solutions</span>
+                  </div>
+                </a>
+
+                <a href="service.html#facial-hair" class="rich-dropdown-item">
+                  <div class="rich-dropdown-icon">
+                    <i data-lucide="user" style="width: 18px; height: 18px;"></i>
+                  </div>
+                  <div class="rich-dropdown-content">
+                    <span class="rich-dropdown-title">Facial Hair Restoration</span>
+                    <span class="rich-dropdown-desc">Beard & Eyebrow Restoration</span>
+                  </div>
+                </a>
+
+                <a href="service.html#scalp-treatments" class="rich-dropdown-item">
+                  <div class="rich-dropdown-icon">
+                    <i data-lucide="droplet" style="width: 18px; height: 18px;"></i>
+                  </div>
+                  <div class="rich-dropdown-content">
+                    <span class="rich-dropdown-title">Scalp & Cosmetic Treatments</span>
+                    <span class="rich-dropdown-desc">SMP & Microblading</span>
+                  </div>
+                </a>
+
+                <a href="service.html#dermatology" class="rich-dropdown-item">
+                  <div class="rich-dropdown-icon">
+                    <i data-lucide="activity" style="width: 18px; height: 18px;"></i>
+                  </div>
+                  <div class="rich-dropdown-content">
+                    <span class="rich-dropdown-title">Dermatology Services</span>
+                    <span class="rich-dropdown-desc">Skin & Scalp Care</span>
+                  </div>
+                </a>
+
+              </div>
+              <div class="rich-dropdown-footer">
+                <a href="service.html" class="rich-footer-link">Explore all treatments <i data-lucide="arrow-right"
+                    style="width: 12px; height: 12px; margin-left: 6px;"></i></a>
+              </div>
+            </div>
           </li>
           <!-- <li class="nav-item">
             <a class="nav-link" href="#surgeon">The Surgeon</a>
@@ -144,12 +188,20 @@
             <span class="menu-arrow"></span>
           </a>
         </li>
-        <li class="drawer-menu-item">
-          <a class="nav-link" href="index.html#services">
+        <li class="drawer-menu-item luxury-mobile-dropdown">
+          <a class="nav-link" href="#mobileServicesMenu" data-bs-toggle="collapse" role="button" aria-expanded="false"
+            aria-controls="mobileServicesMenu">
             <span class="menu-num">03</span>
             <span class="menu-text">Treatments</span>
-            <span class="menu-arrow"></span>
+            <span class="dropdown-caret-mobile" style="margin-left: auto;">▼</span>
           </a>
+          <ul class="collapse list-unstyled mobile-dropdown-menu" id="mobileServicesMenu">
+            <li><a href="service.html#hair-restoration" class="mobile-dropdown-item">Hair Restoration</a></li>
+            <li><a href="service.html#facial-hair" class="mobile-dropdown-item">Facial Hair Restoration</a></li>
+            <li><a href="service.html#scalp-treatments" class="mobile-dropdown-item">Scalp & Cosmetic Treatments</a>
+            </li>
+            <li><a href="service.html#dermatology" class="mobile-dropdown-item">Dermatology Services</a></li>
+          </ul>
         </li>
         <li class="drawer-menu-item">
           <a class="nav-link" href="index.html#before-after">
