@@ -1,31 +1,21 @@
-﻿/* style.css - HSN Hair Transplant Centre Premium Stylesheet */
+/* style.css - HSN Hair Transplant Centre Premium Stylesheet */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
 
 /* Color Variables and Tokens */
 :root {
   --color-primary: #1D1D1F;
-  /* Primary Text & Dark Accents */
-  --color-secondary: #c69f03;
-  /* Accent Gold */
+  --color-secondary: #C9A46A;
   --color-gold-soft: #D8B57A;
-  /* Soft Gold */
   --color-beige-soft: #E8DDD0;
-  /* Soft Beige */
   --color-bg-main: #F8F7F4;
-  /* Background Off-white/Ivory */
   --color-bg-alt: #F1EDE6;
-  /* Section Alternate */
   --color-text-primary: #1D1D1F;
-  /* Primary Text */
   --color-text-secondary: #666666;
-  /* Secondary Text */
   --color-white: #FFFFFF;
 
-  --font-serif: "Montserrat", sans-serif;
-  /* Switched to a bold, highly visible premium modern font */
+  --font-serif: "Outfit", sans-serif;
   --font-sans: "Outfit", sans-serif;
-  /* Soft, airy, premium sans-serif for paragraphs */
   --font-mono: "Outfit", sans-serif;
   /* Replaced coding font with sleek sans for luxury labels */
 
@@ -50,13 +40,11 @@ body {
 
 /* Global Paragraph Styling for Premium Legibility */
 p {
-  font-size: 1.125rem !important;
-  /* 18px size for perfect visibility */
-  line-height: 1.7 !important;
-  /* Airy, luxurious line height */
-  color: #3f3f46 !important;
-  /* Darker, high-contrast grey instead of muted */
-  /* font-weight removed */
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.9;
+  color: #666666;
 }
 
 /* Custom Selection style */
@@ -73,23 +61,116 @@ h4,
 h5,
 h6 {
   font-family: var(--font-serif);
-  font-weight: 700;
-  /* Extra bold for maximum visibility */
-  letter-spacing: 0.01em;
-  /* Tighter letter spacing for modern look */
-  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-top: 0;
 }
 
-.font-serif-italic {
-  font-family: var(--font-serif);
-  font-style: italic;
+/* HSN Standard Typography Classes */
+
+/* Section Label */
+.hr-label,
+.editorial-label,
+.about-hero-label,
+.about-intro-label,
+.our-story-label,
+.who-we-are-label,
+.mission-vision-label,
+.core-values-label,
+.wc-label {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  margin-bottom: 18px !important;
 }
 
-.font-mono-labels {
-  font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
+/* Main Hero Title (H1) */
+.hr-hero-title,
+.about-hero-title {
+  font-family: var(--font-sans) !important;
+  font-size: 60px !important;
+  font-weight: 700 !important;
+  line-height: 1.08 !important;
+  letter-spacing: -0.03em !important;
+  color: var(--color-primary) !important;
+  text-transform: none !important;
+}
+
+/* Section Title (H2) */
+.hr-heading-lg,
+.editorial-title,
+.hr-heading-md,
+.about-intro-title,
+.our-story-title,
+.who-we-are-title,
+.mission-vision-title,
+.core-values-title,
+.wc-title {
+  font-family: var(--font-sans) !important;
+  font-size: 46px !important;
+  font-weight: 700 !important;
+  line-height: 1.15 !important;
+  color: var(--color-primary) !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+}
+
+/* Card Title (H3) */
+.hr-card-title,
+.hr-feature-title {
+  font-family: var(--font-sans) !important;
+  font-size: 32px !important;
+  font-weight: 600 !important;
+  line-height: 1.25 !important;
+  color: var(--color-primary) !important;
+  text-transform: none !important;
+}
+
+/* Small Card Title */
+.hr-small-title {
+  font-family: var(--font-sans) !important;
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  line-height: 1.35 !important;
+  color: var(--color-primary) !important;
+  text-transform: none !important;
+}
+
+/* Highlight Word */
+.hr-highlight {
+  color: var(--color-secondary) !important;
+  font-weight: 700 !important;
+}
+
+/* Body Text / Paragraph */
+.hr-text-body,
+.editorial-desc {
+  font-family: var(--font-sans) !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  line-height: 1.9 !important;
+  color: var(--color-text-secondary) !important;
+}
+
+/* Statistics */
+.hr-stat-number {
+  font-family: var(--font-sans);
+  font-size: 54px !important;
+  font-weight: 700 !important;
+  color: var(--color-primary) !important;
+  margin-bottom: 8px;
+}
+
+.hr-stat-label {
+  font-family: var(--font-sans);
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.25em !important;
+  text-transform: uppercase !important;
+  color: var(--color-secondary) !important;
 }
 
 /* Scroll Progress Bar */
@@ -164,22 +245,19 @@ h6 {
 }
 
 .nav-link {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  /* Increased font size for better visibility */
-  font-weight: 600;
-  /* Bolder text */
-  letter-spacing: 0.15em;
-  color: #333333 !important;
-  /* Darker color for higher contrast */
+  font-family: var(--font-sans);
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.14em;
+  color: var(--color-primary) !important;
   text-transform: uppercase;
   transition: var(--transition-fast);
   padding: 0.5rem 1rem !important;
 }
 
 .nav-link:hover {
-  color: var(--color-primary) !important;
-  opacity: 0.8;
+  color: var(--color-secondary) !important;
+  opacity: 1;
 }
 
 .nav-link.active {
@@ -194,12 +272,11 @@ h6 {
   background: transparent;
   border: 1px solid rgba(200, 164, 93, 0.4);
   padding: 0.625rem 1.5rem;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  color: #a88600;
-  /* Darker gold for better contrast on light background */
+  font-family: var(--font-sans);
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.12em;
+  color: var(--color-secondary);
   text-transform: uppercase;
   border-radius: 0;
   z-index: 1;
@@ -232,10 +309,10 @@ h6 {
   color: #0F172A !important;
   border: 1px solid var(--color-secondary);
   padding: 0.875rem 1.75rem;
-  font-family: var(--font-mono);
-  font-weight: 600;
-  font-size: 10px;
-  letter-spacing: 0.2em;
+  font-family: var(--font-sans);
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   border-radius: 0;
   transition: var(--transition-smooth);
@@ -5213,7 +5290,7 @@ h6 {
   align-items: center;
   gap: 12px;
   padding: 18px 36px;
-  background-color: #1D1D1F;
+  background-color: #C9A46A;
   color: #FFFFFF;
   font-family: var(--font-mono);
   font-size: 11px;
@@ -5226,7 +5303,7 @@ h6 {
 }
 
 .hr-btn-primary:hover {
-  background-color: #C9A46A;
+  background-color: #1D1D1F;
   color: #FFFFFF;
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(201, 164, 106, 0.2);
@@ -5406,6 +5483,156 @@ h6 {
   transform: scale(1.05);
 }
 
+
+/* hair-restoration.css - EDITORIAL TREATMENTS SECTION */
+
+.premium-treatments-section {
+  background-color: var(--color-bg-main);
+  overflow: hidden;
+}
+
+/* Background Color Alternations */
+.bg-luxury-light-1 {
+  background-color: #F8F7F4;
+}
+
+.bg-luxury-light-2 {
+  background-color: #F1EDE6;
+}
+
+/* Editorial Block Spacing */
+.editorial-block {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.05);
+}
+
+.editorial-block:last-child {
+  border-bottom: none;
+}
+
+/* Image Wrapper and Animations */
+.editorial-img-container {
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.15);
+  aspect-ratio: 4 / 3;
+  position: relative;
+  /* Soft border for premium feel */
+  border: 1px solid rgba(201, 164, 106, 0.15);
+}
+
+.editorial-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.editorial-img-container:hover .editorial-img {
+  transform: scale(1.04);
+}
+
+/* Content Area */
+.editorial-content-wrapper {
+  padding: 2rem 0;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.editorial-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.editorial-title {
+  font-family: var(--font-serif);
+  font-size: 2.75rem;
+  color: var(--color-primary);
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.editorial-desc {
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: rgba(15, 23, 42, 0.75);
+  margin-bottom: 2.5rem;
+}
+
+.editorial-link {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+}
+
+.editorial-link i {
+  transition: transform 0.3s ease;
+}
+
+.editorial-link:hover {
+  color: var(--color-secondary);
+}
+
+.editorial-link:hover i {
+  transform: translateX(4px);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 991.98px) {
+  .editorial-block {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .editorial-content-wrapper {
+    padding: 2rem 1rem 0 1rem;
+    text-align: center;
+  }
+
+  .editorial-title {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .editorial-block {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .editorial-img-container {
+    border-radius: 16px;
+    box-shadow: 0 15px 30px -10px rgba(15, 23, 42, 0.1);
+  }
+
+  .editorial-title {
+    font-size: 1.75rem !important;
+  }
+
+  .editorial-desc {
+    font-size: 1rem;
+  }
+}
+
 /*4. WHY CHOOSE HSN (FEATURES)*/
 
 
@@ -5465,13 +5692,16 @@ h6 {
 
 
 .hr-journey {
-  padding: 140px 0;
-  background-color: #111111;
-  color: #FFFFFF;
+  padding: 80px 0;
+  background-image: url('../images/premium_light_bg.png');
+  background-size: cover;
+  background-position: center;
+  background-color: #F8F7F4;
+  color: #1A1A1A;
 }
 
 .hr-journey .hr-heading-lg {
-  color: #FFFFFF;
+  color: #1A1A1A;
 }
 
 .hr-journey-layout {
@@ -5489,10 +5719,10 @@ h6 {
 
 .hr-journey-step {
   padding: 30px 40px;
-  border-left: 2px solid rgba(255, 255, 255, 0.1);
+  border-left: 2px solid rgba(26, 26, 26, 0.1);
   cursor: pointer;
   transition: all 0.4s ease;
-  opacity: 0.5;
+  opacity: 0.65;
   position: relative;
 }
 
@@ -5536,9 +5766,11 @@ h6 {
 
 .hr-journey-image-panel {
   position: relative;
-  aspect-ratio: 4/5;
-  border-radius: 20px;
+  aspect-ratio: 4/3;
+  border-radius: 24px;
   overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.15);
+  border: 1px solid rgba(201, 164, 106, 0.15);
 }
 
 .hr-journey-img {
@@ -5628,16 +5860,20 @@ h6 {
 }
 
 .hr-gallery-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
   gap: 40px;
   margin-top: 60px;
+  flex-wrap: wrap;
 }
 
 .hr-gallery-item {
   position: relative;
   border-radius: 16px;
   overflow: hidden;
+  width: 100%;
+  max-width: 360px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
 }
 
 .hr-gallery-item img {
@@ -5668,7 +5904,7 @@ h6 {
 
 .hr-cta {
   position: relative;
-  padding: 140px 0;
+  padding: 100px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5682,7 +5918,7 @@ h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../images/hsnht-12.png');
+  background-image: url('../images/luxury_clinic_bg.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -5695,7 +5931,7 @@ h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(248, 247, 244, 0.9);
+  background: rgba(248, 247, 244, 0.7);
   /* Soft beige overlay */
   z-index: 2;
 }
@@ -5703,6 +5939,21 @@ h6 {
 .hr-cta-content {
   max-width: 800px;
   margin: 0 auto;
+}
+
+.hr-cta-content h2 {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  color: #111;
+  line-height: 1.2;
+}
+
+.hr-cta-content p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 40px;
 }
 
 .hr-cta-buttons {
@@ -5719,10 +5970,10 @@ h6 {
   padding: 18px 40px;
   background-color: #FFFFFF;
   color: #111111;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
+  font-family: var(--font-sans);
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 4px;
@@ -5737,6 +5988,31 @@ h6 {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
+.hr-btn-dark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 40px;
+  background-color: #1D1D1F;
+  color: #FFFFFF;
+  font-family: var(--font-sans);
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hr-btn-dark:hover {
+  background-color: #333333;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
 .hr-btn-outline {
   display: inline-flex;
   align-items: center;
@@ -5744,10 +6020,10 @@ h6 {
   padding: 18px 40px;
   border: 1px solid #1D1D1F;
   color: #1D1D1F;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
+  font-family: var(--font-sans);
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 4px;
@@ -5814,7 +6090,9 @@ h6 {
   }
 
   .hr-journey-image-panel {
-    display: none;
+    order: -1;
+    margin-bottom: 20px;
+    display: block;
   }
 
   .hr-comparison-grid {
@@ -5823,15 +6101,26 @@ h6 {
 }
 
 @media (max-width: 768px) {
+
+  .hr-editorial {
+    padding: 90px 0;
+  }
+
   .hr-hero {
-    min-height: 480px;
-    background-position: 80% top;
+    min-height: 550px;
     align-items: center;
   }
 
   .hr-hero::before {
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, transparent 10%, black 50%, black 100%);
-    mask-image: linear-gradient(to right, transparent 0%, transparent 10%, black 50%, black 100%);
+    background-position: 70% top;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, transparent 40%, black 85%, black 100%);
+    mask-image: linear-gradient(to right, transparent 0%, transparent 40%, black 85%, black 100%);
+  }
+
+  .hr-hero-title,
+  .hr-hero-desc,
+  .hr-hero-label {
+    text-shadow: 0 0 15px rgba(248, 247, 244, 0.9), 0 0 5px rgba(255, 255, 255, 1);
   }
 
   .hr-hero::after {
@@ -5860,12 +6149,18 @@ h6 {
     grid-template-columns: 1fr;
   }
 
-  .hr-cta-buttons {
+  .hr-cta-buttons,
+  .hr-hero-actions {
     flex-direction: column;
+    align-items: stretch;
   }
 
   .hr-btn-white,
-  .hr-btn-outline {
+  .hr-btn-outline,
+  .hr-btn-primary,
+  .hr-btn-secondary {
     width: 100%;
+    text-align: center;
+    justify-content: center;
   }
 }

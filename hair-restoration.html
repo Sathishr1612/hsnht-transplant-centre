@@ -14,6 +14,9 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
 
     <!-- Custom Style sheets -->
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -205,17 +208,17 @@
                 <span class="hr-hero-label">Hair Restoration</span>
                 <h1 class="hr-hero-title">
                     Restore More Than Hair.<br>
-                    <span class="hr-hero-title-accent">Restore Confidence.</span>
+                    Restore <span class="hr-highlight">Confidence.</span>
                 </h1>
                 <p class="hr-hero-desc">
-                    Advanced treatments and personalized care to restore healthier, fuller, and natural-looking hair.
-                </p>
+                    Advanced hair restoration solutions designed to address hair loss, thinning hair, and baldness
+                    through personalized treatment and expert clinical care. </p>
                 <div class="hr-hero-actions">
                     <a href="#" class="hr-btn-primary" data-bs-toggle="modal" data-bs-target="#consultationModal">
                         Book Consultation
                         <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
                     </a>
-                    <a href="#treatments" class="hr-btn-secondary">Explore Treatments</a>
+                    <!-- <a href="#treatments" class="hr-btn-secondary">Explore Treatments</a> -->
                 </div>
             </div>
         </div>
@@ -232,7 +235,7 @@
                 </div>
                 <div class="hr-editorial-content">
                     <span class="hr-label">The Root Cause</span>
-                    <h2 class="hr-heading-lg mb-4">Every Hair Loss Journey<br>Is Different</h2>
+                    <h2 class="hr-heading-lg mb-4">Every Hair Loss Journey<br>Is <span class="hr-highlight">Different</span></h2>
                     <p class="hr-text-body mb-4">Factors such as genetics, hormonal changes, lifestyle, stress,
                         nutritional deficiencies, and medical conditions can all contribute to hair thinning or
                         baldness.</p>
@@ -246,82 +249,151 @@
     <!-- =========================================
          SECTION 3: TREATMENT SOLUTIONS
          ========================================= -->
-    <section id="treatments" class="hr-treatments">
-        <div class="container">
-            <div class="hr-treatments-header text-center">
-                <span class="hr-label mx-auto">Our Expertise</span>
-                <h2 class="hr-heading-lg">Personalized Treatment Solutions</h2>
+    <section id="treatments" class="premium-treatments-section">
+        <div class="container text-center pt-5 pb-5" data-reveal="fade-up">
+            <span class="editorial-label mx-auto mb-3 d-inline-block">Expert Solutions</span>
+            <h2 class="editorial-title mb-4">Advanced Hair Restoration <span class="hr-highlight">Treatments</span></h2>
+            <p class="editorial-desc mx-auto">From
+                non-surgical therapies that help strengthen
+                existing hair to advanced hair transplant procedures that restore permanent hair growth, HSN provides a
+                complete range of treatments designed to address different stages of hair loss. Our focus is not just on
+                restoring hair but on helping every patient regain confidence through safe, ethical, and evidence-based
+                care.</p>
+        </div>
+
+        <!-- Treatment 1: Hair Transplant -->
+        <div class="editorial-block bg-luxury-light-1">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 order-1 order-lg-1" data-reveal="slide-right">
+                        <div class="editorial-img-container">
+                            <img src="assets/images/bio-fue-treatment.webp" alt="Hair Transplant" class="editorial-img">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-2 order-lg-2" data-reveal="slide-left">
+                        <div class="editorial-content-wrapper">
+                            <span class="editorial-label">01. Permanent Restoration</span>
+                            <h3 class="editorial-title">Hair Transplant</h3>
+                            <p class="editorial-desc">A hair transplant is one of the most effective and long-term
+                                solutions for individuals experiencing significant hair loss or pattern baldness.
+                                Healthy hair follicles are carefully relocated from the donor area to areas of reduced
+                                hair density, creating natural-looking results that blend seamlessly with existing
+                                hair.<br><br>At HSN, every hair transplant is carefully planned to achieve a
+                                natural-looking hairline and balanced density that complements each patient's facial
+                                features.</p>
+                            <a href="#consultationModal" data-bs-toggle="modal" class="editorial-link">
+                                Learn More <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
 
-            <div class="hr-treatment-list">
-
-                <!-- Treatment 1: Hair Transplant -->
-                <div class="hr-treatment-card">
-                    <div class="hr-treatment-card-content">
-                        <span class="hr-label">Permanent Solution</span>
-                        <h3 class="hr-treatment-card-title">Hair Transplant</h3>
-                        <p class="hr-treatment-card-desc">One of the most effective long-term solutions for significant
-                            hair loss and pattern baldness. Carefully relocated healthy follicles provide
-                            natural-looking and permanent results.</p>
+        <!-- Treatment 2: Hair Fall Treatment -->
+        <div class="editorial-block bg-luxury-light-2">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 order-2 order-lg-1" data-reveal="slide-right">
+                        <div class="editorial-content-wrapper">
+                            <span class="editorial-label">02. Hair Fall Treatment</span>
+                            <h3 class="editorial-title">Hair Fall Treatment</h3>
+                            <p class="editorial-desc">Hair fall can occur due to stress, hormonal imbalances,
+                                nutritional deficiencies, environmental factors, or underlying medical conditions.
+                                Through comprehensive consultation and scalp assessment, our specialists identify the
+                                underlying cause before developing a personalised treatment plan that helps reduce hair
+                                fall, improve scalp health, and promote healthier hair growth.</p>
+                            <a href="#consultationModal" data-bs-toggle="modal" class="editorial-link">
+                                Learn More <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div class="hr-treatment-card-img-wrapper">
-                        <img src="assets/images/bio-fue-treatment.webp" alt="Hair Transplant">
+                    <div class="col-lg-6 order-1 order-lg-2" data-reveal="slide-left">
+                        <div class="editorial-img-container">
+                            <img src="assets/images/hair-fall-management.jfif" alt="Hair Fall Treatment"
+                                class="editorial-img">
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <!-- Treatment 2: Hair Fall Treatment (Reverse) -->
-                <div class="hr-treatment-card reverse">
-                    <div class="hr-treatment-card-content">
-                        <span class="hr-label">Preventative Care</span>
-                        <h3 class="hr-treatment-card-title">Hair Fall Treatment</h3>
-                        <p class="hr-treatment-card-desc">Personalized treatment plans designed to reduce hair fall,
-                            improve scalp health, and promote healthier hair growth through comprehensive evaluation and
-                            care.</p>
+        <!-- Treatment 3: PRP Therapy -->
+        <div class="editorial-block bg-luxury-light-1">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 order-1 order-lg-1" data-reveal="slide-right">
+                        <div class="editorial-img-container">
+                            <img src="assets/images/prp-treatment-hsn.jpg" alt="PRP Therapy" class="editorial-img">
+                        </div>
                     </div>
-                    <div class="hr-treatment-card-img-wrapper">
-                        <img src="assets/images/hair-fall-management.jfif" alt="Hair Fall Treatment">
+                    <div class="col-lg-6 order-2 order-lg-2" data-reveal="slide-left">
+                        <div class="editorial-content-wrapper">
+                            <span class="editorial-label">03. Regenerative Therapy</span>
+                            <h3 class="editorial-title">PRP Therapy</h3>
+                            <p class="editorial-desc">Platelet-Rich Plasma (PRP) Therapy is a minimally invasive
+                                treatment that supports natural hair growth using the patient's own healing properties.
+                                Growth factors help stimulate dormant hair follicles, improve blood circulation, and
+                                strengthen existing hair, making it an effective option for individuals experiencing
+                                early-stage hair thinning or hair loss.</p>
+                            <a href="#consultationModal" data-bs-toggle="modal" class="editorial-link">
+                                Learn More <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <!-- Treatment 3: PRP Therapy -->
-                <div class="hr-treatment-card">
-                    <div class="hr-treatment-card-content">
-                        <span class="hr-label">Regenerative</span>
-                        <h3 class="hr-treatment-card-title">PRP Therapy</h3>
-                        <p class="hr-treatment-card-desc">Minimally invasive regenerative treatment that uses the body's
-                            own growth factors to stimulate hair follicles and support natural hair growth.</p>
+        <!-- Treatment 4: GFC Therapy -->
+        <div class="editorial-block bg-luxury-light-2">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 order-2 order-lg-1" data-reveal="slide-right">
+                        <div class="editorial-content-wrapper">
+                            <span class="editorial-label">04. Growth Factor Therapy</span>
+                            <h3 class="editorial-title">GFC Therapy</h3>
+                            <p class="editorial-desc">Growth Factor Concentrate (GFC) Therapy is an advanced
+                                regenerative treatment designed to stimulate hair follicles and encourage healthier hair
+                                growth. By delivering concentrated natural growth factors to the scalp, it supports
+                                stronger, healthier hair and improved scalp health.</p>
+                            <a href="#consultationModal" data-bs-toggle="modal" class="editorial-link">
+                                Learn More <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div class="hr-treatment-card-img-wrapper">
-                        <img src="assets/images/hsnht-17.png" alt="PRP Therapy">
+                    <div class="col-lg-6 order-1 order-lg-2" data-reveal="slide-left">
+                        <div class="editorial-img-container">
+                            <img src="assets/images/gfc-hsn-1.jpg" alt="GFC Therapy" class="editorial-img">
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <!-- Treatment 4: GFC Therapy (Reverse) -->
-                <div class="hr-treatment-card reverse">
-                    <div class="hr-treatment-card-content">
-                        <span class="hr-label">Advanced Factors</span>
-                        <h3 class="hr-treatment-card-title">GFC Therapy</h3>
-                        <p class="hr-treatment-card-desc">Advanced growth factor treatment designed to stimulate
-                            follicles, improve scalp health, and support stronger, healthier hair.</p>
+        <!-- Treatment 5: Mesotherapy -->
+        <div class="editorial-block bg-luxury-light-1">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 order-1 order-lg-1" data-reveal="slide-right">
+                        <div class="editorial-img-container">
+                            <img src="assets/images/mesotherapy-hsn.jfif" alt="Mesotherapy" class="editorial-img">
+                        </div>
                     </div>
-                    <div class="hr-treatment-card-img-wrapper">
-                        <img src="assets/images/hsnht-18.png" alt="GFC Therapy">
+                    <div class="col-lg-6 order-2 order-lg-2" data-reveal="slide-left">
+                        <div class="editorial-content-wrapper">
+                            <span class="editorial-label">05. Scalp Nourishment</span>
+                            <h3 class="editorial-title">Mesotherapy</h3>
+                            <p class="editorial-desc">Mesotherapy is a non-surgical treatment that delivers vitamins,
+                                minerals, amino acids, and essential nutrients directly into the scalp. By nourishing
+                                the hair follicles and improving scalp circulation, it helps strengthen existing hair,
+                                reduce hair fall, and create a healthier environment for natural hair growth.</p>
+                            <a href="#consultationModal" data-bs-toggle="modal" class="editorial-link">
+                                Learn More <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-
-                <!-- Treatment 5: Mesotherapy -->
-                <div class="hr-treatment-card">
-                    <div class="hr-treatment-card-content">
-                        <span class="hr-label">Nourishment</span>
-                        <h3 class="hr-treatment-card-title">Mesotherapy</h3>
-                        <p class="hr-treatment-card-desc">Nutrient-rich scalp therapy that delivers vitamins, minerals,
-                            and essential nutrients directly to the hair follicles.</p>
-                    </div>
-                    <div class="hr-treatment-card-img-wrapper">
-                        <img src="assets/images/hsnht-19.png" alt="Mesotherapy">
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
@@ -333,7 +405,7 @@
         <div class="container">
             <div class="text-center">
                 <span class="hr-label mx-auto">The HSN Standard</span>
-                <h2 class="hr-heading-md">Why Choose HSN</h2>
+                <h2 class="hr-heading-md">Why Choose <span class="hr-highlight">HSN</span></h2>
             </div>
             <div class="hr-features-grid">
 
@@ -359,7 +431,7 @@
 
                 <div class="hr-feature-item">
                     <div class="hr-feature-icon"><i data-lucide="user-check"></i></div>
-                    <h3 class="hr-feature-title">Natural Looking Results</h3>
+                    <h3 class="hr-feature-title">Natural-Looking Results</h3>
                 </div>
 
                 <div class="hr-feature-item">
@@ -409,7 +481,7 @@
 
                     <div class="hr-journey-step" data-target="journey-img-6">
                         <span class="hr-journey-step-num">06</span>
-                        <h3 class="hr-journey-step-title">Healthier Hair. Lasting Confidence.</h3>
+                        <h3 class="hr-journey-step-title">Healthy Hair. Lasting Confidence.</h3>
                     </div>
 
                 </div>
@@ -436,7 +508,7 @@
     <section class="hr-comparison">
         <div class="container">
             <span class="hr-label text-center mx-auto">Treatment Guide</span>
-            <h2 class="hr-heading-lg text-center">Treatment Comparison</h2>
+            <h2 class="hr-heading-lg text-center">Choosing the <span class="hr-highlight">Right</span> Treatments</h2>
 
             <div class="hr-comparison-grid">
 
@@ -486,16 +558,20 @@
         <div class="container">
             <div class="text-center">
                 <span class="hr-label mx-auto">Results</span>
-                <h2 class="hr-heading-lg">Patient Transformations</h2>
+                <h2 class="hr-heading-lg">Real Patient <span class="hr-highlight">Results</span></h2>
             </div>
             <div class="hr-gallery-grid">
                 <div class="hr-gallery-item">
-                    <img src="assets/images/after-before-v1.png" alt="Before and After Hair Transplant">
+                    <img src="assets/images/hsnht-17.png" alt="Before and After Hair Transplant">
                     <div class="hr-gallery-caption">Case Study 01</div>
                 </div>
                 <div class="hr-gallery-item">
-                    <img src="assets/images/hsnht-11.png" alt="Before and After Hair Restoration">
+                    <img src="assets/images/hsnht-7.png" alt="Before and After Hair Restoration">
                     <div class="hr-gallery-caption">Case Study 02</div>
+                </div>
+                <div class="hr-gallery-item">
+                    <img src="assets/images/hsnht-8.png" alt="Advanced Hair Restoration Results">
+                    <div class="hr-gallery-caption">Case Study 03</div>
                 </div>
             </div>
         </div>
@@ -515,7 +591,7 @@
                     HSN Hair Restoration, we combine clinical expertise, personalized treatment planning, and advanced
                     techniques to help you achieve healthier, fuller, and natural-looking hair.</p>
                 <div class="hr-cta-buttons">
-                    <a href="#" class="hr-btn-white" data-bs-toggle="modal" data-bs-target="#consultationModal">Book
+                    <a href="#" class="hr-btn-dark" data-bs-toggle="modal" data-bs-target="#consultationModal">Book
                         Consultation</a>
                     <a href="tel:+919876543210" class="hr-btn-outline">Call Now</a>
                 </div>
