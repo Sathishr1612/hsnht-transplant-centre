@@ -73,28 +73,46 @@
 @media (max-width: 767.98px) {
 
   h1,
-  .h1 {
+  .h1,
+  .hr-hero-title,
+  .about-hero-title,
+  .text-4xl,
+  .text-5xl,
+  .text-6xl,
+  .text-7xl {
     font-size: 2rem !important;
     line-height: 1.2 !important;
     color: var(--color-primary);
   }
 
   h2,
-  .h2 {
+  .h2,
+  .hr-heading-lg,
+  .editorial-title,
+  .hr-heading-md,
+  .about-intro-title,
+  .our-story-title,
+  .who-we-are-title,
+  .mission-vision-title,
+  .core-values-title,
+  .wc-title {
     font-size: 1.75rem !important;
     line-height: 1.25 !important;
     color: var(--color-primary);
   }
 
   h3,
-  .h3 {
+  .h3,
+  .hr-card-title,
+  .hr-feature-title {
     font-size: 1.5rem !important;
     line-height: 1.3 !important;
     color: var(--color-primary);
   }
 
   h4,
-  .h4 {
+  .h4,
+  .hr-small-title {
     font-size: 1.25rem !important;
     line-height: 1.35 !important;
     color: var(--color-primary);
@@ -115,7 +133,9 @@
   }
 
   p,
-  .text-body {
+  .text-body,
+  .hr-text-body,
+  .editorial-desc {
     font-size: 1rem !important;
     /* 16px */
     line-height: 1.6 !important;
