@@ -6609,3 +6609,5 @@ h6 {
   line-height: 1.6;
   max-width: 900px;
 }
+/* Featured Video Playlist Active State */
+.playlist-card.active-video { border-color: var(--color-secondary) !important; border-opacity: 1 !important; transform: translateX(-5px); box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1) !important; }
