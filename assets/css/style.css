@@ -218,6 +218,8 @@ h6 {
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(29, 29, 31, 0.08);
   transition: var(--transition-smooth);
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
 }
 
 .glass-nav.navbar-scrolled {
@@ -227,12 +229,18 @@ h6 {
   box-shadow: 0 10px 30px rgba(29, 29, 31, 0.04);
 }
 
+.navbar-brand .logo-emblem-svg {
+  width: 42px !important;
+  height: 42px !important;
+}
+
 .navbar-brand .logo-text-top {
   font-family: var(--font-serif);
-  font-size: 1.25rem;
-  letter-spacing: 0.25em;
+  font-size: 1.1rem;
+  letter-spacing: 0.3em;
   color: var(--color-primary);
   line-height: 1;
+  font-weight: 600;
 }
 
 .navbar-brand .logo-text-bottom {
@@ -246,13 +254,13 @@ h6 {
 
 .nav-link {
   font-family: var(--font-sans);
-  font-size: 15px !important;
-  font-weight: 600 !important;
-  letter-spacing: 0.14em;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.18em;
   color: var(--color-primary) !important;
   text-transform: uppercase;
   transition: var(--transition-fast);
-  padding: 0.5rem 1rem !important;
+  padding: 0.5rem 1.25rem !important;
 }
 
 .nav-link:hover {
@@ -262,7 +270,7 @@ h6 {
 
 .nav-link.active {
   color: var(--color-secondary) !important;
-  font-weight: 700 !important;
+  font-weight: 600 !important;
 }
 
 /* Gold Button Accent */
@@ -271,11 +279,11 @@ h6 {
   overflow: hidden;
   background: transparent;
   border: 1px solid rgba(200, 164, 93, 0.4);
-  padding: 0.625rem 1.5rem;
+  padding: 0.75rem 1.75rem;
   font-family: var(--font-sans);
-  font-size: 15px !important;
+  font-size: 13px !important;
   font-weight: 600 !important;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.15em;
   color: var(--color-secondary);
   text-transform: uppercase;
   border-radius: 0;
@@ -5376,6 +5384,12 @@ h6 {
   background-size: cover;
 }
 
+.scalp-cosmetic-hero::before {
+  background-image: url('../images/prp-treatment-hsn.jpg') !important;
+  background-position: center top !important;
+  background-size: cover;
+}
+
 .hr-hero::after {
   content: '';
   position: absolute;
@@ -6036,11 +6050,10 @@ h6 {
 }
 
 .hr-gallery-grid {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   margin-top: 60px;
-  flex-wrap: wrap;
 }
 
 .hr-gallery-item {
@@ -6048,7 +6061,7 @@ h6 {
   border-radius: 16px;
   overflow: hidden;
   width: 100%;
-  max-width: 360px;
+  max-width: 100%;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
 }
 
