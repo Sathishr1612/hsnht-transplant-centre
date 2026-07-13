@@ -1,4 +1,4 @@
-/* style.css - HSN Hair Transplant Centre Premium Stylesheet */
+﻿/* style.css - HSN Hair Transplant Centre Premium Stylesheet */
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
 
@@ -1253,7 +1253,7 @@ h6 {
 }
 
 .doctor-item-list li::before {
-  content: "â€¢";
+  content: "Ã¢â‚¬Â¢";
   position: absolute;
   left: 0.25rem;
   color: var(--color-secondary);
@@ -3054,7 +3054,7 @@ h6 {
 
 
 /* ============================================
-   about-story.css â€” Our Story Section
+   about-story.css Ã¢â‚¬â€ Our Story Section
    ============================================ */
 
 .our-story-section {
@@ -3390,15 +3390,24 @@ h6 {
 }
 
 
-/* ============================================
-   who-we-are.css â€” Who We Are Section 
+/* ====================================   who-we-are.css â€” Who We Are Section
    ============================================ */
 
 .who-we-are-section {
-  background-color: #F8F7F4;
-  padding: 100px 0;
+  background-color: var(--color-bg-main);
+  padding: 110px 0;
   position: relative;
   overflow: hidden;
+}
+
+/* Subtle decorative background pattern */
+.who-we-are-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 80% 20%, rgba(201, 164, 106, 0.04) 0%, transparent 60%),
+    radial-gradient(circle at 10% 80%, rgba(201, 164, 106, 0.03) 0%, transparent 50%);
+  pointer-events: none;
 }
 
 .who-we-are-container {
@@ -3407,12 +3416,14 @@ h6 {
   padding: 0 5%;
   display: grid;
   grid-template-columns: 4fr 5fr;
-  gap: 60px;
+  gap: 80px;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
+/* â”€â”€â”€ LEFT CONTENT â”€â”€â”€ */
 .who-we-are-content {
-  /* scroll-reveal initial state */
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1),
@@ -3424,106 +3435,111 @@ h6 {
   transform: translateY(0);
 }
 
-/* .who-we-are-label {
-  display: inline-flex;
-  align-items: center;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 4px;
-  color: #C9A46A;
-  text-transform: uppercase;
-  margin-bottom: 32px;
-}
-
-.who-we-are-label::before {
-  content: '';
-  display: inline-block;
-  width: 48px;
-  height: 1px;
-  background-color: #C9A46A;
-  margin-right: 16px;
-  opacity: 0.8;
-} */
 
 .who-we-are-title {
-  font-family: var(--font-serif);
-  font-size: 38px;
-  line-height: 1.3;
-  /* font-weight removed */
-  color: #1D1D1F;
-  margin-bottom: 48px;
-  letter-spacing: 0.01em;
-
+  font-family: var(--font-sans);
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-primary);
+  margin-bottom: 36px;
+  letter-spacing: -0.01em;
 }
 
 .who-we-are-text-block {
   position: relative;
-  padding-left: 32px;
-}
-
-.who-we-are-text-block::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 8px;
-  bottom: 8px;
-  width: 1px;
-  background: linear-gradient(to bottom, rgba(201, 164, 106, 0.6), rgba(201, 164, 106, 0.1));
+  padding-left: 28px;
+  border-left: 2px solid rgba(201, 164, 106, 0.25);
+  margin-bottom: 48px;
 }
 
 .who-we-are-lead {
   font-family: var(--font-serif);
-  font-size: 21px;
-  line-height: 1.6;
-  color: #1D1D1F;
-  /* font-weight removed */
+  font-size: 19px;
+  line-height: 1.65;
+  color: var(--color-primary);
   font-style: italic;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .who-we-are-text {
   font-family: var(--font-sans);
-  font-size: 16px;
-  line-height: 1.9;
-  color: #666666;
-  /* font-weight removed */
-  margin-bottom: 24px;
+  font-size: 15px;
+  line-height: 1.85;
+  color: var(--color-text-secondary);
+  margin-bottom: 16px;
 }
 
+/* â”€â”€â”€ STATS ROW â”€â”€â”€ */
+.wwa-stats-row {
+  display: flex;
+  align-items: center;
+  padding: 32px 0 0;
+  border-top: 1px solid rgba(201, 164, 106, 0.15);
+}
 
+.wwa-stat {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.wwa-stat-value {
+  font-family: var(--font-serif);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-secondary);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.wwa-stat-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+}
+
+.wwa-stat-divider {
+  width: 1px;
+  height: 40px;
+  background: rgba(201, 164, 106, 0.2);
+  margin: 0 28px;
+  flex-shrink: 0;
+}
+
+/* â”€â”€â”€ RIGHT FEATURE CARDS GRID â”€â”€â”€ */
 .who-we-are-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
+  gap: 24px;
   align-items: start;
-  /* Crucial for stagger effect */
 }
 
 .wwa-feature-card:nth-child(even) {
-  margin-top: 60px;
+  margin-top: 48px;
 }
 
-/* Base Card Styles */
+/* Base Card */
 .wwa-feature-card {
-  background: #FFFFFF;
-  border-radius: 20px;
-  padding: 30px;
-  border: 1px solid rgba(201, 164, 106, 0.1);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.03);
+  background: var(--color-white);
+  border-radius: 16px;
+  padding: 32px 28px;
+  border: 1px solid rgba(201, 164, 106, 0.12);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
   position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 20px;
   text-decoration: none;
-  min-height: 270px;
-
-  /* scroll-reveal initial state */
+  min-height: 260px;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.4s ease;
   opacity: 0;
   transform: translateY(40px);
-  transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1),
-    transform 1s cubic-bezier(0.16, 1, 0.3, 1),
-    box-shadow 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .wwa-feature-card.is-visible {
@@ -3536,56 +3552,67 @@ h6 {
 }
 
 .wwa-feature-card:nth-child(2) {
-  transition-delay: 0.15s;
+  transition-delay: 0.12s;
 }
 
 .wwa-feature-card:nth-child(3) {
-  transition-delay: 0.3s;
+  transition-delay: 0.24s;
 }
 
 .wwa-feature-card:nth-child(4) {
-  transition-delay: 0.45s;
+  transition-delay: 0.36s;
 }
 
-/* Subtle top line */
+/* Gold top accent line that slides in on hover */
 .wwa-feature-card::before {
   content: '';
   position: absolute;
   top: 0;
-  left: 20%;
-  right: 20%;
-  height: 1px;
-  background: linear-gradient(90deg, rgba(201, 164, 106, 0), rgba(201, 164, 106, 0.6), rgba(201, 164, 106, 0));
-  opacity: 0;
-  transition: opacity 0.6s ease;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #C9A46A, #e8c88a, #C9A46A);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .wwa-feature-card:hover {
-  transform: translateY(-8px) !important;
-  box-shadow: 0 32px 64px -12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-6px) !important;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.08);
+  border-color: rgba(201, 164, 106, 0.3);
 }
 
 .wwa-feature-card:hover::before {
-  opacity: 1;
+  transform: scaleX(1);
+}
+
+/* Card Number Badge */
+.wwa-card-number {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  color: rgba(201, 164, 106, 0.5);
+  text-transform: uppercase;
+  line-height: 1;
 }
 
 /* Card Icon */
 .wwa-card-icon {
-  width: 64px;
-  height: 64px;
+  width: 52px;
+  height: 52px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  background: rgba(201, 164, 106, 0.06);
-  color: #C9A46A;
-  margin-bottom: 32px;
-  transition: background 0.6s ease, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  border-radius: 12px;
+  background: rgba(201, 164, 106, 0.07);
+  transition: background 0.4s ease, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .wwa-card-icon svg {
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
   stroke: #C9A46A;
   stroke-width: 1.5;
   fill: none;
@@ -3594,68 +3621,122 @@ h6 {
 }
 
 .wwa-feature-card:hover .wwa-card-icon {
-  background: rgba(201, 164, 106, 0.12);
-  transform: scale(1.05);
+  background: rgba(201, 164, 106, 0.14);
+  transform: scale(1.08);
 }
 
-/* Card Typography */
+/* Card Bottom Content */
 .wwa-card-bottom {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
 }
 
 .wwa-card-title {
-  font-family: var(--font-serif);
-  font-size: 20px;
-  /* font-weight removed */
-  color: #1D1D1F;
-  letter-spacing: 0.01em;
-
-  margin: 0 0 12px 0;
+  font-family: var(--font-sans);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--color-primary);
+  letter-spacing: -0.01em;
+  margin: 0;
   line-height: 1.3;
-  padding-right: 40px;
 }
 
 .wwa-card-text {
   font-family: var(--font-sans);
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.65;
-  color: #555555;
-  /* font-weight removed */
+  color: var(--color-text-secondary);
   margin: 0;
-  padding-right: 20px;
 }
 
-/* Hover Arrow Animation */
-.wwa-card-arrow {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 36px;
-  height: 36px;
-  display: flex;
+/* Card Link */
+.wwa-card-link {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: #C9A46A;
-  color: #FFFFFF;
-  transform: translateX(-15px);
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #C9A46A;
+  margin-top: 4px;
   opacity: 0;
-  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(4px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
-.wwa-card-arrow svg {
-  width: 16px;
-  height: 16px;
-  stroke: currentColor;
+.wwa-card-link svg {
+  stroke: #C9A46A;
   stroke-width: 2;
+  transition: transform 0.3s ease;
 }
 
-.wwa-feature-card:hover .wwa-card-arrow {
-  transform: translateX(0);
+.wwa-feature-card:hover .wwa-card-link {
   opacity: 1;
+  transform: translateY(0);
 }
 
+.wwa-feature-card:hover .wwa-card-link svg {
+  transform: translateX(3px);
+}
 
+/* Legacy arrow â€” hide old element */
+.wwa-card-arrow {
+  display: none;
+}
+
+/* Accent Dark Card (Card 04) */
+.wwa-card-accent {
+  background: linear-gradient(145deg,
+      #43372C 0%,
+      #30261F 55%,
+      #221C18 100%);
+  border-color: rgba(201, 164, 106, 0.15);
+  box-shadow: 0 8px 32px rgba(11, 31, 21, 0.25);
+}
+
+.wwa-card-accent .wwa-card-number {
+  color: rgba(201, 164, 106, 0.45);
+}
+
+.wwa-card-accent .wwa-card-icon {
+  background: rgba(201, 164, 106, 0.1);
+  border: 1px solid rgba(201, 164, 106, 0.15);
+}
+
+.wwa-card-accent .wwa-card-icon svg {
+  stroke: #C9A46A;
+}
+
+.wwa-card-accent:hover .wwa-card-icon {
+  background: rgba(201, 164, 106, 0.18);
+}
+
+.wwa-card-accent .wwa-card-title {
+  color: #ffffff;
+}
+
+.wwa-card-accent .wwa-card-text {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.wwa-card-accent .wwa-card-link {
+  color: #C9A46A;
+}
+
+.wwa-card-accent .wwa-card-link svg {
+  stroke: #C9A46A;
+}
+
+.wwa-card-accent:hover {
+  box-shadow: 0 24px 56px rgba(11, 31, 21, 0.4);
+  border-color: rgba(201, 164, 106, 0.25);
+}
+
+/* â”€â”€â”€ RESPONSIVE â”€â”€â”€ */
 @media (max-width: 1200px) {
   .who-we-are-container {
     grid-template-columns: 1fr 1fr;
@@ -3663,61 +3744,76 @@ h6 {
   }
 
   .who-we-are-title {
-    font-family: var(--font-serif);
-    font-size: 38px;
+    font-size: 36px;
   }
 }
 
 @media (max-width: 991px) {
   .who-we-are-container {
     grid-template-columns: 1fr;
-    gap: 80px;
+    gap: 64px;
   }
 
   .who-we-are-content {
-    max-width: 760px;
+    max-width: 720px;
     margin: 0 auto;
+  }
+
+  .who-we-are-grid {
+    max-width: 720px;
+    margin: 0 auto;
+    width: 100%;
   }
 }
 
 @media (max-width: 768px) {
   .who-we-are-section {
-    padding: 100px 0;
+    padding: 80px 0;
   }
 
   .who-we-are-title {
-    font-family: var(--font-serif);
-    font-size: 26px;
-    margin-bottom: 32px;
+    font-size: 28px;
+    margin-bottom: 28px;
   }
 
   .who-we-are-lead {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .who-we-are-grid {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 20px;
   }
 
-  /* Remove stagger on mobile */
   .wwa-feature-card:nth-child(even) {
     margin-top: 0;
   }
 
   .wwa-feature-card {
-    padding: 36px 32px;
+    padding: 28px 24px;
     min-height: auto;
+  }
+
+  .wwa-stat-value {
+    font-size: 26px;
+  }
+
+  .wwa-stat-divider {
+    margin: 0 20px;
   }
 }
 
+@media (max-width: 480px) {
+  .wwa-stat-value {
+    font-size: 22px;
+  }
 
+  .wwa-stat-divider {
+    margin: 0 14px;
+  }
+}
 
-/* ============================================
-   mission-vision.css â€” Our Purpose Section
-   ============================================ */
-
-.mission-vision-section {
+mission-vision.css Ã¢â‚¬â€ Our Purpose Section============================================*/ .mission-vision-section {
   background-color: #F8F7F4;
   padding: 80px 0;
   position: relative;
@@ -3995,7 +4091,7 @@ h6 {
 
 
 /* ============================================
-   core-values.css â€” Our Core Values Section
+   core-values.css Ã¢â‚¬â€ Our Core Values Section
    ============================================ */
 
 .core-values-section {
@@ -4251,7 +4347,7 @@ h6 {
 
 
 /* ============================================
-   why-choose.css â€” Why Patients Choose Us Section
+   why-choose.css Ã¢â‚¬â€ Why Patients Choose Us Section
    ============================================ */
 
 .why-choose-section {
