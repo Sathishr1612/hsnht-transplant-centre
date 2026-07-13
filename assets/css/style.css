@@ -6609,5 +6609,341 @@ h6 {
   line-height: 1.6;
   max-width: 900px;
 }
+
 /* Featured Video Playlist Active State */
-.playlist-card.active-video { border-color: var(--color-secondary) !important; border-opacity: 1 !important; transform: translateX(-5px); box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1) !important; }
+.playlist-card.active-video {
+  border-color: var(--color-secondary) !important;
+  border-opacity: 1 !important;
+  transform: translateX(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) !important;
+}
+
+
+
+/* CONTACT PAGE CSS */
+.luxury-contact-card {
+  background-color: var(--color-white);
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(29, 29, 31, 0.04);
+  border: 1px solid rgba(201, 164, 106, 0.15);
+  transition: var(--transition-smooth);
+}
+
+.luxury-contact-card:hover {
+  border-color: rgba(201, 164, 106, 0.4);
+  box-shadow: 0 15px 45px rgba(201, 164, 106, 0.08);
+}
+
+/* Gold Form Focus styling */
+.luxury-contact-card .form-control,
+.luxury-contact-card .form-select {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-main);
+  border: 1px solid rgba(29, 29, 31, 0.08);
+  border-radius: 8px;
+  padding: 14px 18px;
+  font-size: 15px;
+  color: var(--color-primary);
+  transition: var(--transition-fast);
+}
+
+.luxury-contact-card .form-control:focus,
+.luxury-contact-card .form-select:focus {
+  background-color: var(--color-white);
+  border-color: var(--color-secondary) !important;
+  box-shadow: 0 0 0 3px rgba(201, 164, 106, 0.2) !important;
+  outline: none;
+}
+
+.luxury-contact-card .form-label {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+/* Right Side Contact Info Card */
+.contact-info-card {
+  background-color: var(--color-bg-alt);
+  border-radius: 20px;
+  border: 1px solid rgba(201, 164, 106, 0.2);
+  padding: 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-info-item {
+  border-bottom: 1px solid rgba(29, 29, 31, 0.06);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-info-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.contact-info-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--color-secondary);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.contact-info-val {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+a.contact-info-val:hover {
+  color: var(--color-secondary);
+}
+
+/* Premium Social Icons */
+.contact-social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.contact-social-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba(201, 164, 106, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  background: transparent;
+  transition: var(--transition-smooth);
+  text-decoration: none;
+}
+
+.contact-social-icon:hover {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+  color: var(--color-white) !important;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(201, 164, 106, 0.2);
+}
+
+/* Clinic Cards */
+.clinic-card {
+  background-color: var(--color-white);
+  border-radius: 20px;
+  border: 1px solid rgba(29, 29, 31, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+  padding: 40px;
+  transition: var(--transition-smooth);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.clinic-card:hover {
+  border-color: var(--color-secondary);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(201, 164, 106, 0.12);
+}
+
+.clinic-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(201, 164, 106, 0.1);
+  color: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.clinic-name {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.clinic-address {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin-bottom: 20px;
+}
+
+.clinic-details {
+  border-top: 1px solid rgba(29, 29, 31, 0.06);
+  padding-top: 20px;
+  margin-bottom: 25px;
+}
+
+.clinic-detail-item {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.clinic-detail-item:last-child {
+  margin-bottom: 0;
+}
+
+.clinic-detail-icon {
+  color: var(--color-secondary);
+  margin-top: 2px;
+}
+
+.clinic-actions {
+  display: flex;
+  gap: 15px;
+}
+
+/* Map Location Cards & Interactive Container */
+.map-card {
+  background-color: var(--color-white);
+  border-radius: 20px;
+  border: 1px solid rgba(201, 164, 106, 0.15);
+  box-shadow: 0 10px 30px rgba(29, 29, 31, 0.02);
+  padding: 30px;
+  transition: var(--transition-smooth);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.map-card:hover {
+  border-color: var(--color-secondary);
+  box-shadow: 0 15px 40px rgba(201, 164, 106, 0.1);
+}
+
+.map-iframe-wrapper {
+  width: 100%;
+  height: 250px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 20px 0;
+  border: 1px solid rgba(29, 29, 31, 0.08);
+}
+
+.map-iframe-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+
+/* Premium Accordion Styling */
+.luxury-accordion .accordion-item {
+  background-color: var(--color-white);
+  border: 1px solid rgba(29, 29, 31, 0.06);
+  border-radius: 12px !important;
+  margin-bottom: 15px;
+  overflow: hidden;
+  transition: var(--transition-smooth);
+}
+
+.luxury-accordion .accordion-item:hover {
+  border-color: var(--color-secondary);
+}
+
+.luxury-accordion .accordion-button {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-primary);
+  padding: 24px 30px;
+  background-color: transparent;
+  box-shadow: none;
+  transition: var(--transition-fast);
+}
+
+.luxury-accordion .accordion-button:not(.collapsed) {
+  color: var(--color-secondary);
+  background-color: transparent;
+}
+
+.luxury-accordion .accordion-body {
+  padding: 0 30px 30px 30px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+}
+
+/* Final CTA Card styling */
+.final-cta-card {
+  background-color: var(--color-bg-alt);
+  border-radius: 30px;
+  border: 1px solid rgba(201, 164, 106, 0.2);
+  padding: 80px 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.final-cta-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at top right, rgba(201, 164, 106, 0.08) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+/* Mobile specific adjustments */
+@media (max-width: 767px) {
+  .clinic-cards-row {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 25px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    gap: 0 !important;
+  }
+
+  .clinic-cards-row>div {
+    flex: 0 0 85% !important;
+    max-width: 85% !important;
+    scroll-snap-align: start;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .final-cta-card {
+    padding: 50px 20px;
+  }
+
+  .clinic-card {
+    padding: 24px !important;
+  }
+
+  .map-card {
+    padding: 20px !important;
+  }
+
+  .luxury-accordion .accordion-button {
+    padding: 18px 20px !important;
+    font-size: 16px !important;
+  }
+
+  .luxury-accordion .accordion-body {
+    padding: 0 20px 20px 20px !important;
+    font-size: 15px !important;
+  }
+}
