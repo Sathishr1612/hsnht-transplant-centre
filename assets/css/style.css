@@ -1,4 +1,4 @@
-﻿/* style.css - HSN Hair Transplant Centre Premium Stylesheet */
+/* style.css - HSN Hair Transplant Centre Premium Stylesheet */
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
 
@@ -2336,6 +2336,13 @@ h6 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid rgba(0, 0, 0, 0.03);
   flex-shrink: 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.luxury-review-card p {
+  flex-grow: 1;
 }
 
 .luxury-review-card:hover {
@@ -5486,6 +5493,12 @@ mission-vision.css Ã¢â‚¬â€ Our Purpose Section=======================
   background-size: cover;
 }
 
+.testimonials-hero::before {
+  background-image: url('../images/testimoniyal-banner-hsn.png') !important;
+  background-position: center top !important;
+  background-size: cover;
+}
+
 .hr-hero::after {
   content: '';
   position: absolute;
@@ -6716,7 +6729,9 @@ mission-vision.css Ã¢â‚¬â€ Our Purpose Section=======================
 
 
 
-/* CONTACT PAGE CSS */
+/* ========== CONTACT PAGE CSS ==============*/
+
+
 .luxury-contact-card {
   background-color: var(--color-white);
   border-radius: 20px;
@@ -6733,7 +6748,6 @@ mission-vision.css Ã¢â‚¬â€ Our Purpose Section=======================
 /* Gold Form Focus styling */
 .luxury-contact-card .form-control,
 .luxury-contact-card .form-select {
-  font-family: var(--font-sans);
   background-color: var(--color-bg-main);
   border: 1px solid rgba(29, 29, 31, 0.08);
   border-radius: 8px;
@@ -6752,7 +6766,6 @@ mission-vision.css Ã¢â‚¬â€ Our Purpose Section=======================
 }
 
 .luxury-contact-card .form-label {
-  font-family: var(--font-sans);
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.1em;
@@ -6893,6 +6906,7 @@ a.contact-info-val:hover {
   align-items: flex-start;
   margin-bottom: 12px;
   font-size: 14px;
+  font-family: var(--font-sans);
 }
 
 .clinic-detail-item:last-child {
@@ -7002,44 +7016,7 @@ a.contact-info-val:hover {
 
 /* Mobile specific adjustments */
 @media (max-width: 767px) {
-  .clinic-cards-row {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    overflow-x: auto !important;
-    scroll-snap-type: x mandatory;
-    padding-bottom: 25px;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: thin;
-    gap: 0 !important;
-  }
-
-  .clinic-cards-row>div {
-    flex: 0 0 85% !important;
-    max-width: 85% !important;
-    scroll-snap-align: start;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
   .final-cta-card {
     padding: 50px 20px;
-  }
-
-  .clinic-card {
-    padding: 24px !important;
-  }
-
-  .map-card {
-    padding: 20px !important;
-  }
-
-  .luxury-accordion .accordion-button {
-    padding: 18px 20px !important;
-    font-size: 16px !important;
-  }
-
-  .luxury-accordion .accordion-body {
-    padding: 0 20px 20px 20px !important;
-    font-size: 15px !important;
   }
 }

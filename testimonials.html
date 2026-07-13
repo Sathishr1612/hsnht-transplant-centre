@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 
 <head>
@@ -23,21 +23,6 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
 
-    <style>
-        .hr-hero::before {
-            background-image: url('assets/images/before-after-banner.png') !important;
-            background-position: right top !important;
-        }
-
-        @media (max-width: 767px) {
-            .hr-hero::before {
-                background-position: center top !important;
-                -webkit-mask-image: none !important;
-                mask-image: none !important;
-                opacity: 0.25 !important;
-            }
-        }
-    </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 </head>
 
@@ -260,23 +245,9 @@
                     </ul>
                 </li>
                 <li class="drawer-menu-item">
-                    <a class="nav-link" href="gallery.html">
-                        <span class="menu-num">05</span>
-                        <span class="menu-text">Gallery</span>
-                        <span class="menu-arrow"></span>
-                    </a>
-                </li>
-                <li class="drawer-menu-item">
                     <a class="nav-link" href="testimonials.html">
                         <span class="menu-num">06</span>
                         <span class="menu-text">Testimonials</span>
-                        <span class="menu-arrow"></span>
-                    </a>
-                </li>
-                <li class="drawer-menu-item">
-                    <a class="nav-link" href="locations.html">
-                        <span class="menu-num">07</span>
-                        <span class="menu-text">Locations</span>
                         <span class="menu-arrow"></span>
                     </a>
                 </li>
@@ -313,12 +284,15 @@
             <div class="d-flex align-items-center justify-content-between gap-2 mt-2">
                 <!-- Socials -->
                 <div class="d-flex gap-2.5">
-                    <a href="https://instagram.com" target="_blank" rel="noreferrer" class="social-link-drawer"
-                        aria-label="Instagram"><i class="bi bi-instagram" style="font-size: 1.1rem;"></i></a>
-                    <a href="https://facebook.com" target="_blank" rel="noreferrer" class="social-link-drawer"
-                        aria-label="Facebook"><i class="bi bi-facebook" style="font-size: 1.1rem;"></i></a>
-                    <a href="https://youtube.com" target="_blank" rel="noreferrer" class="social-link-drawer"
-                        aria-label="YouTube"><i class="bi bi-youtube" style="font-size: 1.1rem;"></i></a>
+                    <a href="https://www.instagram.com/hsnhairtransplant/" target="_blank" rel="noopener noreferrer"
+                        class="social-link-drawer" aria-label="Instagram"><i class="bi bi-instagram"
+                            style="font-size: 1.1rem;"></i></a>
+                    <a href="https://www.facebook.com/people/HSN-Hair-Transplatation/100064108442274/" target="_blank"
+                        rel="noopener noreferrer" class="social-link-drawer" aria-label="Facebook"><i
+                            class="bi bi-facebook" style="font-size: 1.1rem;"></i></a>
+                    <a href="https://www.youtube.com/channel/UCvPAg814mn3C3P5ETNjpihw" target="_blank"
+                        rel="noopener noreferrer" class="social-link-drawer" aria-label="YouTube"><i
+                            class="bi bi-youtube" style="font-size: 1.1rem;"></i></a>
                 </div>
 
                 <!-- Google Reviews Badge -->
@@ -342,7 +316,7 @@
     <!-- ==============================================
          SECTION 1: HERO
          ============================================== -->
-    <section class="hr-hero" id="hr-hero">
+    <section class="hr-hero testimonials-hero" id="hr-hero">
         <div class="hr-hero-container">
             <div class="hr-hero-content">
                 <span class="hr-hero-label">PATIENT TESTIMONIALS</span>
@@ -1174,57 +1148,69 @@
 
                     <!-- Social links -->
                     <div class="d-flex gap-3">
-                        <a href="https://instagram.com" target="_blank" rel="noreferrer"
+                        <a href="https://www.instagram.com/hsnhairtransplant/" target="_blank" rel="noopener noreferrer"
                             class="btn border border-secondary border-opacity-15 rounded-circle p-0 d-flex align-items-center justify-content-center text-secondary hover:bg-secondary hover:text-white transition-all"
                             style="width: 32px; height: 32px;"><i class="bi bi-instagram"
                                 style="font-size: 1.1rem;"></i></a>
-                        <a href="https://youtube.com" target="_blank" rel="noreferrer"
+                        <a href="https://www.youtube.com/channel/UCvPAg814mn3C3P5ETNjpihw" target="_blank"
+                            rel="noopener noreferrer"
                             class="btn border border-secondary border-opacity-15 rounded-circle p-0 d-flex align-items-center justify-content-center text-secondary hover:bg-secondary hover:text-white transition-all"
                             style="width: 32px; height: 32px;"><i class="bi bi-youtube"
                                 style="font-size: 1.1rem;"></i></a>
-                        <a href="https://facebook.com" target="_blank" rel="noreferrer"
+                        <a href="https://www.facebook.com/people/HSN-Hair-Transplatation/100064108442274/"
+                            target="_blank" rel="noopener noreferrer"
                             class="btn border border-secondary border-opacity-15 rounded-circle p-0 d-flex align-items-center justify-content-center text-secondary hover:bg-secondary hover:text-white transition-all"
                             style="width: 32px; height: 32px;"><i class="bi bi-facebook"
                                 style="font-size: 1.1rem;"></i></a>
                     </div>
                 </div>
 
-        <!-- Column 2: Quick navigation links -->
-        <div class="col-md-6 col-lg-3">
-          <h5 class="font-serif text-primary text-uppercase tracking-wider mb-4 font-bold" style="font-size: 1rem;">
-            Quick Links</h5>
-          <div class="row">
-            <div class="col-6">
-              <ul class="list-unstyled space-y-2 text-xs font-sans">
-                <li class="mb-2"><a href="index.html" class="text-decoration-none hover:text-secondary transition-colors"
-                    style="color: var(--color-text-secondary);">Home</a></li>
-                <li class="mb-2"><a href="about.html" class="text-decoration-none hover:text-secondary transition-colors"
-                    style="color: var(--color-text-secondary);">About HSN</a></li>
-                <li class="mb-2"><a href="about.html" class="text-decoration-none hover:text-secondary transition-colors"
-                    style="color: var(--color-text-secondary);">Our Doctors</a></li>
-                <li class="mb-2"><a href="hair-restoration.html" class="text-decoration-none hover:text-secondary transition-colors"
-                    style="color: var(--color-text-secondary);">Services</a></li>
-                <li class="mb-2"><a href="before-after.html" class="text-decoration-none hover:text-secondary transition-colors"
-                    style="color: var(--color-text-secondary);">Results</a></li>
-              </ul>
-            </div>
-            <div class="col-6">
-              <ul class="list-unstyled space-y-2 text-xs font-sans">
-                <li class="mb-2"><a href="gallery.html" class="text-decoration-none hover:text-secondary transition-colors"
-                    style="color: var(--color-text-secondary);">Gallery</a></li>
-                <li class="mb-2"><a href="locations.html"
-                    class="text-decoration-none hover:text-secondary transition-colors"
-                    style="color: var(--color-text-secondary);">Locations</a></li>
-                <li class="mb-2"><a href="index.html" class="text-decoration-none hover:text-secondary transition-colors"
-                    style="color: var(--color-text-secondary);">Blog</a></li>
-                <li class="mb-2"><a href="index.html" class="text-decoration-none hover:text-secondary transition-colors"
-                    style="color: var(--color-text-secondary);">FAQs</a></li>
-                <li class="mb-2"><a href="contact.html" class="text-decoration-none hover:text-secondary transition-colors"
-                    style="color: var(--color-text-secondary);">Contact Us</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+                <!-- Column 2: Quick navigation links -->
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="font-serif text-primary text-uppercase tracking-wider mb-4 font-bold"
+                        style="font-size: 1rem;">
+                        Quick Links</h5>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="list-unstyled space-y-2 text-xs font-sans">
+                                <li class="mb-2"><a href="index.html"
+                                        class="text-decoration-none hover:text-secondary transition-colors"
+                                        style="color: var(--color-text-secondary);">Home</a></li>
+                                <li class="mb-2"><a href="about.html"
+                                        class="text-decoration-none hover:text-secondary transition-colors"
+                                        style="color: var(--color-text-secondary);">About HSN</a></li>
+                                <li class="mb-2"><a href="about.html"
+                                        class="text-decoration-none hover:text-secondary transition-colors"
+                                        style="color: var(--color-text-secondary);">Our Doctors</a></li>
+                                <li class="mb-2"><a href="hair-restoration.html"
+                                        class="text-decoration-none hover:text-secondary transition-colors"
+                                        style="color: var(--color-text-secondary);">Services</a></li>
+                                <li class="mb-2"><a href="before-after.html"
+                                        class="text-decoration-none hover:text-secondary transition-colors"
+                                        style="color: var(--color-text-secondary);">Results</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="list-unstyled space-y-2 text-xs font-sans">
+                                <li class="mb-2"><a href="gallery.html"
+                                        class="text-decoration-none hover:text-secondary transition-colors"
+                                        style="color: var(--color-text-secondary);">Gallery</a></li>
+                                <li class="mb-2"><a href="locations.html"
+                                        class="text-decoration-none hover:text-secondary transition-colors"
+                                        style="color: var(--color-text-secondary);">Locations</a></li>
+                                <li class="mb-2"><a href="index.html"
+                                        class="text-decoration-none hover:text-secondary transition-colors"
+                                        style="color: var(--color-text-secondary);">Blog</a></li>
+                                <li class="mb-2"><a href="index.html"
+                                        class="text-decoration-none hover:text-secondary transition-colors"
+                                        style="color: var(--color-text-secondary);">FAQs</a></li>
+                                <li class="mb-2"><a href="contact.html"
+                                        class="text-decoration-none hover:text-secondary transition-colors"
+                                        style="color: var(--color-text-secondary);">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- Column 3: Contact clinical desk info -->
                 <div class="col-md-6 col-lg-4">

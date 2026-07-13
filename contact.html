@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 
 <head>
@@ -25,317 +25,7 @@
     <link rel="stylesheet" href="assets/css/about-hero.css" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-    <style>
-        /* Contact Page Specific Premium Styles */
 
-        /* Spacing and grids */
-        .luxury-contact-card {
-            background-color: var(--color-white);
-            border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(29, 29, 31, 0.04);
-            border: 1px solid rgba(201, 164, 106, 0.15);
-            transition: var(--transition-smooth);
-        }
-
-        .luxury-contact-card:hover {
-            border-color: rgba(201, 164, 106, 0.4);
-            box-shadow: 0 15px 45px rgba(201, 164, 106, 0.08);
-        }
-
-        /* Gold Form Focus styling */
-        .luxury-contact-card .form-control,
-        .luxury-contact-card .form-select {
-            background-color: var(--color-bg-main);
-            border: 1px solid rgba(29, 29, 31, 0.08);
-            border-radius: 8px;
-            padding: 14px 18px;
-            font-size: 15px;
-            color: var(--color-primary);
-            transition: var(--transition-fast);
-        }
-
-        .luxury-contact-card .form-control:focus,
-        .luxury-contact-card .form-select:focus {
-            background-color: var(--color-white);
-            border-color: var(--color-secondary) !important;
-            box-shadow: 0 0 0 3px rgba(201, 164, 106, 0.2) !important;
-            outline: none;
-        }
-
-        .luxury-contact-card .form-label {
-            font-size: 11px;
-            font-weight: 600;
-            letter-spacing: 0.1em;
-            color: var(--color-primary);
-            margin-bottom: 8px;
-            text-transform: uppercase;
-        }
-
-        /* Right Side Contact Info Card */
-        .contact-info-card {
-            background-color: var(--color-bg-alt);
-            border-radius: 20px;
-            border: 1px solid rgba(201, 164, 106, 0.2);
-            padding: 40px;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .contact-info-item {
-            border-bottom: 1px solid rgba(29, 29, 31, 0.06);
-            padding-bottom: 20px;
-            margin-bottom: 20px;
-        }
-
-        .contact-info-item:last-child {
-            border-bottom: none;
-            padding-bottom: 0;
-            margin-bottom: 0;
-        }
-
-        .contact-info-label {
-            font-size: 11px;
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-            color: var(--color-secondary);
-            font-weight: 600;
-            margin-bottom: 6px;
-        }
-
-        .contact-info-val {
-            font-size: 20px;
-            font-weight: 600;
-            color: var(--color-primary);
-            text-decoration: none;
-            transition: var(--transition-fast);
-        }
-
-        a.contact-info-val:hover {
-            color: var(--color-secondary);
-        }
-
-        /* Premium Social Icons */
-        .contact-social-icons {
-            display: flex;
-            gap: 15px;
-            margin-top: 30px;
-        }
-
-        .contact-social-icon {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            border: 1px solid rgba(201, 164, 106, 0.3);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--color-primary);
-            background: transparent;
-            transition: var(--transition-smooth);
-            text-decoration: none;
-        }
-
-        .contact-social-icon:hover {
-            background-color: var(--color-secondary);
-            border-color: var(--color-secondary);
-            color: var(--color-white) !important;
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(201, 164, 106, 0.2);
-        }
-
-        /* Clinic Cards */
-        .clinic-card {
-            background-color: var(--color-white);
-            border-radius: 20px;
-            border: 1px solid rgba(29, 29, 31, 0.05);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
-            padding: 40px;
-            transition: var(--transition-smooth);
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .clinic-card:hover {
-            border-color: var(--color-secondary);
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(201, 164, 106, 0.12);
-        }
-
-        .clinic-icon {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background-color: rgba(201, 164, 106, 0.1);
-            color: var(--color-secondary);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 25px;
-            font-size: 20px;
-        }
-
-        .clinic-name {
-            font-size: 24px;
-            font-weight: 700;
-            margin-bottom: 15px;
-        }
-
-        .clinic-address {
-            font-size: 15px;
-            line-height: 1.7;
-            color: var(--color-text-secondary);
-            margin-bottom: 20px;
-        }
-
-        .clinic-details {
-            border-top: 1px solid rgba(29, 29, 31, 0.06);
-            padding-top: 20px;
-            margin-bottom: 25px;
-        }
-
-        .clinic-detail-item {
-            display: flex;
-            gap: 10px;
-            align-items: flex-start;
-            margin-bottom: 12px;
-            font-size: 14px;
-        }
-
-        .clinic-detail-item:last-child {
-            margin-bottom: 0;
-        }
-
-        .clinic-detail-icon {
-            color: var(--color-secondary);
-            margin-top: 2px;
-        }
-
-        .clinic-actions {
-            display: flex;
-            gap: 15px;
-        }
-
-        /* Map Location Cards & Interactive Container */
-        .map-card {
-            background-color: var(--color-white);
-            border-radius: 20px;
-            border: 1px solid rgba(201, 164, 106, 0.15);
-            box-shadow: 0 10px 30px rgba(29, 29, 31, 0.02);
-            padding: 30px;
-            transition: var(--transition-smooth);
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .map-card:hover {
-            border-color: var(--color-secondary);
-            box-shadow: 0 15px 40px rgba(201, 164, 106, 0.1);
-        }
-
-        .map-iframe-wrapper {
-            width: 100%;
-            height: 250px;
-            border-radius: 12px;
-            overflow: hidden;
-            margin: 20px 0;
-            border: 1px solid rgba(29, 29, 31, 0.08);
-        }
-
-        .map-iframe-wrapper iframe {
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
-
-
-
-        /* Premium Accordion Styling */
-        .luxury-accordion .accordion-item {
-            background-color: var(--color-white);
-            border: 1px solid rgba(29, 29, 31, 0.06);
-            border-radius: 12px !important;
-            margin-bottom: 15px;
-            overflow: hidden;
-            transition: var(--transition-smooth);
-        }
-
-        .luxury-accordion .accordion-item:hover {
-            border-color: var(--color-secondary);
-        }
-
-        .luxury-accordion .accordion-button {
-            font-family: var(--font-sans);
-            font-size: 18px;
-            font-weight: 600;
-            color: var(--color-primary);
-            padding: 24px 30px;
-            background-color: transparent;
-            box-shadow: none;
-            transition: var(--transition-fast);
-        }
-
-        .luxury-accordion .accordion-button:not(.collapsed) {
-            color: var(--color-secondary);
-            background-color: transparent;
-        }
-
-        .luxury-accordion .accordion-body {
-            padding: 0 30px 30px 30px;
-            font-size: 16px;
-            line-height: 1.8;
-            color: var(--color-text-secondary);
-        }
-
-        /* Final CTA Card styling */
-        .final-cta-card {
-            background-color: var(--color-bg-alt);
-            border-radius: 30px;
-            border: 1px solid rgba(201, 164, 106, 0.2);
-            padding: 80px 40px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .final-cta-card::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background-image: radial-gradient(circle at top right, rgba(201, 164, 106, 0.08) 0%, transparent 60%);
-            pointer-events: none;
-        }
-
-        /* Mobile specific adjustments */
-        @media (max-width: 767px) {
-            .clinic-cards-row {
-                display: flex !important;
-                flex-wrap: nowrap !important;
-                overflow-x: auto !important;
-                scroll-snap-type: x mandatory;
-                padding-bottom: 25px;
-                -webkit-overflow-scrolling: touch;
-                scrollbar-width: thin;
-                gap: 0 !important;
-            }
-
-            .clinic-cards-row>div {
-                flex: 0 0 85% !important;
-                max-width: 85% !important;
-                scroll-snap-align: start;
-                padding-left: 10px;
-                padding-right: 10px;
-            }
-
-            .final-cta-card {
-                padding: 50px 20px;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -535,7 +225,7 @@
                     <a class="nav-link" href="#mobileServicesMenu" data-bs-toggle="collapse" role="button"
                         aria-expanded="false" aria-controls="mobileServicesMenu">
                         <span class="menu-num">03</span>
-                        <span class="menu-text">Treatments</span>
+                        <span class="menu-text">Services</span>
                         <span class="dropdown-caret-mobile" style="margin-left: auto;">▼</span>
                     </a>
                     <ul class="collapse list-unstyled mobile-dropdown-menu" id="mobileServicesMenu">
@@ -576,15 +266,8 @@
                     </a>
                 </li>
                 <li class="drawer-menu-item">
-                    <a class="nav-link" href="locations.html">
-                        <span class="menu-num">07</span>
-                        <span class="menu-text">Locations</span>
-                        <span class="menu-arrow"></span>
-                    </a>
-                </li>
-                <li class="drawer-menu-item">
                     <a class="nav-link active" href="contact.html">
-                        <span class="menu-num">08</span>
+                        <span class="menu-num">07</span>
                         <span class="menu-text">Contact</span>
                         <span class="menu-arrow"></span>
                     </a>
@@ -594,22 +277,9 @@
 
         <!-- Drawer Footer -->
         <div class="drawer-footer w-100 mt-auto pt-3 border-top border-secondary border-opacity-10 text-start">
-            <!-- Primary CTA -->
-            <button class="btn btn-gold-solid w-100 mb-3 py-2.5 text-uppercase tracking-wider font-mono text-[11px]"
-                data-bs-toggle="modal" data-bs-target="#consultationModal" id="drawer-cta-book">
-                Book Your Consultation Today
-            </button>
 
             <!-- Secondary CTA Buttons -->
             <div class="row g-2 mb-4">
-                <!-- <div class="col-6">
-          <a href="https://wa.me/919876543210?text=Hello%20HSN%20Hair%20Transplant%20Centre,%20I%20am%20looking%20to%20schedule%20an%20expert%20digital%20scalp%20consultation."
-            target="_blank" rel="noreferrer"
-            class="btn btn-outline-dark w-100 py-2 font-mono text-[10px] tracking-widest text-uppercase d-flex align-items-center justify-content-center gap-1.5"
-            style="border-color: rgba(29, 29, 31, 0.15); font-size: 10px; color: var(--color-primary); background: transparent;">
-            <i data-lucide="message-square" style="width: 12px; height: 12px;"></i> WhatsApp Now
-          </a>
-        </div> -->
                 <div class="col-6">
                     <a href="tel:+919876543210"
                         class="btn btn-outline-dark w-100 py-2 font-mono text-[10px] tracking-widest text-uppercase d-flex align-items-center justify-content-center gap-1.5"
@@ -623,12 +293,15 @@
             <div class="d-flex align-items-center justify-content-between gap-2 mt-2">
                 <!-- Socials -->
                 <div class="d-flex gap-2.5">
-                    <a href="https://instagram.com" target="_blank" rel="noreferrer" class="social-link-drawer"
-                        aria-label="Instagram"><i class="bi bi-instagram" style="font-size: 1.1rem;"></i></a>
-                    <a href="https://facebook.com" target="_blank" rel="noreferrer" class="social-link-drawer"
-                        aria-label="Facebook"><i class="bi bi-facebook" style="font-size: 1.1rem;"></i></a>
-                    <a href="https://youtube.com" target="_blank" rel="noreferrer" class="social-link-drawer"
-                        aria-label="YouTube"><i class="bi bi-youtube" style="font-size: 1.1rem;"></i></a>
+                    <a href="https://www.instagram.com/hsnhairtransplant/" target="_blank" rel="noopener noreferrer"
+                        class="social-link-drawer" aria-label="Instagram"><i class="bi bi-instagram"
+                            style="font-size: 1.1rem;"></i></a>
+                    <a href="https://www.facebook.com/people/HSN-Hair-Transplatation/100064108442274/" target="_blank"
+                        rel="noopener noreferrer" class="social-link-drawer" aria-label="Facebook"><i
+                            class="bi bi-facebook" style="font-size: 1.1rem;"></i></a>
+                    <a href="https://www.youtube.com/channel/UCvPAg814mn3C3P5ETNjpihw" target="_blank"
+                        rel="noopener noreferrer" class="social-link-drawer" aria-label="YouTube"><i
+                            class="bi bi-youtube" style="font-size: 1.1rem;"></i></a>
                 </div>
 
                 <!-- Google Reviews Badge -->
@@ -648,49 +321,31 @@
     </div>
 
     <!-- 4. Hero Section -->
-    <section class="about-hero" id="about-hero">
+    <section class="about-hero" id="about-hero" style="background-image: url('assets/images/contact-page-banner.png');">
         <div class="about-hero-container">
             <div class="about-hero-content">
-                <!-- <span class="about-hero-label">ABOUT HSN</span> -->
+                <span class="about-hero-label">GET IN TOUCH</span>
 
                 <h1 class="about-hero-title">
-                    Transforming Hair.<br>
-                    <span class="about-hero-title-accent">Restoring Confidence.</span>
+                    Let's Begin Your<br>
+                    <span class="about-hero-title-accent">Hair Restoration Journey</span>
                 </h1>
 
                 <p class="about-hero-desc">
-                    Over 18 years of excellence in advanced hair restoration and personalized care.
+                    Whether you're considering hair restoration, PRP therapy, beard restoration, scalp treatments, or
+                    dermatology care, our specialists are here to guide you with personalized treatment and expert
+                    consultation.
                 </p>
             </div>
-            <div class="about-hero-image-wrapper">
-                <img src="assets/images/about-banner.png" alt="Confident Indian male model with healthy hair"
-                    class="about-hero-image">
-            </div>
-        </div>
-    </section> <!-- =========================================
-         SECTION 1 — CONTACT INTRODUCTION
-         ========================================= -->
-    <section class="py-5 my-4">
-        <div class="container text-center" style="max-width: 700px; padding-top: 20px; padding-bottom: 20px;">
-            <span class="editorial-label">GET IN TOUCH</span>
-            <h2 class="editorial-title mb-4" style="font-family: var(--font-sans); font-size: 46px; font-weight: 700;">
-                Let's Begin Your<br>
-                <span class="hr-highlight">Hair Restoration Journey</span>
-            </h2>
-            <p class="editorial-desc">
-                Whether you're considering hair restoration, PRP therapy, beard restoration, scalp treatments, or
-                dermatology care, our specialists are here to guide you with personalized treatment and expert
-                consultation.
-            </p>
         </div>
     </section>
 
     <!-- =========================================
          SECTION 2 — BOOK A CONSULTATION
          ========================================= -->
-    <section class="py-5" style="background-color: var(--color-bg-main);">
-        <div class="container">
-            <div class="row g-5">
+    <section class="pb-5" style="background-color: var(--color-bg-main);">
+        <div class="container" style="position: relative; z-index: 10; margin-top:100px; margin-bottom:100px;">
+            <div class="row g-lg-5 g-4">
                 <!-- Left Side: Premium Appointment Form (55%) -->
                 <div class="col-lg-7">
                     <div class="luxury-contact-card p-3 p-md-5">
@@ -801,16 +456,17 @@
                         </div>
 
                         <div class="contact-social-icons">
-                            <a href="https://instagram.com" target="_blank" rel="noreferrer" class="contact-social-icon"
-                                aria-label="Instagram">
+                            <a href="https://www.instagram.com/hsnhairtransplant/" target="_blank"
+                                rel="noopener noreferrer" class="contact-social-icon" aria-label="Instagram">
                                 <i class="bi bi-instagram"></i>
                             </a>
-                            <a href="https://facebook.com" target="_blank" rel="noreferrer" class="contact-social-icon"
+                            <a href="https://www.facebook.com/people/HSN-Hair-Transplatation/100064108442274/"
+                                target="_blank" rel="noopener noreferrer" class="contact-social-icon"
                                 aria-label="Facebook">
                                 <i class="bi bi-facebook"></i>
                             </a>
-                            <a href="https://youtube.com" target="_blank" rel="noreferrer" class="contact-social-icon"
-                                aria-label="YouTube">
+                            <a href="https://www.youtube.com/channel/UCvPAg814mn3C3P5ETNjpihw" target="_blank"
+                                rel="noopener noreferrer" class="contact-social-icon" aria-label="YouTube">
                                 <i class="bi bi-youtube"></i>
                             </a>
                         </div>
@@ -970,12 +626,13 @@
                             Stage, Bangalore</p>
                         <div class="map-iframe-wrapper">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.387163884841!2d77.5562725!3d12.9886369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3ddbc71d4793%3A0xe54e60bf7b5bcf!2sMKK%20Road%20Rajajinagar!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-                                allowfullscreen="" loading="lazy"></iframe>
+                                src="https://maps.google.com/maps?q=HSN+Hair+Centre,+Rajajinagar,+Bangalore&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen=""
+                                loading="lazy"></iframe>
                         </div>
                         <div class="d-flex gap-2 mt-auto">
                             <a href="https://maps.google.com/?q=HSN+Hair+Centre+Rajajinagar+Bangalore" target="_blank"
-                                rel="noreferrer" class="btn btn-gold-solid py-2 px-3 text-center flex-grow-1"
+                                rel="noreferrer" class="btn btn-gold-solid py-2 px-3 text-center flex-grow-1 font-sans"
                                 style="font-size: 11px;">
                                 <i class="bi bi-box-arrow-up-right me-1"></i> DIRECTIONS
                             </a>
@@ -991,16 +648,18 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="map-card">
                         <h4 class="font-serif mb-2" style="font-size: 20px; font-weight: 700;">Chennai Hair Centre</h4>
-                        <p class="text-muted text-xs mb-0" style="font-size: 13px; line-height: 1.4;">Purasaiwalkam,
+                        <p class="text-muted text-xs mb-0 font-sans" style="font-size: 13px; line-height: 1.4;">
+                            Purasaiwalkam,
                             Chennai</p>
                         <div class="map-iframe-wrapper">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.136294711651!2d80.2559281!3d13.090587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265fe0b080517%3A0x673934f8a846c43b!2sMuthiyal%20Chetty%20St%2C%20Purasaiwakkam%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-                                allowfullscreen="" loading="lazy"></iframe>
+                                src="https://maps.google.com/maps?q=HSN+Hair+Centre,+Purasaiwalkam,+Chennai&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen=""
+                                loading="lazy"></iframe>
                         </div>
                         <div class="d-flex gap-2 mt-auto">
                             <a href="https://maps.google.com/?q=HSN+Hair+Centre+Purasaiwalkam+Chennai" target="_blank"
-                                rel="noreferrer" class="btn btn-gold-solid py-2 px-3 text-center flex-grow-1"
+                                rel="noreferrer" class="btn btn-gold-solid py-2 px-3 text-center flex-grow-1 font-sans"
                                 style="font-size: 11px;">
                                 <i class="bi bi-box-arrow-up-right me-1"></i> DIRECTIONS
                             </a>
@@ -1017,12 +676,14 @@
                     <div class="map-card">
                         <h4 class="font-serif mb-2" style="font-size: 20px; font-weight: 700;">Coimbatore Hair Centre
                         </h4>
-                        <p class="text-muted text-xs mb-0" style="font-size: 13px; line-height: 1.4;">PN Palayam,
+                        <p class="text-muted text-xs mb-0 font-sans" style="font-size: 13px; line-height: 1.4;">PN
+                            Palayam,
                             Coimbatore</p>
                         <div class="map-iframe-wrapper">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.3312952876523!2d76.978128!3d11.011652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859bc0f925b6d%3A0x672d5bcf943265eb!2sPN%20Palayam%2C%20Coimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-                                allowfullscreen="" loading="lazy"></iframe>
+                                src="https://maps.google.com/maps?q=HSN+Hair+Centre,+PN+Palayam,+Coimbatore&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen=""
+                                loading="lazy"></iframe>
                         </div>
                         <div class="d-flex gap-2 mt-auto">
                             <a href="https://maps.google.com/?q=HSN+Hair+Centre+PN+Palayam+Coimbatore" target="_blank"
@@ -1234,15 +895,17 @@
 
                     <!-- Social links -->
                     <div class="d-flex gap-3">
-                        <a href="https://instagram.com" target="_blank" rel="noreferrer"
+                        <a href="https://www.instagram.com/hsnhairtransplant/" target="_blank" rel="noopener noreferrer"
                             class="btn border border-secondary border-opacity-15 rounded-circle p-0 d-flex align-items-center justify-content-center text-secondary hover:bg-secondary hover:text-white transition-all"
                             style="width: 32px; height: 32px;"><i class="bi bi-instagram"
                                 style="font-size: 1.1rem;"></i></a>
-                        <a href="https://youtube.com" target="_blank" rel="noreferrer"
+                        <a href="https://www.youtube.com/channel/UCvPAg814mn3C3P5ETNjpihw" target="_blank"
+                            rel="noopener noreferrer"
                             class="btn border border-secondary border-opacity-15 rounded-circle p-0 d-flex align-items-center justify-content-center text-secondary hover:bg-secondary hover:text-white transition-all"
                             style="width: 32px; height: 32px;"><i class="bi bi-youtube"
                                 style="font-size: 1.1rem;"></i></a>
-                        <a href="https://facebook.com" target="_blank" rel="noreferrer"
+                        <a href="https://www.facebook.com/people/HSN-Hair-Transplatation/100064108442274/"
+                            target="_blank" rel="noopener noreferrer"
                             class="btn border border-secondary border-opacity-15 rounded-circle p-0 d-flex align-items-center justify-content-center text-secondary hover:bg-secondary hover:text-white transition-all"
                             style="width: 32px; height: 32px;"><i class="bi bi-facebook"
                                 style="font-size: 1.1rem;"></i></a>
