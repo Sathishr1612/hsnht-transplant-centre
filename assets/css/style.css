@@ -7020,3 +7020,106 @@ a.contact-info-val:hover {
     padding: 50px 20px;
   }
 }
+
+
+/* ==============TESTIMONIYALS PAGE CSS ===================*/
+
+
+.bg-secondary.bg-opacity-10 {
+  background-color: rgba(201, 164, 106, 0.1) !important;
+}
+
+/* Testimonial Page Custom Animations */
+
+/* Playlist Active State */
+.playlist-card.active-video {
+  border-color: var(--color-secondary) !important;
+  background-color: var(--color-bg-main) !important;
+}
+
+/* Infinite Scroll Carousel */
+.moving-carousel-wrapper,
+.review-carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.moving-carousel-wrapper::before,
+.moving-carousel-wrapper::after,
+.review-carousel-wrapper::before,
+.review-carousel-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.moving-carousel-wrapper::before,
+.review-carousel-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, var(--color-bg-main) 0%, transparent 100%);
+}
+
+.moving-carousel-wrapper::after,
+.review-carousel-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, var(--color-bg-main) 0%, transparent 100%);
+}
+
+.review-carousel-wrapper::before {
+  background: linear-gradient(to right, var(--color-bg-main) 0%, transparent 100%);
+}
+
+.review-carousel-wrapper::after {
+  background: linear-gradient(to left, var(--color-bg-main) 0%, transparent 100%);
+}
+
+.moving-carousel-track {
+  display: flex;
+  width: calc(300px * 8 + 1.5rem * 8);
+  /* Base width of items + gap */
+  animation: scroll-left 25s linear infinite;
+}
+
+.review-carousel-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 35s linear infinite;
+}
+
+.moving-carousel-track:hover,
+.review-carousel-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-50% - 0.75rem));
+  }
+
+  /* Shift by half since items are duplicated */
+}
+
+/* Mobile Overrides */
+@media (max-width: 767px) {
+
+  .moving-carousel-wrapper::before,
+  .moving-carousel-wrapper::after,
+  .review-carousel-wrapper::before,
+  .review-carousel-wrapper::after {
+    width: 50px;
+    /* Smaller gradient fade on mobile */
+  }
+
+  .review-card {
+    width: 280px !important;
+  }
+}
