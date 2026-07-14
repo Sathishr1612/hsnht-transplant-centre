@@ -216,7 +216,7 @@ h6 {
   background: rgba(248, 247, 244, 0.85);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(29, 29, 31, 0.08);
+  /* Removed border-bottom — prevents visible gap/line between navbar and banner */
   transition: var(--transition-smooth);
   padding-top: 0.75rem !important;
   padding-bottom: 0.75rem !important;
@@ -354,9 +354,11 @@ h6 {
 .hero-section {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: calc(100vh - 84px);
+  /* changed from height to min-height to prevent clipping */
+  margin-top: 84px;
   overflow: hidden;
-  background-color: #111;
+  background-color: #F8F7F4;
   display: flex;
   align-items: center;
 }
@@ -365,7 +367,7 @@ h6 {
   position: absolute;
   inset: 0;
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   opacity: 0;
   transition: opacity 1.2s ease-in-out;
   z-index: 1;
@@ -374,6 +376,13 @@ h6 {
 .hero-slide.active {
   opacity: 1;
   z-index: 2;
+}
+
+/* Mobile responsive adjustment for hero images to center the subjects (who are usually on the right) */
+@media (max-width: 768px) {
+  .hero-slide {
+    background-position: 75% top;
+  }
 }
 
 .hero-overlay-r {
@@ -394,7 +403,8 @@ h6 {
 .hero-content {
   position: relative;
   z-index: 4;
-  padding-top: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .hero-badge-container {
@@ -2674,13 +2684,13 @@ h6 {
 .about-hero {
   position: relative;
   width: 100%;
-  min-height: 450px;
-  /* Short height banner */
+  min-height: 520px;
   display: flex;
   align-items: center;
   background-image: url('../images/about-banner.png');
   background-size: cover;
-  background-position: top right;
+  /* Shift image down by navbar height (80px) so person's head shows below the fixed navbar */
+  background-position: right top 80px;
   background-repeat: no-repeat;
   overflow: hidden;
 }
@@ -2721,8 +2731,9 @@ h6 {
 
 .about-hero-content {
   max-width: 580px;
-  padding-top: 40px;
-  /* Push content down slightly for balance */
+  /* Push text below fixed navbar (80px) + breathing room (40px) */
+  padding-top: 120px;
+  padding-bottom: 60px;
 }
 
 .about-hero-label {
@@ -5469,18 +5480,21 @@ mission-vision.css Ã¢â‚¬â€ Our Purpose Section=========================
   align-items: center;
   background-color: #F8F7F4;
   overflow: hidden;
+  /* No padding-top here — section fills flush to navbar, no gap */
 }
 
 .hr-hero::before {
   content: '';
   position: absolute;
   top: 0;
+  /* Fill entire section — no gap below navbar */
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../images/about/patient-satisfaction.png');
+  background-image: url('../images/hero-hsn.webp');
   background-size: cover;
-  background-position: top right;
+  /* Shift image down by navbar height (80px) so person's head shows below navbar */
+  background-position: right top 80px;
   background-repeat: no-repeat;
   /* Fades the image out on the left side so it blends perfectly into the solid background */
   -webkit-mask-image: linear-gradient(to right, transparent 0%, transparent 35%, black 65%, black 100%);
@@ -5490,19 +5504,20 @@ mission-vision.css Ã¢â‚¬â€ Our Purpose Section=========================
 
 .facial-hero::before {
   background-image: url('../images/dermatosurgery-improve-skin-simple-steps.jpg') !important;
-  background-position: center top !important;
+  /* Push image down by navbar height so face/head is visible below navbar */
+  background-position: center top 80px !important;
   background-size: cover;
 }
 
 .scalp-cosmetic-hero::before {
   background-image: url('../images/prp-treatment-hsn.jpg') !important;
-  background-position: center top !important;
+  background-position: center top 80px !important;
   background-size: cover;
 }
 
 .testimonials-hero::before {
   background-image: url('../images/testimoniyal-banner-hsn.png') !important;
-  background-position: center top !important;
+  background-position: center top 80px !important;
   background-size: cover;
 }
 
@@ -5528,7 +5543,9 @@ mission-vision.css Ã¢â‚¬â€ Our Purpose Section=========================
 
 .hr-hero-content {
   max-width: 580px;
-  padding-top: 40px;
+  /* Offset content below the fixed navbar (80px) + breathing room (40px) */
+  padding-top: 120px;
+  padding-bottom: 60px;
 }
 
 .hr-hero-label {
@@ -6417,9 +6434,10 @@ mission-vision.css Ã¢â‚¬â€ Our Purpose Section=========================
   }
 
   .hr-hero::before {
-    background-position: 70% top;
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, transparent 40%, black 85%, black 100%);
-    mask-image: linear-gradient(to right, transparent 0%, transparent 40%, black 85%, black 100%);
+    background-position: right top;
+    /* Align to right edge to prevent subject cutoff */
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, transparent 25%, black 65%, black 100%);
+    mask-image: linear-gradient(to right, transparent 0%, transparent 25%, black 65%, black 100%);
   }
 
   .hr-hero-title,
