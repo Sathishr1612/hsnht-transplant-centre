@@ -1491,6 +1491,7 @@ h6 {
   border-radius: 0;
   color: var(--color-primary);
   padding: 0.75rem 1rem;
+  font-family: var(--font-sans);
   font-size: 0.875rem;
 }
 
@@ -2639,6 +2640,12 @@ h6 {
   background-position: center;
 }
 
+.cta-banner-section-about {
+  background-image: url('../images/prp-treatment-hsn.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
 .cta-overlay {
   position: absolute;
   inset: 0;
@@ -3061,7 +3068,7 @@ h6 {
 
 
 /* ============================================
-   about-story.css Ã¢â‚¬â€ Our Story Section
+   about-story.css Ã¢â‚¬â€  Our Story Section
    ============================================ */
 
 .our-story-section {
@@ -3820,7 +3827,7 @@ h6 {
   }
 }
 
-mission-vision.css Ã¢â‚¬â€ Our Purpose Section============================================*/ .mission-vision-section {
+mission-vision.css Ã¢â‚¬â€ Our Purpose Section============================================*/ .mission-vision-section {
   background-color: #F8F7F4;
   padding: 80px 0;
   position: relative;
@@ -4098,7 +4105,7 @@ mission-vision.css Ã¢â‚¬â€ Our Purpose Section=======================
 
 
 /* ============================================
-   core-values.css Ã¢â‚¬â€ Our Core Values Section
+   core-values.css Ã¢â‚¬â€  Our Core Values Section
    ============================================ */
 
 .core-values-section {
@@ -4354,7 +4361,7 @@ mission-vision.css Ã¢â‚¬â€ Our Purpose Section=======================
 
 
 /* ============================================
-   why-choose.css Ã¢â‚¬â€ Why Patients Choose Us Section
+   why-choose.css Ã¢â‚¬â€  Why Patients Choose Us Section
    ============================================ */
 
 .why-choose-section {
@@ -6482,10 +6489,6 @@ mission-vision.css Ã¢â‚¬â€ Our Purpose Section=======================
   display: none;
 }
 
-.moving-row-container:active {
-  cursor: grabbing;
-}
-
 .moving-row-container:first-child {
   margin-bottom: 4rem;
   /* Better spacing between rows */
@@ -6753,6 +6756,7 @@ mission-vision.css Ã¢â‚¬â€ Our Purpose Section=======================
   border-radius: 8px;
   padding: 14px 18px;
   font-size: 15px;
+  font-family: var(--font-sans);
   color: var(--color-primary);
   transition: var(--transition-fast);
 }
@@ -6808,6 +6812,7 @@ mission-vision.css Ã¢â‚¬â€ Our Purpose Section=======================
 }
 
 .contact-info-val {
+  font-family: var(--font-sans);
   font-size: 20px;
   font-weight: 600;
   color: var(--color-primary);
