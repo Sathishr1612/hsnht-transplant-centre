@@ -6004,7 +6004,7 @@ mission-vision.css Ã¢â‚¬â€ Our Purpose Section=========================
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  margin-top: 60px;
+  /* margin-top: 60px; */
   align-items: center;
 }
 
