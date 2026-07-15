@@ -379,9 +379,73 @@ h6 {
 }
 
 /* Mobile responsive adjustment for hero images to center the subjects (who are usually on the right) */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
+  .hero-section {
+    min-height: 650px !important;
+    align-items: flex-start !important;
+  }
+
+  .hero-content {
+    padding-top: 3rem !important;
+  }
+
   .hero-slide {
-    background-position: 75% top;
+    background-position: 65% 20% !important;
+  }
+
+  /* Mobile: nearly invisible overlay — image stays bright, natural, and fully visible */
+  .hero-overlay-r {
+    background: linear-gradient(to bottom,
+        rgba(248, 247, 244, 0.08) 0%,
+        rgba(248, 247, 244, 0.05) 50%,
+        rgba(248, 247, 244, 0) 100%) !important;
+  }
+
+  .hero-overlay-t {
+    display: none !important;
+  }
+
+  /* ── Home page mobile hero text: bold, bright, and clearly visible ── */
+  #home .hero-badge-text {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    text-shadow:
+      0 1px 6px rgba(0, 0, 0, 0.80),
+      0 2px 14px rgba(0, 0, 0, 0.60) !important;
+  }
+
+  #home .hero-title {
+    color: #ffffff !important;
+    font-weight: 800 !important;
+    font-size: 2.4rem !important;
+    line-height: 1.15 !important;
+    text-shadow:
+      0 1px 4px rgba(0, 0, 0, 0.90),
+      0 3px 12px rgba(0, 0, 0, 0.70),
+      0 6px 24px rgba(0, 0, 0, 0.50) !important;
+  }
+
+  #home .hero-title .hr-highlight {
+    color: #C8A45D !important;
+    text-shadow:
+      0 1px 4px rgba(0, 0, 0, 0.85),
+      0 3px 12px rgba(0, 0, 0, 0.65) !important;
+  }
+
+  #home .hero-subtitle {
+    color: #f0d98a !important;
+    font-weight: 600 !important;
+    text-shadow:
+      0 1px 5px rgba(0, 0, 0, 0.85),
+      0 3px 12px rgba(0, 0, 0, 0.65) !important;
+  }
+
+  #home .hero-content p.font-sans.text-sm {
+    color: rgba(255, 255, 255, 0.92) !important;
+    font-weight: 500 !important;
+    text-shadow:
+      0 1px 4px rgba(0, 0, 0, 0.80),
+      0 2px 10px rgba(0, 0, 0, 0.60) !important;
   }
 }
 
@@ -2818,37 +2882,58 @@ h6 {
 @media (max-width: 768px) {
   .about-hero {
     min-height: 480px;
-    background-position: 80% top;
-    align-items: center;
-    /* Keep vertically centered but shift image */
+    background-position: 70% top;
+    align-items: flex-start;
+    padding-top: 100px;
   }
 
+  /* Mobile: nearly invisible overlay — image stays bright, natural, and fully visible */
   .about-hero::before {
-    /* Stronger gradient on mobile to ensure readability */
-    background: linear-gradient(90deg, rgba(248, 247, 244, 0.96) 0%, rgba(248, 247, 244, 0.88) 75%, rgba(241, 237, 230, 0.4) 100%);
+    background: linear-gradient(to bottom,
+        rgba(248, 247, 244, 0.08) 0%,
+        rgba(248, 247, 244, 0.05) 50%,
+        rgba(241, 237, 230, 0) 100%);
   }
 
   .about-hero::after {
     display: none;
-    /* Hide gold line on mobile for clean look */
   }
 
   .about-hero-content {
     padding-top: 0;
     max-width: 90%;
-    /* Let text breathe slightly */
   }
 
+  /* Bold white title for visibility over bright image */
   .about-hero-title {
     font-size: 28px;
-    /* Nicer wrapping size */
     line-height: 1.35;
     margin-bottom: 20px;
+    color: #ffffff !important;
+    font-weight: 800 !important;
+    text-shadow:
+      0 1px 4px rgba(0, 0, 0, 0.90),
+      0 3px 12px rgba(0, 0, 0, 0.70),
+      0 6px 24px rgba(0, 0, 0, 0.50) !important;
   }
 
+  /* Keep gold accent, add dark shadow so it's visible over bright image */
+  .about-hero-title-accent {
+    color: #C8A45D !important;
+    text-shadow:
+      0 1px 4px rgba(0, 0, 0, 0.85),
+      0 3px 12px rgba(0, 0, 0, 0.65) !important;
+  }
+
+  /* Description: bright white with shadow */
   .about-hero-desc {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.6;
+    color: rgba(255, 255, 255, 0.92) !important;
+    font-weight: 500 !important;
+    text-shadow:
+      0 1px 5px rgba(0, 0, 0, 0.85),
+      0 3px 12px rgba(0, 0, 0, 0.65) !important;
   }
 }
 
@@ -5491,7 +5576,7 @@ mission-vision.css Ã¢â‚¬â€ Our Purpose Section=========================
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../images/hero-hsn.webp');
+  background-image: url('../images/hair-restore-3.png');
   background-size: cover;
   /* Shift image down by navbar height (80px) so person's head shows below navbar */
   background-position: right top 80px;
@@ -5517,7 +5602,7 @@ mission-vision.css Ã¢â‚¬â€ Our Purpose Section=========================
 
 .testimonials-hero::before {
   background-image: url('../images/testimoniyal-banner-hsn.png') !important;
-  background-position: center top 80px !important;
+  /* background-position: center top 80px !important; */
   background-size: cover;
 }
 
@@ -5552,7 +5637,7 @@ mission-vision.css Ã¢â‚¬â€ Our Purpose Section=========================
   display: inline-flex;
   align-items: center;
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 15px;
   letter-spacing: 3px;
   color: #C9A46A;
   text-transform: uppercase;
@@ -5650,6 +5735,71 @@ mission-vision.css Ã¢â‚¬â€ Our Purpose Section=========================
 .hr-btn-secondary:hover::after {
   background-color: #C9A46A;
   bottom: 8px;
+}
+
+/* ── Mobile: hair-restoration hero image centering fix ── */
+@media (max-width: 768px) {
+  #hr-hero {
+    min-height: 520px;
+    align-items: flex-start;
+    padding-top: 100px;
+  }
+
+  /* Center image on mobile & remove left-fade mask that hides image on narrow screens */
+  #hr-hero::before {
+    background-position: center top 80px !important;
+    /* Remove the desktop left-to-right fade mask — show full image on mobile */
+    -webkit-mask-image: none !important;
+    mask-image: none !important;
+    /* Ultra-light overlay so image stays bright and fully visible */
+    -webkit-mask: none !important;
+    mask: none !important;
+    opacity: 1;
+  }
+
+  /* Nearly invisible overlay — image stays bright and clear */
+  #hr-hero::after {
+    display: none;
+  }
+
+  /* Add a very light scrim via a box-shadow trick on the section itself */
+  #hr-hero {
+    background: rgba(248, 247, 244, 0.06);
+  }
+
+  /* Bold white text with strong shadow for readability */
+  #hr-hero .hr-hero-label {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.80), 0 2px 14px rgba(0, 0, 0, 0.60) !important;
+  }
+
+  #hr-hero .hr-hero-title {
+    color: #ffffff !important;
+    font-weight: 800 !important;
+    font-size: 1.9rem !important;
+    line-height: 1.2 !important;
+    text-shadow:
+      0 1px 4px rgba(0, 0, 0, 0.92),
+      0 3px 12px rgba(0, 0, 0, 0.72),
+      0 6px 24px rgba(0, 0, 0, 0.50) !important;
+  }
+
+  #hr-hero .hr-hero-title .hr-highlight {
+    color: #C8A45D !important;
+    text-shadow:
+      0 1px 4px rgba(0, 0, 0, 0.88),
+      0 3px 12px rgba(0, 0, 0, 0.68) !important;
+  }
+
+  #hr-hero .hr-hero-desc {
+    color: rgba(255, 255, 255, 0.92) !important;
+    font-weight: 500 !important;
+    font-size: 15px !important;
+    text-shadow:
+      0 1px 5px rgba(0, 0, 0, 0.85),
+      0 3px 12px rgba(0, 0, 0, 0.65) !important;
+  }
 }
 
 /* 2. UNDERSTANDING HAIR LOSS  */

@@ -214,3 +214,26 @@
     font-size: 8px !important;
   }
 }
+
+/* ── Hide all banner page labels on mobile only ── */
+@media (max-width: 768px) {
+
+  /* Service/inner page hero labels */
+  .hr-hero-label,
+  .about-hero-label,
+  .hero-label-v2,
+  /* Home page badge (line + text) */
+  .hero-badge-container {
+    display: none !important;
+  }
+
+  /* ── All inner-page heroes (testimonials, before-after, etc.): center image on mobile ── */
+  /* Remove the desktop left-to-right fade mask and center the subject */
+  .hr-hero::before {
+    background-position: center top 80px !important;
+    -webkit-mask-image: none !important;
+    mask-image: none !important;
+    -webkit-mask: none !important;
+    mask: none !important;
+  }
+}
