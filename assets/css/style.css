@@ -5628,7 +5628,6 @@ mission-vision.css Ã¢â‚¬â€ Our Purpose Section=========================
 
 .hr-hero-content {
   max-width: 580px;
-  /* Offset content below the fixed navbar (80px) + breathing room (40px) */
   padding-top: 120px;
   padding-bottom: 60px;
 }
@@ -7128,7 +7127,6 @@ a.contact-info-val:hover {
   height: 100%;
   border: 0;
 }
-
 
 
 /* Premium Accordion Styling */
