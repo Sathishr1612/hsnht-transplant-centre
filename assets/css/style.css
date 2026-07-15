@@ -5602,7 +5602,7 @@ mission-vision.css Ã¢â‚¬â€ Our Purpose Section=========================
 
 .testimonials-hero::before {
   background-image: url('../images/testimoniyal-banner-hsn.png') !important;
-  /* background-position: center top 80px !important; */
+  background-position: center top 80px !important;
   background-size: cover;
 }
 
@@ -5747,7 +5747,7 @@ mission-vision.css Ã¢â‚¬â€ Our Purpose Section=========================
 
   /* Center image on mobile & remove left-fade mask that hides image on narrow screens */
   #hr-hero::before {
-    background-position: center top 80px !important;
+    background-position: 40% top 80px !important;
     /* Remove the desktop left-to-right fade mask — show full image on mobile */
     -webkit-mask-image: none !important;
     mask-image: none !important;
