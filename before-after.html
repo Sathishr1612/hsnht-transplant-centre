@@ -28,10 +28,11 @@
             background-image: url('assets/images/before-after-banner.png') !important;
         }
 
-        /* Mobile: shift the subject to the left for this specific banner image */
+        /* Mobile: use dedicated portrait image and center it */
         @media (max-width: 768px) {
-            .hr-hero::before {
-                background-position: 100% 80px !important;
+            #hr-hero::before {
+                background-image: url('assets/images/before-after-mobile-img.png') !important;
+                background-position: center top 80px !important;
                 -webkit-mask-image: none !important;
                 mask-image: none !important;
             }
