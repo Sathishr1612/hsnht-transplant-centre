@@ -2717,7 +2717,10 @@ h6 {
 .cta-banner-section-about {
   background-image: url('../images/prp-treatment-hsn.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: right top;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
 }
 
 .cta-overlay {
