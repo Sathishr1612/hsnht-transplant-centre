@@ -1,4 +1,4 @@
-/* style.css - HSN Hair Transplant Centre Premium Stylesheet */
+﻿/* style.css - HSN Hair Transplant Centre Premium Stylesheet */
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
 
@@ -2709,13 +2709,13 @@ h6 {
    CTA Banner Section
    ========================================================================== */
 .cta-banner-section {
-  background-image: url('../images/hsn-cta-banner.png');
+  background-image: url('../images/hsn-cta-banner.webp');
   background-size: cover;
   background-position: center;
 }
 
 .cta-banner-section-about {
-  background-image: url('../images/prp-treatment-hsn.jpg');
+  background-image: url('../images/prp-treatment-hsn.webp');
   background-size: cover;
   background-position: right top;
   min-height: 500px;
@@ -2754,7 +2754,7 @@ h6 {
   min-height: 520px;
   display: flex;
   align-items: center;
-  background-image: url('../images/about-banner.png');
+  background-image: url('../images/about-banner.webp');
   background-size: cover;
   /* Shift image down by navbar height (80px) so person's head shows below the fixed navbar */
   background-position: right top 80px;
@@ -5579,7 +5579,7 @@ mission-vision.css Ã¢â‚¬â€ Our Purpose Section=========================
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../images/hair-restore-3.png');
+  background-image: url('../images/hair-restore-3.webp');
   background-size: cover;
   /* Shift image down by navbar height (80px) so person's head shows below navbar */
   background-position: right top 80px;
@@ -5591,20 +5591,20 @@ mission-vision.css Ã¢â‚¬â€ Our Purpose Section=========================
 }
 
 .facial-hero::before {
-  background-image: url('../images/dermatosurgery-improve-skin-simple-steps.jpg') !important;
+  background-image: url('../images/dermatosurgery-improve-skin-simple-steps.webp') !important;
   /* Push image down by navbar height so face/head is visible below navbar */
   background-position: center top 80px !important;
   background-size: cover;
 }
 
 .scalp-cosmetic-hero::before {
-  background-image: url('../images/prp-treatment-hsn.jpg') !important;
+  background-image: url('../images/prp-treatment-hsn.webp') !important;
   background-position: center top 80px !important;
   background-size: cover;
 }
 
 .testimonials-hero::before {
-  background-image: url('../images/testimoniyal-banner-hsn.png') !important;
+  background-image: url('../images/testimoniyal-banner-hsn.webp') !important;
   background-position: center top 80px !important;
   background-size: cover;
 }
@@ -6158,7 +6158,7 @@ mission-vision.css Ã¢â‚¬â€ Our Purpose Section=========================
 
 .hr-journey {
   padding: 80px 0;
-  background-image: url('../images/premium_light_bg.png');
+  background-image: url('../images/premium_light_bg.webp');
   background-size: cover;
   background-position: center;
   background-color: #F8F7F4;
@@ -6392,7 +6392,7 @@ mission-vision.css Ã¢â‚¬â€ Our Purpose Section=========================
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../images/luxury_clinic_bg.png');
+  background-image: url('../images/luxury_clinic_bg.webp');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
