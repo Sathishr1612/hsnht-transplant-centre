@@ -22,6 +22,19 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+ <style>
+        /* Mobile: use dedicated portrait image and center it */
+        @media (max-width: 768px) {
+            #hr-hero::before {
+                background-image: url('assets/images/hero-mobile-baner.png') !important;
+                background-position: center top 80px !important;
+                -webkit-mask-image: none !important;
+                mask-image: none !important;
+            }
+        }
+    </style>
+
 </head>
 
 <body class="hr-page">
@@ -304,7 +317,7 @@
                     Advanced hair restoration solutions designed to address hair loss, thinning hair, and baldness
                     through personalized treatment and expert clinical care. </p>
                 <div class="hr-hero-actions">
-                    <a href="#" class="hr-btn-primary" data-bs-toggle="modal" data-bs-target="#consultationModal">
+                    <a href="#" class="hr-btn-primary d-none d-md-inline-flex" data-bs-toggle="modal" data-bs-target="#consultationModal">
                         Book Consultation
                         <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
                     </a>

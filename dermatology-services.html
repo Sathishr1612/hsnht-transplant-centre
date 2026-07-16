@@ -28,6 +28,15 @@
             background-image: url('assets/images/dermatology-hsn-banner.png') !important;
             background-position: center 30% !important;
         }
+         /* Mobile: use dedicated portrait image and center it */
+        @media (max-width: 768px) {
+            #hr-hero::before {
+                background-image: url('assets/images/dermatology-hsn-banner-mobile.png') !important;
+                background-position: center top 80px !important;
+                -webkit-mask-image: none !important;
+                mask-image: none !important;
+            }
+        }
     </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 </head>
